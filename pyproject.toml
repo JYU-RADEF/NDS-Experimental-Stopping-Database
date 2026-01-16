@@ -19,3 +19,6 @@ dev = [
     "pandas-stubs>=2.2.3.250527",
     "pytest>=8.4.0",
 ]
+
+[tool.setuptools.package-data]
+nds_database = ["package_data/*.csv"]

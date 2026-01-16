@@ -1,10 +1,13 @@
 # Utility functions for harmonizing the data
 
+from typing import Optional
 import pandas as pd  # type: ignore
 import periodictable as pt  # type: ignore
 from periodictable.formulas import parse_formula  # type: ignore
 from pyparsing import ParseException
+import logging
 
+logger = logging.getLogger(__name__)
 
 def detect_material_type(name: str):
     name = name.strip()
@@ -134,10 +137,67 @@ def get_element_mass(name: str, isotope: float) -> float:
 
     return closest.mass
 
+def get_element_density(name: str, isotope: float) -> float:
+    """Get element density from the Periodic Table module.
+
+    Parameters
+    ----------
+    name : str
+        Name of the element (e.g., "Cu").
+    isotope : float
+        Isotope number (e.g., 63.546).
+
+    Returns
+    -------
+    float
+        Density of the element in g/cm3.
+
+    """
+    name_ = name
+    try:
+        options = [getattr(pt, name)[x] for x in getattr(pt, name).isotopes]
+    except AttributeError:
+        try:
+            logger.debug(f"Trying to get isotopes for element '{name_}' by lowercase name.")
+            name = name.lower()
+            options = [getattr(pt, name)[x] for x in getattr(pt, name).isotopes]
+        except AttributeError:
+            raise ValueError(f"Element '{name_}' not found in the periodic table.")
+
+    closest = min(options, key=lambda x: abs(x.mass - isotope))
+    return closest.density
+
+def get_element_symbol(name: str) -> str:
+    """Get element symbol from the Periodic Table module.
+
+    Parameters
+    ----------
+    name : str
+        Name of the element (e.g., "Copper" or "cu").
+
+    Returns
+    -------
+    str
+        Symbol of the element (e.g., "Cu").
+
+    """
+    # Try as a properly capitalized symbol (first letter capital, rest lowercase)
+    if hasattr(pt, name):
+        element = getattr(pt, name)
+        if isinstance(element, pt.core.Element):
+            return element.symbol
+
+    # Try matching by lowercase element name
+    for elem in pt.elements:
+        if elem is not None and elem.name.lower() == name.lower():
+            return elem.symbol
+
+    raise ValueError(f"Element '{name}' not found in the periodic table.")
 
 def convert_energy(
     value: float, mass: float, from_unit: str, to_unit: str = "MeV/u"
 ) -> tuple[float, str]:
+    
     new_unit = to_unit
 
     if from_unit[0] == to_unit[0]:
@@ -164,8 +224,8 @@ def convert_energy(
 
 
 def convert_dedx(
-    value: float, target_mass: float, from_unit: str, to_unit: str = "MeV/mg/cm2"
-) -> float:
+    value: float, target_mass: Optional[float], target_rho: Optional[float], from_unit: str, to_unit: str = "MeV/mg/cm2"
+) -> tuple[float, str]:
     """Convert dE/dx values between different units.
 
     Possible units are:
@@ -183,6 +243,10 @@ def convert_dedx(
     ----------
     value : float
         The value to convert.
+    target_mass : Optional[float]
+        The mass of the target element in atomic mass units (amu).
+    target_rho : Optional[float]
+        The density of the target material in g/cm3. Required for conversions involving `eV/Å`. 
     from_unit : str
         The unit of the input value.
     to_unit : str
@@ -190,24 +254,31 @@ def convert_dedx(
 
     Returns
     -------
-    float
-        The converted value.
+    float, str
+        The converted value and the new unit.
 
     """
 
     if from_unit == to_unit:
-        return value
+        return value, to_unit
 
-    if from_unit == "MeV/(mg/cm2)" and to_unit == "E-15eV cm2/atom":
-        return value * 1e-15
-    elif from_unit == "E-15eV cm2/atom" and to_unit == "MeV/(mg/cm2)":
-        return value / 1e-15
-    elif from_unit == "eV/A" and to_unit == "MeV/(mg/cm2)":
-        return value * 1e-6
-    elif from_unit == "MeV/(mg/cm2)" and to_unit == "eV/A":
-        return value / 1e-6
-    else:
-        raise ValueError(f"Unknown dE/dx units: {from_unit} to {to_unit}")
+    _DEDX_CONVERSIONS = {
+        ("E-15eV cm2/atom", "MeV/(mg/cm2)"): lambda v, A, *_: v / (1.6605 * A),
+        ("MeV/(mg/cm2)", "E-15eV cm2/atom"): lambda v, A, *_: v * 1.6605 * A,
+        ("eV/(mg/cm2)", "MeV/(mg/cm2)"):     lambda v, *_: v * 1e-6,
+        ("eV/A", "MeV/(mg/cm2)"):            lambda v, _, rho: v / (1e3*rho) * 1e8 * 1e-6,
+        ("MeV/(mg/cm2)", "eV/A"):            lambda v, _, rho: v * (1e3*rho) / 1e8 / 1e-6,
+        }
+
+    if target_mass is None and any("E-15eV cm2/atom" in unit for unit in [from_unit, to_unit]):
+        raise ValueError("target_mass must be provided for conversions involving E-15eV cm2/atom.")
+    if target_rho is None and any("eV/A" in unit for unit in [from_unit, to_unit]):
+        raise ValueError("target_rho must be provided for conversions involving eV/A.")
+
+    try:
+        return _DEDX_CONVERSIONS[(from_unit, to_unit)](value, target_mass, target_rho), to_unit
+    except KeyError:
+        raise ValueError(f"Conversion from {from_unit} to {to_unit} not supported.")
 
 
 def harmonize_energy_units(df: pd.DataFrame, to: str = "MeV/u") -> pd.DataFrame:
@@ -225,7 +296,7 @@ def harmonize_energy_units(df: pd.DataFrame, to: str = "MeV/u") -> pd.DataFrame:
         lambda x: get_element_mass(x["projectile_name"], x["ion_isotope"]), axis=1
     )
     df["ion_mass"] = ion_mass
-    df["target_mass"] = df["ion_mass"] * df["target_mass_atom_ratio"]
+    df["target_mass"] = df["target_mass_atom_ratio"]
 
     df["energy"], df["energy_unit"] = zip(
         *df.apply(
@@ -239,3 +310,41 @@ def harmonize_energy_units(df: pd.DataFrame, to: str = "MeV/u") -> pd.DataFrame:
         )
     )
     return df
+
+def harmonize_dedx_units(df: pd.DataFrame, to: str = "MeV/(mg/cm2)") -> pd.DataFrame:
+    """
+    Harmonizes the dE/dx units in the DataFrame. The possible values for dE/dx units are:
+    'MeV/(mg/cm2)', 'E-15eV cm2/atom', 'eV/Å', 'eV/(mg/cm2)'.
+    The function converts all dE/dx values to the specified unit.
+    The default is 'MeV/(mg/cm2)'.
+
+    NOTE: This function only works for elemental targets.
+
+    """
+
+    df_ = df.copy()
+    df_ = df_[df_["target_name"].apply(is_element_in_periodic_table)].reset_index(drop=True)
+
+    if df_.shape[0] != df.shape[0]:
+        logger.warning(
+            "Some rows were removed in harmonize_dedx_units because they contain non-elemental targets."
+        )
+
+    target_densities = df_[["target_name", "target_mass"]].apply(
+        lambda x: get_element_density(x["target_name"], x["target_mass"]), axis=1
+    )
+    df_["target_rho"] = target_densities
+
+    df_["stopping_power"], df_["stopping_unit"] = zip(
+        *df_.apply(
+            lambda x: convert_dedx(
+                x["stopping_power"],
+                x["target_mass"],
+                x["target_rho"],
+                x["stopping_unit"],
+                to,
+            ),
+            axis=1,
+        )
+    )
+    return df_
