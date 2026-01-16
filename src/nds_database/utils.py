@@ -137,7 +137,7 @@ def get_element_mass(name: str, isotope: float) -> float:
 
     return closest.mass
 
-def get_element_density(name: str, isotope: float) -> float:
+def get_element_density(name: str, isotope: Optional[float]) -> float:
     """Get element density from the Periodic Table module.
 
     Parameters
@@ -164,8 +164,12 @@ def get_element_density(name: str, isotope: float) -> float:
         except AttributeError:
             raise ValueError(f"Element '{name_}' not found in the periodic table.")
 
-    closest = min(options, key=lambda x: abs(x.mass - isotope))
-    return closest.density
+    if isotope is not None:
+        closest = min(options, key=lambda x: abs(x.mass - isotope))
+        return closest.density
+    else:
+        return getattr(pt, name).density
+    
 
 def get_element_symbol(name: str) -> str:
     """Get element symbol from the Periodic Table module.
@@ -324,6 +328,8 @@ def harmonize_dedx_units(df: pd.DataFrame, to: str = "MeV/(mg/cm2)") -> pd.DataF
 
     df_ = df.copy()
     df_ = df_[df_["target_name"].apply(is_element_in_periodic_table)].reset_index(drop=True)
+
+    df_["target_name"] = df_["target_name"].apply(get_element_symbol)
 
     if df_.shape[0] != df.shape[0]:
         logger.warning(

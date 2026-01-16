@@ -120,6 +120,7 @@ class TestGetElementDensity:
         [
             ("Cu", 63.546, 8.96),  # Copper
             ("Cu", 65.0, 9.15),  # Copper with different isotope
+            ("Cu", None, 8.96),  # Copper without isotope
             ("Fe", 55.845, 7.874),  # Iron
             ("Fe", 54.0, 7.6),  # Iron with different isotope
             ("Fe", 57.0, 8.03),  # Iron with different isotope
