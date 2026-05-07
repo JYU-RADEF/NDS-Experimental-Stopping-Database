@@ -1,5 +1,10 @@
 from pathlib import Path
 
+from .api import (
+    clear_stopping_data_cache,
+    get_stopping_power_data,
+    get_stopping_power_references,
+)
 from .utils import (
     convert_dedx,
     convert_energy,
@@ -24,5 +29,8 @@ __all__ = [
     "convert_dedx",
     "harmonize_energy_units",
     "harmonize_dedx_units",
+    "get_stopping_power_data",
+    "get_stopping_power_references",
+    "clear_stopping_data_cache",
     "DATA_PATH",
 ]
