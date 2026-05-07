@@ -1,0 +1,62 @@
+---
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  PYTHON_VERSION: "3.12"
+  # With the following variables, we tell uv how to publish our package.
+  # Gitlab has built in usernames and passwords for publish packages.
+  # This means you don't need to change them!
+  UV_PUBLISH_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi"
+  UV_PUBLISH_USERNAME: "gitlab-ci-token"
+  UV_PUBLISH_PASSWORD: "${CI_JOB_TOKEN}"
+  GIT_DEPTH: "0"
+  UV_CACHE_DIR: "$CI_PROJECT_DIR/.cache/uv"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+default:
+  image: python:${PYTHON_VERSION}
+  before_script:
+    - python -m pip install --upgrade pip uv
+
+cache:
+  paths:
+    - .cache/uv
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_TAG
+    - when: never
+
+build:
+  stage: build
+  script:
+    - uv build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+test:
+  stage: test
+  script:
+    - uv sync --group test --frozen
+    - uv run pytest
+
+deploy:
+  stage: deploy
+  needs:
+    - job: build
+      artifacts: true
+    - job: test
+  script:
+    - |
+      expected_wheel="dist/nds_dedx_database-${CI_COMMIT_TAG#v}-py3-none-any.whl"
+      test -f "$expected_wheel"
+      uv publish "$expected_wheel"
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: on_success
+    - when: never
