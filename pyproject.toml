@@ -14,7 +14,8 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "pandas-stubs>=2.2.3.250527",
+    "pandas-stubs>=2.2.3.250527",]
+test = [
     "pytest>=8.4.0",
 ]
 notebooks = [

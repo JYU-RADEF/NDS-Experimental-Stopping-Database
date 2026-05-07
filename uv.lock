@@ -854,13 +854,15 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "pandas-stubs" },
-    { name = "pytest" },
 ]
 notebooks = [
     { name = "ipykernel" },
     { name = "ipywidgets" },
     { name = "jupyter" },
     { name = "jupyterlab" },
+]
+test = [
+    { name = "pytest" },
 ]
 
 [package.metadata]
@@ -872,16 +874,14 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [
-    { name = "pandas-stubs", specifier = ">=2.2.3.250527" },
-    { name = "pytest", specifier = ">=8.4.0" },
-]
+dev = [{ name = "pandas-stubs", specifier = ">=2.2.3.250527" }]
 notebooks = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "ipywidgets", specifier = ">=8.1.7" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "jupyterlab", specifier = ">=3.0.0" },
 ]
+test = [{ name = "pytest", specifier = ">=8.4.0" }]
 
 [[package]]
 name = "nest-asyncio"

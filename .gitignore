@@ -1,21 +1,81 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+*.py[cod]
+*$py.class
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+/build/
+/dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+wheelhouse/
 
 # Virtual environments
-.venv
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Installer / test / coverage
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+
+# Python tooling
+.mypy_cache/
+.pyre/
+.ruff_cache/
+.hypothesis/
+
 # Logs
 *.log
 
-.mypy_cache/
-.vscode/
+# macOS
+.DS_Store
 
-.pytest_cache/
+# Thumbs and other OS files
+Thumbs.db
+
+# Local env vars and secrets
+.env
+.env.*
+
+# Misc
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+*.manifest
+*.spec
+

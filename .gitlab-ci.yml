@@ -13,7 +13,7 @@ variables:
   UV_PUBLISH_USERNAME: "gitlab-ci-token"
   UV_PUBLISH_PASSWORD: "${CI_JOB_TOKEN}"
   GIT_DEPTH: "0"
-  UV_CACHE_DIR: "$CI_PROJECT_DIR/.cache/uv"
+  UV_CACHE_DIR: "/tmp/uv-cache"
   PIP_DISABLE_PIP_VERSION_CHECK: "1"
 
 default:
@@ -23,7 +23,7 @@ default:
 
 cache:
   paths:
-    - .cache/uv
+    - /tmp/uv-cache
 
 workflow:
   rules:
