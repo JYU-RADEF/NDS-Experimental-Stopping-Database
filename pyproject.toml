@@ -1,13 +1,11 @@
 [project]
-name = "nds-database"
-version = "0.1.0"
-description = "Add your description here"
+name = "nds_dedx_database"
+dynamic = ["version"]
+description = "Python package for the Experimental Stopping Database, a collection of experimental stopping power data for various materials and particles."
 readme = "README.md"
-requires-python = ">=3.13"
+authors = [{name = "Arto Javanainen", email = "arto.javanainen@jyu.fi"}]
+requires-python = ">=3.12"
 dependencies = [
-    "ipykernel>=6.29.5",
-    "ipywidgets>=8.1.7",
-    "jupyter>=1.1.1",
     "numpy>=2.2.6",
     "pandas>=2.3.0",
     "periodictable>=2.0.2",
@@ -19,6 +17,28 @@ dev = [
     "pandas-stubs>=2.2.3.250527",
     "pytest>=8.4.0",
 ]
+notebooks = [
+    "jupyterlab>=3.0.0",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.7",
+    "jupyter>=1.1.1",
+]
 
-[tool.setuptools.package-data]
-nds_database = ["package_data/*.csv"]
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+dirty = true
+pattern = "default-unprefixed"
+# style = "semver"
+
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nds_dedx_database"]
+include = [
+    "nds_dedx_database/package_data/latest/*.csv",
+]

@@ -1,7 +1,6 @@
 ref_id,doi,authors,citation_reference,year
 Ab1991a,10.1016/0168-583x(91)95310-a,M. Abdesselam;J.P. Stoquert;G. Guillaume;M. Hage-Ali;J.J. Grob;P. Siffert,"M.Abdesselam,J.P.Stoquert,G.Guillaume,M.Hage-Ali,J.J.Grob and P.Siffert Nucl.Instrum.Methods Phys.Res. B61,385,and personal communication",1991
 Ab1992a,10.1016/0168-583x(92)95123-9,M. Abdesselam;J.P. Stoquert;G. Guillaume;M. Hage-Ali;J.J. Grob;P. Siffert,"M.Abdesselam,J.P.Stoquert,G.Guillaume,M.Hage-Ali,J.J.Grob and P.Siffert Nucl.Instrum.Methods Phys.Res. B72,293",1992
-Ab1992b,,M.Abdesselam,"M.Abdesselam, pers. communication to H. Paul (diskette). See also Ab1993, Nucl. Instr. Meth. B73 (1993) 115 DOI: 10.1016/0168-583X(93)95724-J ",1992
 Ab1992c,10.1016/0168-583x(91)95310-a,M. Abdesselam;J.P. Stoquert;G. Guillaume;M. Hage-Ali;J.J. Grob;P. Siffert,"M.Abdesselam,J.P.Stoquert,G.Guillaume,M.Hage-Ali,J.J.Grob and P.Siffert Nucl.Instrum.Methods Phys.Res. B72,7",1992
 Ab1993,10.1016/0168-583x(93)95724-j,M. Abdesselam;J.P. Stoquert;M. Hage-Ali;J.J. Grob;P. Siffert,"M.Abdesselam,J.P.Stoquert,M.Hage-Ali,J.J.Grob and P.Siffert, Nucl. Instr. Meth. B73 (1993) 115",1993
 Ab2008,10.1016/j.nimb.2008.06.029,M. Abdesselam;S. Ouichaoui;M. Azzouz;A.C. Chami;M. Siad,"M.Abdesselam,S.Ouichaoui,M.Azzouz,A.C.Chami, and M.Siad Nucl. Instrum. Methods Phys. Res. B 266, 3899",2008
@@ -22,6 +21,7 @@ Ala2001,10.1088/0953-8984/13/48/304,T Alanko;J Hyvönen;V Kyllönen;P Laitinen;A
 Ala2002,10.1016/s0168-583x(01)01289-7,T. Alanko;W.H. Trzaska;V. Lyapin;J. Räisänen;G. Tiourine;A. Virtanen,"T.Alanko,W.H.Trzaska,V.Lyapin,J.Räisänen,G.Tiourine,A.Virtanen Nucl.Instrum.Methods Phys.Res. B190, 60",2002
 All1956,10.1103/physrev.104.959,Samuel K. Allison;C. S. Littlejohn,"S.K.Allison and C.S.Littlejohn Phys.Rev. 104,959",1956
 Am1968,10.1016/0029-554x(68)90025-6,B.H. Armitage;B.W. Hooton,"B.H.Armitage and B.H.Hooton Nucl.Instrum.Methods Phys.Res. 58,29",1968
+Amm2006,10.1080/10420150600762037, H. Ammi;R. Zemih;S. Mammeri;M. Allab,"H. Ammi , R. Zemih , S. Mammeri, M. Allab (2006) Radiation Effects and Defects in Solids, 161:6, 339-346",2006
 Amm2011,10.1016/j.nimb.2010.12.020,H. Ammi;C.A. Pineda-Vargas;S. Mammeri;M. Msimanga;S. Ourabah;A. Dib,"H.Ammi,C.A.Pineda-Vargas,S.Mammeri,M.Msimanga,S.Ourabah,A.Dib Nucl. Instrum. Methods B269, 386",2011
 An1967,10.1103/physrev.153.338,H. H. Andersen;C. C. Hanke;H. Sørensen;P. Vajda,"H.H.Andersen,C.C.Hanke,H.Sörensen and P.Vajda, Phys.Rev. 153,338 (1967)",1967
 An1968,10.1103/physrev.175.389,H. H. Andersen;C. C. Hanke;H. Simonsen;H. Sørensen;P. Vajda,"H.H.Andersen,C.C.Hanke,H.Simonsen,H.Sörensen and P.Vajda Phys.Rev. 175,389",1968
@@ -37,19 +37,18 @@ Ang2000,10.1016/s0168-583x(00)00158-0,C Angulo;Th Delbar;J.-S Graulich;P Leleux,
 Ant1991,10.1016/0168-583x(91)95165-a,A.J. Antolak;B.N. Handy;D.H. Morse;A.E. Pontau,"A.J.Antolak,B.N.Handy,D.H.Morse and A.E.Pontau Nucl.Instrum. Methods Phys.Res. B59/60,13 (1991)",1991
 Ap1970,10.1002/pssa.19700030336,P. Apel;U. Müller-jahreis;G. Rockstroh;S. Schwabe,"F.Apel,U.Mueller-Jahrreiss,G.Rockstroh,S.Schwabe Phys.stat.solidi(a) 3,K173 (see also Ber69 and Ne76)",1970
 Ar1969,10.1134/s0021364017060042,R. M. Arkhipov;A. V. Pakhomov;M. V. Arkhipov;I. Babushkin;Yu. A. Tolmachev;N. N. Rosanov,"E.P.Arkhipov and Yu.V.Gott Sov.Phys.-JETP 29,615",1969
-Ara2002,10.1016/s0168-583x(01)01174-0,L.L. Araujo;P.L. Grande;M. Behar;J.H.R. dos Santos,"L.L.Araujo,P.L.Grande,M.Behar,J.H.R. dos Santos Nucl.Instrum.Methods Phys.Res. B190, 79",2002
-Ara2004,10.1016/j.nimb.2004.01.062,L.L. Araujo;M. Behar;P.L. Grande;J.F. Dias,"L.L.Araujo,M.Behar,P.L.Grande,J.F.Dias Nucl.Instrum.Methods B219-220, 246",2004
+Ara2002,10.1016/s0168-583x(01)01174-0,L.L. Araujo;P. L. Grande;M. Behar;J.H.R. dos Santos,"L.L.Araujo,P. L. Grande,M.Behar,J.H.R. dos Santos Nucl.Instrum.Methods Phys.Res. B190, 79",2002
+Ara2004,10.1016/j.nimb.2004.01.062,L.L. Araujo;M. Behar;P. L. Grande;J.F. Dias,"L.L.Araujo,M.Behar,P.L.Grande,J.F.Dias Nucl.Instrum.Methods B219-220, 246",2004
 At1990,10.1103/physrevb.41.6117,K. Arstila;J. Keinonen;P. Tikkanen,"K.Arstila,J.Keinonen and P.Tikkanen, Phys.Rev. B41,6117 (1990) (Ge data superseded by At91)",1990
 At1991,10.1103/physrevb.43.13967,K. Arstila;J. Keinonen;P. Tikkanen;A. Kuronen,"K.Arstila,J.Keinonen,P.Tikkanen and A.Kuronen Phys.Rev. B43,13967",1991
 At1995,10.1016/0168-583X(95)00571-4,K. Arstila;J. Keinonen;P. Tikkanen;A. Kuronen,"K.Arstila,J.Keinonen,P.Tikkanen Nucl.Instrum.Methods Phys. Res. B101, 321",1995
-At2000,10.1016/j.nimb.2020.03.006,Tetsuya Matsunaka;Kimikazu Sasa;Seiji Hosoya;Hongtao Shen;Tsutomu Takahashi;Masumi Matsumura;Keisuke Sueki,"K.Arstila Nucl.Instrum.Methods Phys. Res. B168, 473",2000
+At2000,,K.Arstila,"K.Arstila Nucl.Instrum.Methods Phys. Res. B168, 473",2000
 Ay1981a,10.1109/tns.1981.4331385,J. M. Anthony;P. D. Parker;W. A. Lanford,"J.M.Anthony,P.D.Parker and W.A.Lanford IEEE Trans.Nucl.Science,Vol28,No.2,1227",1981
 Ay1981b,10.1016/0029-554x(81)90248-2,J.M. Anthony;William A. Lanford,"J.M.Anthony and W.A.Lanford Nucl.Instrum.Methods 186,647",1981
 Ay1982,10.1103/physreva.25.1868,J. M. Anthony;W. A. Lanford,"J.M.Anthony and W.A.Lanford Phys.Rev. A25,1868",1982
 Aze2002,10.1103/physrevb.65.075203,G. de M. Azevedo;M. Behar;J. F. Dias;P. L. Grande;D. L. da Silva;G. Schiwietz,"G.de M.Azevedo,M.Behar,J.F.Dias,P.L.Grande, and D.L.da Silva Phys. Rev. B65,075203",2002
 Bä1936,10.1002/andp.19364170307,Heinrich Bätzner,"H.Bätzner, Ann.Phys.(Leipzig) 25,233 (1936)",1936
 Ba1983a,10.1016/0167-5087(83)90093-5,H. Baumgart;W. Arnold;H. Berg;E. Huttel;G. Clausnitzer,"H.Baumgart,W.Arnold,H.Berg,E.Huttel and G.Clausnitzer Nucl.Instrum.Methods Phys.Res. 204,597",1983
-Ba1983b,10.1103/PhysRevA.28.3109,H. Baumgart;H. Berg;E. Huttel;G. Clausnitzer,"H.Baumgart,H.Berg,E.Huttel and G.Clausnitzer Phys.Rev. A28,3109",1983
 Ba1983c,10.1016/0167-5087(83)91324-8,H. Baumgart;H. Berg;E. Huttel;E. Pfaff;G. Reiter;G. Clausnitzer,"H.Baumgart,H.Berg,E.Huttel,E.Pfaff,G.Reiter and G.Clausnitzer Nucl.Instrum.Methods Phys.Res. 215,319",1983
 Ba1984a,10.1016/0168-583x(84)90175-7,H. Baumgart;H. Berg;E. Huttel;E. Pfaff;G. Reiter;G. Clausnitzer,"H.Baumgart,H.Berg,E.Huttel,E.Pfaff,G.Reiter and G.Clausnitzer Nucl.Instrum.Methods Phys.Res. B2,145",1984
 Ba1984b,10.1016/0168-583x(84)90561-5,H. Baumgart;W. Arnold;J. Günzl;E. Huttel;A. Hofmann;N. Kniest;E. Pfaff;G. Reiter;S. Tharraketta;G. Clausnitzer,"H.Baumgart,W.Arnold,J.Günzl,E.Huttel,A.Hofmann,N.Kniest, E.Pfaff,G.Reiter,S.Tharraketta and G.Clausnitzer Nucl. Instrum.Methods Phys.Res. B5,1 (1984)",1984
@@ -62,7 +61,7 @@ BA2014b,10.1016/j.nimb.2014.02.089,N.P. Barradas;J.G. Marques;E. Alves,"N.P. Bar
 BA2015,10.1016/j.nimb.2015.08.034,N.P. Barradas;A. Bergmaier;K. Mizohata;M. Msimanga;J. Räisänen;T. Sajavaara;A. Simon,"N.P.Barradas,A.Bergmaier,K.Mizohata,M.Msimanga,J.Raisanen, T.Sajavaara, A.Simon  Nucl. Instrum. Methods B 360 (2015) 90 ",2015
 Bae1987,10.1103/physreva.35.51,W. Y. Baek;G. H. Both;D. Gassen;W. Neuwirth;M. Zielinski,"W.Y.Baek,G.H.Both,D.Gassen,W.Neuwirth and M.Zielinski Phys.Rev. A35,51",1987
 Bae2020,10.1103/physreve.102.062418,W. Y. Baek;T. Braunroth;L. de La Fuente Rosales;J. M. Rahm;H. Rabus,"W.Y.Baek, T. Braunroth, L. de La Fuente Rosales, J.M. Rahm, H. Rabus, Phys.Rev. E 102, 062418 (2020).",2020
-BB1994,10.1007/bf02976627,Sanghyun Lee;Kyoung Soon Kim;Ji Myun Jang;Youmie Park;Yang Bae Kim;Bak-Kwang Kim,"H.I.Bak,Y.D.Bae,C.S.Kim,M.S.Kim Nucl.Instrum.Methods Phys.Res. B93, 234",1994
+BB1994,,H.I.Bak;Y.D.Bae;C.S.Kim;M.S.Kim,"H.I.Bak,Y.D.Bae,C.S.Kim,M.S.Kim Nucl.Instrum.Methods Phys.Res. B93, 234",1994
 Bbi2010,10.1016/j.nimb.2009.09.058,M. Barbui; D. Fabris; M. Lunardon; S. Moretto; G. Nebbia; S. Pesente; G. Viesti; M. Cinausero; G. Prete; V. Rizzi; K. Hagel; S. Kowalski; J.B. Natowitz; L. Qin; R. Wada; Z. Chen,"M. Barbui and D. Fabris and M. Lunardon and S. Moretto and G. Nebbia and S. Pesente and G. Viesti and M. Cinausero and G. Prete and V. Rizzi and K. Hagel and S. Kowalski and J.B. Natowitz and L. Qin and R. Wada and Z. Chen,
 Nuclear Instruments and Methods in Physics Research Section 268, 20-27 (2010)",2010
 BC1978,10.1016/0029-554x(78)90954-0,J.E.E. Baglin;W.K. Chu,"J.E.E.Baglin and W.K.Chu Nucl.Instrum.Methods Phys.Res. 149,695",1978
@@ -70,6 +69,7 @@ Bc2005,10.1016/j.nimb.2005.04.060,M. Bianconi;N.P. Barradas;L. Correra,"M.Bianco
 Bd1956,10.1103/physrev.103.32,M. Bader;R. E. Pixley;F. S. Mozer;W. Whaling,"M.Bader,R.E.Pixley,F.S.Mozer and W.Whaling Phys.Rev. 103,32",1956
 Be1980,10.1002/pssa.2210680125,A. A. Bednyakov;Yu. V. Bulgakov;V. S. Nikolaev;V. L. Chernov,"A.A.Bednyakov,Yu.V.Bulgakov,V.S.Nikolaev and V.L.Chernov, Sov.Phys.-JETP 51,954 (1980)",1980
 Be1981,10.1002/pssa.2210680125,A. A. Bednyakov;Yu. V. Bulgakov;V. S. Nikolaev;V. L. Chernov,"A.A.Bednyakov,Yu.V.Bulgakov,V.S.Nikolaev and V.L.Chernov, Phys.Status Solidi A68,187",1981
+Bel2025,10.1016/j.vacuum.2025.114210,A. Belalia;A. Guesmia; M. Masenya;Z. M. Khumalo;M. Msimanga;M. Madhuku;C. B. Mtshali; M. Nkosi,"Belalia et al, Vacuum 238 (2025) 114210",2025
 Ben1991,10.1016/0168-583x(91)95438-j,G.G. Bentini;M. Bianconi;R. Nipoti;F. Malaguti;E. Verondini,"G.G.Bentini,M.Bianconi,R.Nipoti,F.Malaguti and E.Verondini Nucl.Instrum.Methods Phys.Res. B53,1",1991
 Ben1993,10.1016/0168-583x(93)96070-s,G.G. Bentini;M. Bianconi;R. Nipoti,"G.G.Bentini,M.Bianconi and R.Nipoti Nucl.Instrum.Methods Phys.Res. B80,33",1993
 Ber1969,10.1002/pssb.19690350128,F. Bernhard;U. Müller-Jahreis;G. Rockstroh;S. Schwabe,"F.Bernhard,U.Mueller-Jahrreiss,G.Rockstroh,S.Schwabe Phys.Stat.Solidi 35,285",1969
@@ -91,7 +91,7 @@ Bi1989a,10.1016/0168-583x(89)90683-6,R. Bimbot;C. Cabot;D. Gardes;H. Gauvin;R. H
 Bi1989b,10.1016/0168-583x(89)90684-8,R. Bimbot;C. Cabot;D. Gardes;H. Gauvin;I. Orliange;L. de Reilhac;K. Subotic;F. Hubert,"R.Bimbot,C.Cabot,D.Gardes,H.Gauvin,I.Orliange,L.de Reilhac, K.Subotic and F.Hubert Nucl.Instrum.Methods Phys.Res. B44,19",1989
 Bi1990,10.1080/10420158908214153,R. Bimbot;H. Gauvin;J. Herault;R. Anne;G. Bastin;F. Hubert,"R.Bimbot,H.Gauvin,J.Herault,R.Anne,G.Bastin and F.Hubert Radiat.Eff. 110,15 (1989) Similar to He88. Numerical data in Ga87 and He91",1989
 Bi1996,10.1016/0168-583X(95)00804-7,R. Bimbot; S. Barbey; T. Benfoughal; F. Clapier; M. Mirea; N. Pauwels; S. Pierre; M.F. Rivet; G. Fares; A. Hachem; R. Anne; Y. Georget and R. Hue; C. Tribouillard,"R.Bimbot et al. Nucl.Instrum.Methods Phys.Res. B107,9",1996
-Bi2000,10.1016/j.nimb.2018.12.039,Kenneth T. Gillen;Roger L. Clough,"R.Bimbot et al. Nucl.Instrum.Methods Phys.Res. B170,329",2000
+Bi2000,,R.Bimbot,"R.Bimbot et al. Nucl.Instrum.Methods Phys.Res. B170,329",2000
 Bie1972,10.1016/0031-8914(72)90256-x,D.J. Bierman;D. Van Vliet,"D.J.Bierman and D. van Vliet Physica 57,221",1972
 Bj1975,10.1088/0022-3727/8/7/010,V W E Burgess,"V.W.E.Burgess J.Phys.D: Appl. Phys. 8,782",1975
 BL1974,10.1080/00337577408241460,A. Bontemps;E. Ligeon;J. Fontenille,"A.Bontemps,E.Ligeon and J.Fontenille Rad. Effects 21,181",1974
@@ -107,6 +107,7 @@ Bo1974,10.1080/00337577408241458,J. A. Borders,"J.A.Borders Radiat.Eff. 21,165",
 Bö1977,10.1016/0029-554x(77)90374-3,P. Borgesen;M-A. Nicolet,"P.Boergesen and M.A.Nicolet Nucl.Instrum.Methods Phys.Res. 140,541",1977
 Bö1982a,10.1016/0029-554x(82)90492-x,Peter Børgensen;Chen Hao-Ming;Hans Sørensen,"P.Boergesen,C. Hao-Ming,H.Soerensen Nucl.Instrum.Methods Phys.Res. 194, 71",1982
 Bö1982b,10.1016/0167-5087(82)90486-0,Peter Børgesen; HansSørensen,"P.Boergesen,H.Soerensen Nucl.Instrum.Methods Phys.Res. 200, 571",1982
+Bob2023,10.1016/j.nimb.2023.165094,T.L. Bobrovskiy;M.V. Bokhovko; A.F. Gurbich;P.S. Prusachenko,"T.L. Bobrovskiy et al, Nuclear Instruments and Methods in Physics Research B 543 (2023) 165094",2023
 Bon1980,10.1016/0029-554X(80)91227-6,G. Blondiaux; M. Valladon; K. Ishii; J.L. Debrun,"G. Blondiaux, M. Valladon, K. Ishii, J.L. Debrun, Nucl.Instrum. Meth. 168, 29 (1980)",1980
 Bot1985a,10.2307/3576303,G. Both;K. Lohmer;W. Neuwirth;R. Schmidt,"G.Both,K.Lohmer,W.Neuwirth and R.Schmidt Radiat. Res. 101,60",1985
 Bp1971,10.1103/physreva.4.562,E. Bonderup;P. Hvelplund,"E.Bonderup and P.Hvelplund Phys.Rev. A4,562",1971
@@ -114,18 +115,18 @@ BP1979,10.1063/1.326666,R. B. Brown;D. Powers,"R.B.Brown, D.Powers J.Appl.Phys. 
 Br1984a,10.1016/0168-583x(84)90469-5,Peter Bauer;Friedrich Aumayr;Dieter Semrad;B.M.U. Scherzer,"P.Bauer,F.Aumayr,D.Semrad and B.M.U.Scherzer, Nucl.Instrum.Methods Phys.Res. B1,1 (1984)",1984
 Br1984b,10.1016/0168-583x(84)90176-9,P. Bauer;D. Semrad;R. Golser,"P.Bauer,D.Semrad and R.Golser, Nucl.Instrum.Methods Phys.Res. B2,149 (1984)",1984
 Br1986,10.1016/0168-583x(86)90503-3,Peter Bauer;Dieter Semrad,"P.Bauer and D.Semrad, Nucl.Instrum.Methods Phys.Res. B13,201 (1986)",1986
-Br1990,10.1016/0022-3115(96)00402-3,Hj. Matzke;V. Rigato,"P.Bauer, Nucl.Instrum.Methods Phys.Res. B45,673 (1990)",1990
+Br1990,,P.Bauer,"P.Bauer, Nucl.Instrum.Methods Phys.Res. B45,673 (1990)",1990
 Br1992a,10.1016/0168-583x(92)95737-c,Peter Bauer;Wolfgang Rössler;Peter Mertens,"P.Bauer, W. Rössler, P. Mertens, Nucl.Instrum.Methods Phys.Res. B69,46 (1992)",1992
 Br1992b,10.1103/physrevlett.69.1137,P. Bauer;F. Kastner;A. Arnau;A. Salin;P. D. Fainstein;V. H. Ponce;P. M. Echenique,"P.Bauer,F.Kastner,A.Arnau,A.Salin,P.D.Fairstein,V.H.Ponce and P.M.Echenique, Phys. Rev. Letters 69, 1137 (1992) and personal communication from P. Bauer",1992
-Br1994a,10.1103/physrevb.55.13275,W. Käferböck;W Rössler;V. Necas;P. Bauer;M. Peñalba;E. Zarate;A. Arnau,"P.Bauer,W.Käferböck,V.Necas, Nucl.Instrum.Methods Phys.Res. B93,132 (1994)",1994
+Br1994a,,p. Bauer;W. Käferböck;V. Necas,"P.Bauer,W.Käferböck,V.Necas, Nucl.Instrum.Methods Phys.Res. B93,132 (1994)",1994
 Br1998,10.1016/s0168-583x(97)00868-9,Bauer P; Golser R; Semrad D; Maier-Komor P; Aumayr F; Arnau A,"Bauer, P., Golser, R., Semrad, D., Maier-Komor, P., Aumayr, F., & Arnau, A. (1998)",1998
 Brd1967a,10.1103/physrev.159.276,L. B. Bridwell;L. C. Northcliffe;S. Datz;C. D. Moak;H. O. Lutz,"L.B.Bridwell and C.D.Moak Phys.Rev. 156,242",1967
 Brd1967b,10.1103/physrev.159.276,L. B. Bridwell;L. C. Northcliffe;S. Datz;C. D. Moak;H. O. Lutz,"L.B.Bridwell,L.C.Northcliffe,S.Datz,C.D.Moak,H.O.Lutz Phys.Rev. 159,276",1967
 Bri1992,10.1016/0168-583x(92)95560-e,M.A. Briere;J.P. Biersack,"M.A.Briere and J.P.Biersack Nucl.Instrum.Methods Phys.Res. B64,693",1992
-Brn1972,10.1103/physrev.149.244,C. D. Moak;M. D. Brown,"M.D.Brown and C.D.Moak Phys.Rev. B6,90",1972
+Brn1972,,M. D. Brown;C. D. Moak,"M.D.Brown and C.D.Moak Phys.Rev. B6,90",1972
 Bro2017,10.1140/epjd/e2016-70277-3,Mitchell Brocklebank;Sergey N. Dedyulin;Lyudmila V. Goncharova,"M. Brocklebank, S. N. Dedyulin, and L. V. Goncharova Eur.Phys.J.D 70, 248 (2016)",2017
 Bru2018,10.1016/j.nimb.2018.02.005,B. Bruckner;D. Roth;D. Goebl;P. Bauer;D. Primetzhofer,"B. Bruckner, D. Roth, D. Goebl, P. Bauer, D. Primetzhofer Nucl.Instrum.Methods Phys.Res. B 423,82 (2018).",2018
-Bs1979,10.1017/s0009840x00089137,A. E. Taylor,"F.Besenbacher,H.H.Andersen,P.Hvelplund and H.Knudsen Mat.-Fys.Medd.K.Dan.Vidensk.Selsk 40,No.3",1979
+Bs1979,,F.Besenbacher;H.H.Andersen;P.Hvelplund;H.Knudsen,"F.Besenbacher,H.H.Andersen,P.Hvelplund and H.Knudsen Mat.-Fys.Medd.K.Dan.Vidensk.Selsk 40,No.3",1979
 Bs1981,10.1016/0029-554x(81)90279-2,F. Besenbacher;J. Bøttiger;O. Graversen;J.L. Hansen;H. Sørensen,"F.Besenbacher,J.Bottiger,O.Graversen, and J.L.Hansen Nucl. Instr. Methods 188, 657",1981
 Bt1965,10.1016/0031-9163(65)90086-7,K. Bethge;P. Sandner,"K.Bethge and P.Sandner Phys.Lett. 19,241",1965
 Bt1966,10.1515/zna-1966-0727,K. Bethge;P. Sandner;H. Schmidt,"K.Bethge,P.Sandner and H.Schmidt Z.Naturforschung 21a,1052",1966
@@ -139,7 +140,7 @@ Can2009,10.1103/physreva.79.042904,E. D. Cantero;R. C. Fadanelli;C. C. Montanari
 Can2011,10.1103/PhysRevA.84.014902,E. D. Cantero; C. C. Montanari; M. Behar; R. C. Fadanelli; G. H. Lantschner; J. E. Miraglia; N. R. Arista,"E. D. Cantero et al, PHYSICAL REVIEW A 84, 014902 (2011)",2011
 Can2012,10.1016/j.nimb.2012.06.009,E.D. Cantero; R.C. Fadanelli; M. Behar; L.C.C.M. Nagamine; G.H. Lantschner; J.C. Eckardt,"E. D. Cantero et al, Nuclear Instruments and Methods in Physics Research B 287 (2012) 1–3",2012
 Car1973,10.1016/0375-9601(73)90227-2,G.W. Carriveau;G. Beauchemin;E.J. Knystautas;E.H. Pinnington;R. Drouin,"G.W.Carriveau,G.Beauchemin,E.J.Knystautas,E.H.Pinnington and R.Drouin Phys.Lett. 46A,4",1973
-CasP6.0,10.1088/1361-6455/aa843d,P. Grande; G. Schiwietz,Program CasP version 6.0 (March 2021) http://www.casp-program.org/ J. Phys. B At. Mol. Opt. Phys. 50 185201 (2017),2021
+CasP6.0,10.1088/1361-6455/aa843d,P. L. Grande; G. Schiwietz,Program CasP version 6.0 (March 2021) http://www.casp-program.org/ J. Phys. B At. Mol. Opt. Phys. 50 185201 (2017),2021
 CB1977,10.1103/physreva.16.1407,E. K. L. Chau;R. B. Brown;A. S. Lodhi;D. Powers;S. Matteson;S. R. Eisenbarth,"E.K.L.Chau,R.B.Brown,A.S.Lodhi,D.Powers,S.Matteson,S.R.Eisenbarth Phys. Rev. A16, 1407",1977
 Ce1977,10.1080/00337577708233273,F. Cembali;F. Zignani,"F.Cembali and F.Zignani Radiat.Eff. 31,169",1977
 Cel2013,10.1103/physreva.88.012903,C. Celedón;E. A. Sánchez;M. S. Moreno;N. R. Arista;J. D. Uribe;M. Mery;J. E. Valdés;P. Vargas,"C. Celedon, E.A Sanchez, M.S. Moreno, N.R. Arista, J.D. Uribe, M. Mery, J.E. Valdés, P. Vargas Phys.Rev. A 88, 012903 (2013)",2013
@@ -172,6 +173,7 @@ Dib2015,10.1016/j.nimb.2015.08.028,A. Dib;H. Ammi;A. Guesmia;M. Msimanga;S. Mamm
 Dib2015b,10.1016/j.nimb.2015.09.083,A. Dib;H. Ammi;M. Hedibel;A. Guesmia;S. Mammeri;M. Msimanga;C.A. Pineda-Vargas,"A. Dib, H. Ammi, M. Hedibel, A. Guesmia, S. Mammeri,  M. Msimanga, C.A. Pineda-Vargas  Nucl. Instrum. Methods Phys. Res. B 362, 172 (2015)",2015
 Dib2019,10.1016/j.nimb.2018.11.008,A. Dib;H. Ammi;M. Msimanga;S. Mammeri;C.A. Pineda-Vargas,"A. Dib, H. Ammi, M. Msimanga, S. Mammeri, C.A. Pineda-Vargas, Nucl. Instrum. Methods Phys. Res. B 450, 43 (2019)",2019
 Dib2023,10.1016/j.nimb.2023.165099,A. Dib; H. Ammi; M. Msimanga; C. Mtshali; M. Nkosi,"A. Dib, H. Ammi, M. Msimanga, C. Mtshali, M. Nkosi, Nuclear Instruments and Methods in Physics Research B 543 (2023) 165099",2023
+Dib2024,10.1016/j.nimb.2024.165528,A. Dib; H. Ammi;K. Boukeffoussa;M. Msimanga;C. Mtshali;M. Nkosi,"A Dib et al, Nuclear Instruments and Methods in Physics Research B 557 (2024) 165528",2024
 Diw2003,10.1016/s0168-583x(02)01601-4,P.K Diwan;S Kumar;V Sharma;S.K Sharma;V.K Mittal;B Sannakki;R.D Mathad;K Uday Kumar;S.A Khan;D.K Avasthi,"P.K.Diwan,S.Kumar,V.Sharma,S.K.Sharma,V.K.Mittal,B.Sannakki, R.D.Mathad,K.Uday Kumar,S.A.Khan,D.K.Avasthi Nucl. Instrum. Methods Phys.Res. B201,389",2003
 Diw2007,10.1016/j.nimb.2006.12.181,P.K. Diwan;V. Sharma;S. Kumar;V.K. Mittal;S.A. Khan;D.K. Avasthi,"P.K.Diwan,V.Sharma,S.Kumar,V.K.Mittal,S.A.Khan,D.K.Avasthi Nucl. Instrum. Methods Phys.Res. B 258, 293",2007
 Diw2008,10.1016/j.nimb.2008.07.016,P.K.Diwan;V.Sharma;Pratibha;Shyam Kumar;S.A.Khan;D.K.Avasthi,"P.K.Diwan,V.Sharma,Pratibha,Shyam Kumar,S.A.Khan,D.K.Avasthi Nucl. Instrum. Methods Phys.Res. B 266, 4738",2008
@@ -182,10 +184,10 @@ Dm2010,10.1016/j.nimb.2010.02.068,S. Damache;D. Moussa;S. Ouichaoui,"S. Damache,
 Dm2013,10.1016/j.nimb.2013.05.002,Smail Damache;Djamel Moussa;Saâd Ouichaoui,"S.Damache, D.Moussa, S.Ouichaoui Nucl. Instrum. Methods B 308, 46",2013
 Dm2015,10.1016/j.nimb.2014.11.007,D. Moussa;S. Damache;S. Ouichaoui,"D.Moussa, S.Damache, S.Ouichaoui Nucl. Instrum. Methods B 343, 44-47 (2015)",2015
 Dm2016,10.1016/j.nimb.2016.07.006,S. Damache;S. Djaroum;S. Ouichaoui;L. Amari;D. Moussa,"S. Damache, S. Djaroum, S. Ouichaoui, L. Amari, D. Moussa Nucl. Instrum. Methods Phys. Res. B 383, 164-170 (2016)",2016
-Do1975,10.1097/00000542-198209001-00272,E. H. Flewellen;T. E. Nelson,"V.Dose and G.Sele Z.Phys. A272,237",1975
+Do1975,,V.Dose;G.Sele,"V.Dose and G.Sele Z.Phys. A272,237",1975
 DPASS21.06,10.1016/j.nimb.2018.10.047, A. Schinner; P. Sigmund,"A. Schinner and P. Sigmund, Nuclear Instruments and Methods in Physics Research Section B 460, 19-26 (2019)",2021
 Dr2005,10.1103/physrevlett.95.113201,M. Draxler;S. P. Chenakin;S. N. Markin;P. Bauer,"M.Draxler,S.P.Chenakin,S.N.Markin,P.Bauer Phys. Rev. Lett. 95 (2005) 113201",2005
-Ds1997,10.1016/b978-0-444-82334-2.50014-9,J.H.R. dos Santos;P.L. Grande;H. Boudinov;M. Behar;R. Stoll;Chr. Klatt;S. Kalbitzer,"J.H.R.dos Santos,M.Behar,P.L.Grande,H.Boudinov,R.Stoll,Chr.Klatt, S.Kalbitzer Phys.Rev. B55, 13651",1997
+Ds1997,10.1016/b978-0-444-82334-2.50014-9,J.H.R. dos Santos;P. L. Grande;H. Boudinov;M. Behar;R. Stoll;Chr. Klatt;S. Kalbitzer,"J.H.R.dos Santos,M.Behar,P.L.Grande,H.Boudinov,R.Stoll,Chr.Klatt, S.Kalbitzer Phys.Rev. B55, 13651",1997
 Du1975,10.1016/0029-554x(75)90082-8,J.C. Duder;J.F. Clare;H. Naylor,"J.C.Duder,J.F.Clare,H.Naynor Nucl. Instrum. Methods 123, 89",1975
 Dwi1997,10.1016/s1350-4487(97)00035-8,K.K. Dwivedi;D. Sinha;S. Singh;A. Srivastava;D.K. Avasthi,"K.K.Dwivedi,D.Sinha,S.Singh,A.Srivastava,D.K.Avasthi Radiation Measurements 28, 37 (1997)",1997
 Ec1978,10.1103/physreva.18.426,J. C. Eckardt,"J.C.Eckardt, Phys.Rev. A18,426 (1978)",1978
@@ -197,17 +199,16 @@ Ed1997,10.1103/physrevlett.79.4112,K. Eder;D. Semrad;P. Bauer;R. Golser;P. Maier
 Ef1975,10.1016/0029-554x(75)90132-9,B. Efken;D. Hahn;D. Hilscher;G. Wüstefeld,"B.Efken,D.Hahn,D.Hilscher, and G. Wustefeld Nucl.Instr.Methods 129,219",1975
 Eh1968,10.1002/pssb.19680280154,P. Ehrhart;W. Rupp;R. Sizmann,"P.Ehrhart,W.Rupp and R.Sizmann Phys.Status Solidi 28,K35",1968
 Ep1992,10.1016/0168-583x(92)95735-a,Ch. Eppacher;D. Semrad,"Ch.Eppacher,D.Semrad, Nucl.Instrum.Methods Phys.Res. B69, 33 (1992) see also Ep94a",1992
-Ep1994a,10.7767/9783205205890-004,Johann K. Brunner,"Chr. Eppacher Ph.D.Thesis, Univ. of Linz, Austria, Schriften der Johannes-Kepler- Universität Linz, Universitätsverlag Rudolf Trauner (1995), and pers. comm.",1994
+Ep1994a,,Ch. Eppacher,"Chr. Eppacher Ph.D.Thesis, Univ. of Linz, Austria, Schriften der Johannes-Kepler- Universität Linz, Universitätsverlag Rudolf Trauner (1995), and pers. comm.",1994
 Ep1994b,10.1016/0168-583x(94)95520-4,Ch. Eppacher;G. Zemsauer;D. Semrad,"Ch.Eppacher,G.Zemsauer,D.Semrad Nucl.Instrum.Methods Phys.Res. B90, 92 (1995). see also Ep94a",1994
 Ep1995,10.1016/0168-583x(95)00258-8,Ch. Eppacher;R. Díez Muiño;D. Semrad;A. Arnau,"Ch.Eppacher, R.Diez Muino, D.Semrad, A.Arnau Nucl.Instrum.Methods Phys.Res. B96, 639 see also Ep94a",1995
-Er1963,10.1007/978-3-642-53272-6,K. E. Zimen,"D.Ertel and K.Zimen Nukleonika 5,256",1963
+Er1963,,D. Ertel;K. Zimen,"D.Ertel and K.Zimen Nukleonika 5,256",1963
 ESPNN,10.1063/5.0130875, F. Bivort Haiek; A. M. P. Mendez; C. C. Montanari; D. M. Mitnik,"Electronic Stopping Power Neural Network (ESPNN). Part I: atomic targets, https://pypi.org/project/ESPNN/, J. Appl. Phys. 132, 245103 (2022)",2022
 Fa1966,10.1016/0029-554x(65)90149-7,B. Fastrup;P. Hvelplund;C. Sautter,"B.Fastrup,P.Hvelplund and C.A.Sautter K.Dansk.Videnskab.Selskab Mat.-Fys. Medd. 35 no.10",1966
 Fa1968,10.1139/p68-062,B. Fastrup;A. Borup;P. Hvelplund,"B.Fastrup,A.Borup and P.Hvelplund Canadian Journal of Physics 46,489",1968
 Fa2016,10.1140/epjd/e2016-70179-4,Raul C. Fadanelli;Chiara D. Nascimento;C. C. Montanari;Julio C. Aguiar;Dario Mitnik;Andrzej Turos;Elzbieta Guziewicz;Moni Behar,"R.C.Fadanelli,C.D.Nascimento,C.C.Montanari,J.C.Aguiar,D.Mitnik,A.Turos,E.Guziewicz,M.Behar, Eur. Phys. J. D (2016) 70, 178",2016
-Fe1975,10.1063/1.95607,Osamu Niwa;Makoto Hikita;Toshiaki Tamamura,"J.S.-Y.Feng J.Appl.Phys. 46,444",1975
+Fe1975,,J.S.-Y.Feng,"J.S.-Y.Feng J.Appl.Phys. 46,444",1975
 Fer2006,10.1016/j.nimb.2006.02.003,A.D. Fertman;T.Yu. Mutin;M.M. Basko;A.A. Golubev;T.V. Kulevoy;R.P. Kuybeda;V.I. Pershin;I.V. Roudskoy;B.Yu. Sharkov,"A.D.Fertman,T.Yu.Mutin,M.M.Basko,A.A.Golubev,T.V.Kulevoy, R.P.Kuybeda,V.I.Pershin,I.V.Roudskoy,B.Yu.Sharkov Nucl.Instrum.Methods B247, 199",2006
-Fg2007,10.1103/physreva.75.019905,E. A. Figueroa;E. D. Cantero;J. C. Eckardt;G. H. Lantschner;J. E. Valdés;N. R. Arista,"E.A.Figueroa,E.D.Cantero,J.C.Eckardt,G.H.Lantschner, J.E.Valdés,N.R.Arista Phys. Rev. A 75, 010901(R)",2007
 Fi1996,10.1016/0168-583x(95)01443-8,P. Fischer;Ch. Eppacher;G. Höfler;D. Semrad,"P.Fischer,Ch.Eppacher,G.Höfler, and D.Semrad Nucl. Instrum. Methods Phys. Res. B115, 27",1996
 Fm2002,10.1016/s0168-583x(02)00732-2,M Famá;G.H Lantschner;J.C Eckardt;N.R Arista;J.E Gayone;E Sanchez;F Lovey,"M.Fama,G.H.Lantschner,J.C.Eckardt,N.R.Arista,J.E.Gayone, E.Sanchez,F.Lovey Nucl.Instrum.Methods Phys. Res. B193,91",2002
 Fn1979,10.1103/physrevb.19.159,A. Fontell;M. Luomajärvi,"A.Fontell and M.Luomajärvi Phys.Rev. B19,159",1979
@@ -222,11 +223,10 @@ Fu1981,10.1088/0031-9155/26/4/006,A Fukuda,"A.Fukuda Phys. Med. Biol. 26,623",19
 Fu1996,10.1088/0953-4075/29/16/015,Akira Fukuda,"A.Fukuda J.Phys.B. At.Mol.Opt.Phys. 29,3717",1996
 Fu1999,10.1088/0953-4075/32/2/001,Akira Fukuda,"A.Fukuda J.Phys.B At. Mol.Opt.Phys. 32,153",1999
 Ga1987,10.1016/0168-583x(87)90103-0,H. Gauvin;R. Bimbot;J. Herault;R. Anne;G. Bastin;F. Hubert,"H.Gauvin,R.Bimbot,J.Herault,R.Anne,G.Bastin and F.Hubert Nucl.Instrum. Methods Phys.Res. B28,191 (1987)",1987
-Ga1990,10.1051/jphyscol:1988704,J. HERAULT;R. BIMBOT;H. GAUVIN;R. ANNE;G. BASTIN;F. HUBERT,"H.Gauvin,R.Bimbot,J.Herault,B.Kubica,R.Anne,G.Bastin and F.Hubert Nucl.Instrum. Methods Phys.Res. B47,339",1990
+Ga1990,,H. Gauvin;R. Bimbot;J. Herault;B.Kubica;R. Anne;G. Bastin;F. Hubert,"H.Gauvin,R.Bimbot,J.Herault,B.Kubica,R.Anne,G.Bastin and F.Hubert Nucl.Instrum. Methods Phys.Res. B47,339",1990
 Gd1998,10.1016/s0168-9002(98)00451-3,D. Gardès;M. Chabot;M. Nectoux;G. Maynard;C. Deutsch;I. Roudskoı̈,"D.Gardes,M.Chabot,M.Nectoux,G.Maynard,C.Deutsch,I.Roudskoi, Nucl.Instrum. Methods Phys.Res. A415,698",1998
 Ge1985,10.1002/pssb.2221310213,P. Gehrmann;K. Lenkeit;R. Stolle,"P.Gehrmann,K.Lenkeit and R.Stolle Phys.Status Solidi B131,519",1985
 Gew2018,10.1063/1.5083599,Jeeban Pd Gewali;Neha Munjal;Ankush Thakur;Inderjeet Singh;Bimla Jaishy;A. Saxena,"J.Pd Gewali, N.Munjal, A.Thakur, I.Singh, B.Jaishy, and A.Saxena AIP Conference Proceedings 2050, 020012 (2018); https://doi.org/10.1063/1.5083599",2018
-Gl1990,,R. Golser,"R.Golser Ph.D.Thesis,Univ.Linz,(1991)",1990
 Gl1991,10.1103/physrevlett.66.1831,R. Golser;D. Semrad,"R.Golser and D.Semrad Phys. Rev. Lett. 66,1831",1991
 Gl1992a,10.1016/0168-583x(92)95774-l,R. Golser;Ch. Eppacher;D. Semrad,"R.Golser,Ch.Eppacher and D.Semrad Nucl.Instrum. Methods Phys.Res. B67,69",1992
 Gl1992b,10.1103/physreva.45.r4222,R. Golser;D. Semrad,"R.Golser and D.Semrad Nucl.Instrum. Methods Phys.Res. B69,18",1992
@@ -236,13 +236,13 @@ Go1967,10.1016/0375-9474(67)90456-3,S. Gorodetzky;Mme A. Chevallier;A. Pape;J.Cl
 Go1969,10.1016/0029-554x(69)90171-2,S Gorodetzky;A Pape;E.L Cooperman;A Chevallier;J.C Sens;R Armbruster,"S.Gorodetzky,A.Pape,E.L.Cooperman,A.Chevallier,J.C.Sens and R.Armbruster Nucl.Instrum.Methods Phys.Res. 70,11",1969
 Gö2013,10.1103/physreva.87.062903,D. Goebl;D. Roth;P. Bauer,"D. Goebl, D. Roth, P. Bauer, Phys. Rev. A 87, 062903",2013
 Gö2014,10.1103/physreva.90.042706,D. Goebl;W. Roessler;D. Roth;P. Bauer,"D.Goebl,W.Roessler,D.Roth,P.Bauer, Phys. Rev. A90, 042706",2014
-Gop1996,10.1016/s0042-207x(99)00153-0,Z.Q. Ma;B.X. Liu;H. Naramoto;Y. Aoki;S. Yamamoto;H. Takeshita;P.C. Goppelt-Langer,"P.Goppelt-Langer,S.Yamamoto,Y.Aoki,H.Takeshita,H.Naramoto Nucl.Instrum.Methods Phys.Res. B118,7",1996
+Gop1996,,P.C. Goppelt-Langer;S.Yamamoto;Y.Aoki;H.Takeshita;H.Naramoto,"P.Goppelt-Langer,S.Yamamoto,Y.Aoki,H.Takeshita,H.Naramoto Nucl.Instrum.Methods Phys.Res. B118,7",1996
 Gr1955,10.1103/physrev.98.466,D. Wayne Green;John N. Cooper;James C. Harris,"D.W.Green,J.N.Cooper and J.C.Harris, Phys.Rev. 98,466 (1955)",1955
 Grf2004,10.1016/j.nimb.2018.12.039,Kenneth T. Gillen;Roger L. Clough,"U.Greife et al, Nucl.Instrum.Methods B 217 (2004) 1",2004
 Gs1977,10.1016/0029-554x(77)90010-6,H. Geissel;K. Güttner;S. Hofmann;G. Münzenberg,"H.Geissel,K.Güttner,S.Hofmann and G.Münzenberg Nucl. Instrum. Methods 144,465",1977
 Gs1980,10.1016/0029-554x(80)91015-0,H. Geissel;P. Armbruster;T. Kitahara;G. Kraft;H. Spieler;K. Güttner,"H.Geissel,P.Armbruster,T.Kitahara,G.Kraft,H.Spieler and K.Güttner Nucl.Instrum.Methods Phys.Res. 170,217",1980
 Gs1982a,10.1016/0029-554x(82)90483-9,H. Geissel;Y. Laichter;W.F.W. Schneider;P. Armbruster,"H.Geissel,Y.Laichter,W.F.W.Schneider and P.Armbruster Nucl. Instr. Meth. 194,21",1982
-Gs1982b,10.1103/physreva.26.1915,Y. Laichter;H. Geissel;M. Schädel;P. Armbruster,"H.Geissel,Y.Laichter,W.F.W.Schneider and P.Armbruster Phys. Lett. 88A,26",1982
+Gs1982b,,H. Geissel;Y. Laichter;W.F.W.Schneider;P. Armbruster,"H.Geissel,Y.Laichter,W.F.W.Schneider and P.Armbruster Phys. Lett. 88A,26",1982
 GS1982c,,H. Geissel," H.Geissel, GSI 82-12 Report, PhD Thesis
     ""Investigations on the deceleration of heavy ions in matter
     in the energy range from 0.5-10 MeV/amu"". Justus-Liebig University, Gieben.
@@ -252,7 +252,7 @@ Gs1983b,10.1016/0167-5087(83)90404-0,H. Geissel;Y. Laichter;R. Albrecht;T. Kitah
 Gt1962,,Yu.Gott; V.G.Tel'kovskiy,"Yu.Gott and V.G.Tel'kovskiy, Radiotekh.Electron. 7,1956 (1962) [Engl.trans. Rad.Eng.and Electron.Phys. 7,1813]",1962
 Gt1968,,Yu.Gott and V.G.Tel'kovskiy,"Yu.Gott and V.G.Tel'kovskiy, Sov.Phys.-Solid State 9,1741 (1968)",1968
 Gue2014,10.1016/j.radphyschem.2013.10.003,A. Guesmia;H. Ammi;S. Mammeri;A. Dib;C.A. Pineda-Vargas;M. Msimanga;M. Hedibel,"A.Guesmia,H.Ammi,S.Mammeri,A.Dib,C.A.Pineda-Vargas, M.Msimanga,M.Hedibel Rad. Phys. and Chem. 96, 205",2014
-Gue2016,10.1016/j.radphyschem.2012.08.010,S. Mammeri;H. Ammi;A. Dib;C.A. Pineda-Vargas;S. Ourabah;M. Msimanga;M. Chekirine;A. Guesmia,"A.Guesmia,M.Msimanga,C.A.Pineda-Vargas,H.Ammi,A.Dib,S.Mammeri Nucl.Instr.Methods Phys.Res. B 371, 69 (2016)",2016
+Gue2016,,A.Guesmia;M.Msimanga;C.A.Pineda-Vargas;H.Ammi;A.Dib;S.Mammeri,"A.Guesmia,M.Msimanga,C.A.Pineda-Vargas,H.Ammi,A.Dib,S.Mammeri Nucl.Instr.Methods Phys.Res. B 371, 69 (2016)",2016
 Ha1975,10.1103/physrevb.11.1013,J. M. Harris;M- A. Nicolet,"J.M.Harris and M.-A.Nicolet Phys.Res. B11,1013",1975
 Hak2002,10.1016/s0168-583x(01)00930-2,A. Hakim;A. Fahli;M. Toulemonde;D. Leliévre,"A.Hakim,A.Fahli,M.Toulemonde,D.Leliévre Nucl.Instr.Methods Phys.Res. B187, 164 (2002)",2002
 Han1981,10.1016/0029-554x(81)90102-6,R.L. Hahn;K.S. Toth;R.L. Ferguson;F. Plasil,"R.L.Hahn,K.S.Toth,R.L.Ferguson,F.Plasil Nucl.Instrum.Methods Phys.Res. 180, 581",1981
@@ -303,6 +303,7 @@ Is1984,10.1016/0168-583x(84)90174-5,R. Ishiwari;N. Shiomi;N. Sakamoto,"R.Ishiwar
 Is1984b,10.1016/0168-583x(84)90187-3,R. Ishiwari;N. Shiomi;N. Sakamoto,"R.Ishiwari,N.Shiomi and N.Sakamoto Nucl.Instrum.Methods Phys.Res. B2,195-198 (1984)",1984
 Is1988a,10.1016/b978-0-12-168561-4.50486-8,N. SHIOMI–TSUDA;N. SAKAMOTO;H. OGAWA;R. Ishiwari,"R.Ishiwari,N.Shiomi-Tsuda and N.Sakamoto Nucl.Instrum.Methods Phys.Res. B35,118",1988
 Is1990,10.1016/b978-0-12-168561-4.50486-8,N. SHIOMI–TSUDA;N. SAKAMOTO;H. OGAWA;R. Ishiwari,"R.Ishiwari,N.Shiomi-Tsuda,N.Sakamoto,H.Ogawa Nucl.Instrum.Methods Phys.Res B47, 111",1990
+Ish2023,10.1016/j.physletb.2023.138220,S. Ishikawa;H. Geissel;S. Purushothaman;H. Weick;E. Haettner;N. Iwasa;C. Scheidenberger;A.H. Sørensen;Y.K. Tanaka;T. Abel;J. Äystö;S. Bagchi;T. Dickel;V. Drozd;B. Franczak;F. Greiner;M.N. Harakeh;N. Kalantar-Nayestanaki;B. Kindler;R. Knöbel; D. Kostyleva; Kraft-Bermuth;N. Kuzminchuk;E. Lamour;B. Lommel;I. Mukha;Z. Patyk;S. Pietri;G. Schaumann;J. Zhao,"Ishikawa et al, Phy. Lett. B 846, 138220 (2023)",2023
 Iw1985,10.1143/jpsj.54.1750,Akihiro Iwase;Shigemi Sasaki;Tadao Iwata;Takeshi Nihira,"A.Iwase,S.Sasaki,T.Iwata and T.Nihira Journ.of the Phys.Soc.of Japan,54,No5,1750",1985
 Iz1980,10.1016/0029-554x(80)91235-5,Sh.Z. Izmailov;E.I. Sirotinin;A.F. Tulinov,"Sh.Z.Izmailow,E.I.Sirotonin and A.F.Tulinov Nucl.Instrum.Methods Phys.Res. 168,81 (1980)",1980
 Jai1989,10.1088/0022-3727/22/8/003,R K Jain;S K Bose;K K Dwivedi,"R.K.Jain,S.K.Bose, and K.K.Dwivedi J.Phys. D: Appl. Phys. 22, 1025",1989
@@ -310,7 +311,7 @@ Jav2007,10.1109/tns.2007.895121,A. Javanainen;T. Malkiewicz;J. Perkowski;W.H. Tr
 Jav2009,10.1109/tns.2008.2009983,A. Javanainen;M. Sillanpaa;W. H. Trzaska;A. Virtanen;G. Berger;W. Hajdas;R. Harboe-Sorensen;H. Kettunen;T. Malkiewicz;M. Mutterer;J. Perkowski;A. Pirojenko;I. Riihimaki;T. Sajavaara;G. Tyurin;H. J. Whitlow,"A.Javanainen,M.Sillanpää,W.H.Trzska,A.Virtanen, et al. IEEE Trans. Nucl. Science 56, 2242",2009
 Jed2018,10.1016/j.nimb.2018.04.039,David Jedrejcic;Uwe Greife,"D. Jedrejcic, U. Greife, Nucl.Instr.Meth.Phys.Res. B 428,1-8 (2018)",2018
 Jia1999,10.1103/physrevb.59.226,W. Jiang;R. Grötzschel;W. Pilz;B. Schmidt;W. Möller,"W.Jiang,R.Grötzschel,W.Pilz,B.Schmidt, and W.Möller Phys.Rev. B59,226",1999
-Jin1993,10.1088/0256-307x/10/4/004,Xiaojing Huang;Xiting Lu;Changwen Jin;Chengfang Zhou;Yanlin Ye;Zonghuang Xia;Hongtao Liu;Dongxing Jiang,"C.W.Jin,X.T.Lu,X.J.Huang,Y.L.Ye,Z.H.Xia,H.T.Liu,D.X.Jiang Phys.Rev. B48,6858",1993
+Jin1993,,C.W.Jin;X.T.Lu;X.J.Huang;Y.L.Ye;Z.H.Xia;H.T.Liu;D.X.Jiang,"C.W.Jin,X.T.Lu,X.J.Huang,Y.L.Ye,Z.H.Xia,H.T.Liu,D.X.Jiang Phys.Rev. B48,6858",1993
 Jin2013,10.1016/j.nimb.2013.02.051,K. Jin;Y. Zhang;H. Xue;Z. Zhu;W.J. Weber,"K.Jin,Y.Zhang,H.Xue,Z.Zhu,W.J.Weber Nucl. Instrum. Methods B 307, 65",2013
 Jin2014,10.1063/1.4861642,K. Jin;Y. Zhang;Z. Zhu;D. A. Grove;H. Xue;J. Xue;W. J. Weber,"K.Jin,Y.Zhang,Z.Zhu,D.A.Grove,H.Xue,J.Xue,W.J.Weber J. Appl. Phys. 115, 044903 (2014)",2014
 Jn1968,10.1103/physrev.169.974,C. H. Johnson;R. L. Kernell,"C.H.Johnson and R.L.KernelL, Phys.Rev. 169,974 (1968)",1968
@@ -324,7 +325,7 @@ Kan2021,10.1002/sia.6951,Karim‐Alexandros Kantre;Marcos V. Moro;Valentina Pane
 Kc1998,10.1016/s0168-583x(98)80016-5,G. Konac;S. Kalbitzer;Ch. Klatt;D. Niemann;R. Stoll,"G.Konac,S.Kalbitzer,Ch.Klatt,D.Niemann,R,Stoll Nucl. Instr. Methods Phys. Res. B136-138, 159",1998
 Ke1966,10.1097/00004032-196610000-00009,G. D. Kerr;L. M. Hairr;N. Underwood;A. W. Waltner,"G.D.Kerr,L.M.Hairr,N.Underwood and A.W.Waltner Health Phys. 12,1475",1966
 Kei1992,10.1063/1.106972,J. Keinonen;K. Arstila;P. Tikkanen,"J.Keinonen,K.Arstila and P.Tikkanen Appl.Phys.Lett. 60,228",1992
-Kel1973,10.1103/physrevlett.31.407,P. L. Rothwell;Ludwig Katz;Bach Sellers;Frederick A. Hanser,"J.G.Kelley,B.Sellers and F.A.Hanser Phys.Rev.B8,103",1973
+Kel1973,,J.G.Kelley;B.Sellers;F.A.Hanser,"J.G.Kelley,B.Sellers and F.A.Hanser Phys.Rev.B8,103",1973
 KF1966,10.1007/bf01380034,J. Kloppenburg;A. Flammersfeld,"J.Kloppenburg,A.Flammersfeld Zeit. Physik 196, 424",1966
 Kh1984,10.1080/00337578408215788,V. A. Khodyrev;V. N. Mizgulin;E. I. Sirotinin;A. F. Tulinov,"V.A.Khodyrev,V.N.Mizgulin,E.I.Sirotonin and A.F.Tulinov Radiat.Eff. 83,21",1984
 Kha2001,10.1016/s1350-4487(01)00173-1,D.T Khathing;S.P Tripathy;R Mishra;B.K Verma;K.K Dwivedi,"D.T.Khating,S.P.Tripathy,R.Mishra,B.K.Verma, and K.K.Dwivedi Radiation Measurements 34, 305 (2001).",2001
@@ -335,7 +336,7 @@ KK1962,10.1007/bf01378142,D. Kamke;P. Kramer,"D.Kamke and P.Kramer Zeit. f. Phys
 Kl1979,10.1109/tns.1979.4330379,James Kliwer;Ashraf ElFiqi,"J.Kliwer and A.El Fiqi IEEE Trans.Nucl.Sci. 26,1323",1979
 Kn1980,10.1016/0029-554x(80)91229-x,H. Knudsen;H.H. Andersen;V. Martini,"H.Knudsen,H.H.Andersen and V.Martini Nucl.Instrum.Methods 168,41 (1980)",1980
 Kny2006,10.1016/j.nimb.2006.04.071,G.N. Knyazheva;S.V. Khlebnikov;E.M. Kozulin;T.E. Kuzmina;V.G. Lyapin;M. Mutterer;J. Perkowski;W.H. Trzaska,"G.N.Knyazheva,S.V.Khlebnikov,E.M.Kozulin,T.E.Kuzmina, V.G.Lyapin,M.Mutterer,J.Perkowski,W.H.Trzaska Nucl.Instrum.Methods B248, 7",2006
-Ko1974,10.1111/j.1474-919x.1901.tb07522.x,F. J. Jackson;R. Bowdler Sharpe,"H.Kamitsubo Oyo Buturi (Japan) 43, 1019 (obtained from J.F.Ziegler)",1974
+Ko1974, 10.11470/oubutsu1932.43.1019,H.Kamitsubo,"H.Kamitsubo, Oyo Buturi 43, 1019 (1974) (obtained from J.F.Ziegler)",1974
 Kr1982,10.1103/PhysRevB.26.6099,Siegfried Kreussler;C.Varelas;Rudolf Sizmann,"S.Kreussler,C.Varelas and R.Sizmann Phys.Rev. B26,6099",1982
 Ks1989,10.1016/0168-583x(89)90732-5,Á.Z. Kiss;E. Somorjai;J. Räisänen;E. Rauhala,"A.Z.Kiss,E.Somorjai,J.Räisänen and E.Rauhala Nucl.Instrum.Methods Phys.Res. B39,15",1989
 Kt1983a,10.1016/0167-5087(83)91084-0,Th. Krist;P. Mertens,"Th.Krist and P.Mertens Nucl.Instrum.Methods Phys.Res. 218,790",1983
@@ -353,13 +354,13 @@ Kz1980,10.1103/physreva.22.2598,Ronald Kreutz;Wolfgang Neuwirth;Werner Pietsch,"
 La1972,10.1103/PhysRevA.6.1863,R. Langley,"R. Langley Phys. Rev. A 6, 1863",1972
 La1975,10.1103/PhysRevB.12.3575,R.Langley,"R.Langley Phys.Rev. B12,3575",1975
 La1976,10.1016/0029-554x(76)90719-9,Robert A. Langley;Robert S. Blewer,"R.Langley and R.Blewer Nucl.Instrum.Methods Phys.Res. 132,109",1976
-LB1994,10.1016/j.nimb.2018.12.039,Kenneth T. Gillen;Roger L. Clough,"L.LeBlanc,G.G.Ross Nucl.Instrum.Meth. Phys.Res. B90,54",1994
+LB1994,,L.LeBlanc;G.G.Ross,"L.LeBlanc,G.G.Ross Nucl.Instrum.Meth. Phys.Res. B90,54",1994
 LB1995,10.1016/0168-583X(94)00606-7,L.LeBlanc;G.G.Ross;W.E.Wallace,"L.LeBlanc,G.G.Ross,W.E.Wallace Nucl.Instrum.Meth. Phys.Res. B 95,457",1995
 Lb1996,10.1016/0168-583x(95)01331-8,M. Laube;F. Rauch;C. Ottermann;O. Anderson;K. Bange,"M.Laube,F.Rauch,C.Ottermann,O.Anderson,K.Bange Nucl. Instrum. Methods B 113, 288",1996
 LCT2004,10.1016/j.nimb.2003.12.090,M.M.Li;D.J.Connor;H.Timmers,"M.M.Li,D.J.Connor,H.Timmers Nucl.Instrum.Methods B222,11",2004
-Ld1985,10.1016/0168-583x(85)90243-5,David J. Land;Donald G. Simons;James G. Brennan;G.A. Glass,"D.J.Land,D.G.Simons,J.G.Brennan and G.A.Glass Nucl.Instrum.Methods Phys.Res.B10/11, 234 For final values, see personal communication Ld92",1985
-Le1968,10.1007/bf01386894,M. Bister;A. Anttila;A. Fontell;E. Leminen,"E.Leminen,A.Fontell and M.Bister Ann.Acad.Sci.Fenn. AVI. Phys.",1968
-Le1971,10.5186/aasfm.1983.0826,Sakari Toppila,E.Leminen and A.Anttila Ann.Acad.Sci.Fenn. A VI. Phys. 370,1971
+Ld1985,10.1016/0168-583x(85)90243-5,David J. Land;Donald G. Simons;James G. Brennan;G.A. Glass,"D.J.Land,D.G.Simons,J.G.Brennan and G.A.Glass Nucl.Instrum.Methods Phys.Res.B10/11, 234",1985
+Le1968,,E.Leminen;A.Fontell;M.Bister,"E.Leminen,A.Fontell and M.Bister Ann.Acad.Sci.Fenn. AVI. Phys.",1968
+Le1971,,E.Leminen;A.Anttila,E.Leminen and A.Anttila Ann.Acad.Sci.Fenn. A VI. Phys. 370,1971
 Le1974,10.1080/00337577408232143,E. Leminen;A. Fontell,"E.Leminen and A.Fontell Radiat.Eff. 22,39",1974
 Len1983,10.1016/0167-5087(83)90208-9,W.N. Lennard;H.R. Andrews;B. Dubé;M. Freeman;I.V. Mitchell;D. Phillips;D. Ward,"W.N.Lennard,H.R.Andrews,B.Dube,M,Freeman,I.V.Mitchell, D.Phillips and D.Ward Nucl.Instrum. Methods Phys.Res. 205,351",1983
 Len1986,10.1103/physrevlett.57.318,W. N. Lennard;H. Geissel;D. Phillips;D. P. Jackson,"W.Lennard,H.Geissel,D.Jackson and D.Phillips Nucl.Instrum. Methods Phys.Res. B13,127",1986
@@ -392,34 +393,36 @@ Lo1983,10.1016/0167-5087(83)90363-0,J. Lombaard;J. Conradie;E. Friedland,"J.Lomb
 Loh2020,10.1103/physreva.102.062803,S. Lohmann;R. Holeňák;D. Primetzhofer,"S.Lohmann, R. Holenak, D.Primetzhofer Phys. Rev. A 102,062803 (2020).",2020
 LP1974,10.1103/physreva.10.2131,A. S. Lodhi;D. Powers,"A.S.Lodhi and D.Powers Phys. Rev. A 10, 2131 (1974).",1974
 Lr1978,10.1016/0029-554x(78)90853-4,Allen Lurio;J.F. Ziegler;J.J. Cuomo,"A.Lurio,J.F.Ziegler and J.J.Cuomo Nucl.Instrum.Methods Phys.Res. 149,155",1978
-Lt2004,10.1103/physreva.69.062903,G. H. Lantschner;J. C. Eckardt;A. F. Lifschitz;N. R. Arista;L. L. Araujo;P. F. Duarte;J. H. R. dos Santos;M. Behar;J. F. Dias;P. L. Grande;C. C. Montanari;J. E. Miraglia,"G.H.Lantschner,J.C.Eckardt,A.F.Lifschitz,N.R.Arista, L.L.Araujo,P.F.Duarte,J.H.dosSantos,M.Behar, J.F.Dias,P.L.Grande,C.C.Montanari,J.E.Miraglia Phys. Rev. A69, 62903",2004
+Lt2004,10.1103/physreva.69.062903,G. H. Lantschner;J. C. Eckardt;A. F. Lifschitz;N. R. Arista;L. L. Araujo;P. F. Duarte;J. H. R. dos Santos;M. Behar;J. F. Dias;P. L. Grande;C. C. Montanari;J. E. Miraglia,"G.H.Lantschner,J.C.Eckardt,A.F.Lifschitz,N.R.Arista, L.L.Araujo,P.F.Duarte,J.H.dosSantos,M.Behar, J.F.Dias,P.L. Grande,C. C. Montanari,J.E.Miraglia Phys. Rev. A69, 62903",2004
 Lu1976,10.1007/978-1-4615-8876-4_8,M. Luomajärvi;A. Fontell;M. Bister,"M.Luomajärvi,A.Fontell and M.Bister Ion Beam Surface Layer Analysis,Plenum New York,p.75",1976
-Lu1979,10.1007/bf01323118,Harald H. Rossi,"M.Luomajärvi, Radiat.Eff. 40,173 (1979)",1979
+Lu1979,,M.Luomajärvi,"M.Luomajärvi, Radiat.Eff. 40,173 (1979)",1979
 LuX1989,10.1016/0168-583x(89)90680-0,Xiting Lu;Zonghuang Xia;Dingyu Shen;Lian Mao;Xuemei Wang,"Xiting Lu,Zonghuang Xia,Dingyu Shen,Lian Mao,Xuemei Wang Nucl.Instrum.Methods Phys.Res. B36,350",1989
 LuX1991,10.1016/0168-583x(91)95602-a,Xiting Lu;Zonghuang Xia;Kungang Zhou;Changwen Jin;Xihong Yang;Hongtao Liu;Dongxing Jiang;Yanlin Ye,"Xiting Lu,Zonghuang Xia,Kungang Zhou,Changwen Jin, Xihong Yang,Hongtao Liu,Dongxing Jiang and Yanlin Ye Nucl.Instrum.Methods Phys.Res. B58,280",1991
 LuX2000,10.1016/s0168-583x(99)01002-2,Lu Xiting;Xia Zonghuang;Zheng Tao;Shen Yixiong,"Xiting Lu,Zonghuang Xia,Tao Zheng,Yixiong Shen Nucl.Instrum.Methods Phys.Res. B168,287 (2000)",2000
 LuX2004,10.1016/s0169-4332(03)00936-x,Xiting Lu;Tao Zheng;Zonghuang Xia;Dingyu Shen,"Xiting Lu,Tao Zheng,Zonghuang Xia,Dingyu Shen Appl. Surface Science 221,10",2004
 LX2004,10.1016/j.nimb.2003.08.037,W.N.Lennard;H.Xia;J.K.Kim,"W.N.Lennard,H.Xia,J.K.Kim Nucl. Instrum. Methods B215, 297 and pers. comm. from W.N.Lennard",2004
 Ma1978,10.1016/0029-554x(78)90372-5,R.E. Marshall;A.R. El Fiqi;J.K. Kliwer,"R.E.Marshall,A.R.El Fiqi and J.K.Kliwer Nucl.Instrum.Methods Phys.Res. 150,241",1978
-Mai2004,10.1177/0725513620961992,John Grumley,"M. Maier, Ph.D. Thesis, Univ. of Giessen taken from Fet06",2004
+Mai2004,,M. Maier,"M. Maier, Ph.D. Thesis, Univ. of Giessen, values taken from Fet06",2004
 Mar1962,10.1103/physrev.128.1166,F. W. Martin;L. C. Northcliffe,"E.W.Martin and L.C.Northcliffe Phys.Rev.128,1166 (No graphs for C on CH4, He)",1962
+Mas2025,10.1140/epjp/s13360-024-05963-w,Masenya M A;Belalia A;Guesmia A;Msimanga M,"M. A. Masenyaet al, The European Physical Journal Plus 140 (2025) 6",2025
 Mat2021,10.1016/j.nimb.2021.08.003,T. Materna;E. Berthoumieux;Q. Deshayes;D. Doré;M. Kebbiri;A. Letourneau;L. Thulliez;Y.H. Kim;U. Köster;X. Ledoux,"T. Materna, E. Berthoumieux, Q. Deshayes, D. Doré, M. Kebbiri, A. Letourneau, L. Thulliez, Y.H. Kim, U. Köster, X. Ledoux, Nuclear Instruments and Methods in Physics Research B 505 (2021) 1–16 https://doi.org/10.1016/j.nimb.2021.08.003",2021
 Mc1966,10.1515/zna-1966-1-220,James R. Macdonald;John H. Ormrod;Henry E. Duckworth,"J.R.Macdonald,J.H.Ormrod and H.E.Duckworth Z.Nat.forsch. 21A,130",1966
 Md1948,10.1103/physrev.74.648,C. B. Madsen;P. Venkateswarlu,"C.B.Madsen and P.Ventkatesvarlu Phys.Rev. 74,648",1948
-Md1953,10.1017/s0009840x00089137,A. E. Taylor,"C.B.Madsen, Mat.-Fys.Medd.K.Dan.Vidensk.Selsk. 27,no.13 (1953)",1953
+Md1953,,C.B.Madsen,"C.B.Madsen, Mat.-Fys.Medd.K.Dan.Vidensk.Selsk. 27,no.13 (1953)",1953
 MD1970,10.1016/0029-554x(70)90217-x,Trinh Thi Hoang Mai;R. Drouin,"T.T.H.Mai and R.Drouin, Nucl. Instr. Methods 87,297",1970
-Me1978,10.1088/0950-7671/36/3/421,Micro Methods Ltd.,"P.Mertens, Nucl.Instrum.Methods Phys.Res. 149,149",1978
+Me1978,,P.Mertens,"P.Mertens, Nucl.Instrum.Methods Phys.Res. 149,149",1978
 Me1979,10.1103/physreva.19.1442,P. Mertens,"P.Mertens Phys.Rev. A19,1442",1979
 Me1980,10.1016/0029-554x(80)91228-8,P. Mertens;Th. Krist,"P.Mertens and Th.Krist,  Nucl.Instrum.Methods Phys.Res. 168,33 (1980).",1980
 Me1982a,10.1016/0029-554x(82)90489-x,P. Mertens;Th. Krist,"P.Mertens and Th.Krist,  Nucl.Instrum.Methods Phys.Res. 194,57 (1982).",1982
 Me1982b,10.1063/1.330142,P. Mertens;Th. Krist,"P.Mertens and Th.Krist J.Appl.Phys. 53,7343",1982
 Me1988,10.1016/0168-583X(88)90530-7,P.Mertens; P.Bauer,"P.Mertens and P.Bauer Nucl.Instrum.Methods Phys.Res. B33,133",1988
+Mee2024,10.1016/j.nimb.2024.165406,Johan Meersschaut;Simon Meersschaut;Jean-Philippe Soulié;René Heller,"J Meersschaut, S Meersschaut, J-P Soulié, R Heller, Nuclear Instruments and Methods in Physics Research B 553 (2024) 165406",2024
 MELFGOS2014,10.1103/physreve.89.022703,Silvina Limandri;Pablo de Vera;Raul C. Fadanelli;Luiz C. C. M. Nagamine;Alexandre Mello;Rafael Garcia-Molina;Moni Behar;Isabel Abril,"S.Limandri et al, Phys. Rev. E 89, 022703",2014
 MeV2021,10.1080/10420150.2021.1891060,Mario Mery;Juan D. Uribe;Marcos Flores;Néstor R. Arista;Vladimir A. Esaulov;Jorge E. Valdés,"M. Mery,J.D. Uribe, M. Flores, N.R. Arista, V.A. Esaulov, J.E. Valdés, Rad. Eff. and Defects in Sol., 176:1-2, 73-91 (2021). DOI:10.1080/10420150.2021.1891060",2021
 MeV2022,10.1080/10420150.2022.2049789,M. Mery;C. González-Fuentes;C. Romanque-Albornoz;C. García;A. M. León;N. R. Arista;V. A. Esaulov;J. E. Valdés,"Mario Mery, Claudio González-Fuentes, Cristian Romanque-Albornoz, Carlos García, Andrea M. León, Néstor R. Arista, Vladimir A. Esaulov, Jorge E. Valdés, Radiation Effects and Defects in Solids, 1-12, 2022",2022
 Mh1965,10.1093/oseo/instance.00265655,Phillis Wheatley,"R.D.Moorhead, J.Appl.Phys. 36,391",1965
 Mi1990,10.1016/0168-583x(90)90073-4,Christian Mitterschiffthaler;Peter Bauer,"C.Mitterschiffthaler and P.Bauer Nucl.Instrum.Methods Phys.Res. B48,58",1990
-Mik2011,10.1063/1.3668062,Perena Gouma,"R. Miksova et al, AIP Conf. Proc. 1412 (2011) 113",2011
+Mik2011,,R. Miksova,"R. Miksova et al, AIP Conf. Proc. 1412 (2011) 113",2011
 Mik2014,10.1016/j.nimb.2013.11.041,R.Miksova;A. Mackova;P. Malinsky;V. Hnatowicz;P. Slepicka,"R.Miksova,A.Mackova,P.Malinsky,V.Hnatowicz,P.Slepicka Nucl. Instrum. Methods B 331 (2014) 42",2014
 Mik2015,10.1016/j.nimb.2013.12.045,A. Mackova;P. Malinsky;R. Miksova;V. Hnatowicz;R.I. Khaibullin;P. Slepicka;V. Svorcik,"R.Miksova,V.Hnatowicz,A.Mackova,P.Malinsky,P.Slepicka Nucl. Instrum. Methods B 354  (2015) 205",2015
 Mik2016,10.1016/j.apsusc.2012.12.071,A. Mackova;P. Malinsky;R. Miksova;R.I. Khaibullin;V.F. Valeev;V. Svorcik;P. Slepicka;M. Slouf,"R.Miksova,A.Mackova,P.Slepicka Nucl. Instrum. Methods B 371  (2016) 81",2016
@@ -427,13 +430,13 @@ Mik2017a,10.1016/j.nimb.2017.02.069,R.Miksova;A.Mackova;P.Malinsky;Z.Sofer,"R.Mi
 Mir2020,10.1103/physreva.101.062701,C. C. Montanari;P. A. Miranda;E. Alves;A. M. P. Mendez;D. M. Mitnik;J. E. Miraglia;R. Correa;J. Wachter;M. Aguilera;N. Catarino;R. C. da Silva,"C.C. Montanari, P.A. Miranda, E. Alves, A.M.P. Mendez, D.M. Mitnik, J.E. Miraglia, R. Correa, J. Wachter, M. Aguilera, N. Catarino, R.C. da Silva, Phys. Rev. A 101 (2020) 062701",2020
 Miz2013,10.1016/j.nimb.2013.02.010,K. Mizohata;J. Räisänen;J. Keinonen;E. Härkönen;J. Palmans;M. Ritala,"K.Mizohata,J.Räisänen,J.Keinonen,E.Härkönen,J.Palmans,M.Ritala Nucl. Instrum. Methods B 300, 1 The data are already shown in TEC13.",2013
 Mj1988,,V.D.Majackij; N.N.Pucherov,"V.D.Majackij and N.N.Pucherov, Ukrainskij fiziceskij Zurnal 33, 1285",1988
-Mk2007,10.1631/jzus.2006.a1282,Evgeny Markin;Edmond C. Prakash,"S.Markin, Dissertation, Univ. of Linz",2007
 Mk2008,10.1103/physrevb.78.195122,S. N. Markin;D. Primetzhofer;S. Prusa;M. Brunmayr;G. Kowarik;F. Aumayr;P. Bauer,"S.N.Markin,D.Primetzhofer,S.Prusa,M.Brunmayr,G.Kowarik,F.Aumayr, and P.Bauer Phys. Rev. B 78, 195122",2008
 Mk2009a,10.1103/physrevlett.103.113201,S. N. Markin;D. Primetzhofer;P. Bauer,"S.N.Markin,D.Primetzhofer and P. Bauer Phys. Rev. Lett. 103, 113201",2009
 Mk2009b,10.1103/physrevb.80.205105,S. N. Markin;D. Primetzhofer;M. Spitz;P. Bauer,"S.N.Markin,D.Primetzhofer,M.Spitz, P.Bauer Phys.Rev. B80, 205105 (2009)",2009
 Ml1975,10.1080/00337577508237428,J. D. Mewins;T. A. Tombrello,"J.D.Melvin and T.A.Tombrello Radiat.Eff. 126,113 (1975)",1975
 Mm2012,10.1016/j.radphyschem.2012.08.010,S. Mammeri;H. Ammi;A. Dib;C.A. Pineda-Vargas;S. Ourabah;M. Msimanga;M. Chekirine;A. Guesmia,"S.Mammeri,H.Ammi,A.Dib,C.A.Pineda-Vargas,S.Ourabah,M.Msimanga, M.Chekirine,A.Guesmia Rad. Phys. and Chem. 81, 1862 (2012)",2012
 Mm2019,10.1016/j.nimb.2019.08.017,S. Mammeri;A. Dib;H. Ammi,"S.Mammeri,A.Dib,H.Ammi, Nucl. Instrum. Methods B 459, 15-21 (2019)",2019
+Mm2025,10.1016/j.nimb.2025.165757,S. Mammeri;C. Mtshali;M. Nkosi,"S. Mammeri et al, Nuclear Instruments and Methods in Physics Research B 566 (2025) 165757",2025
 Mo1968,10.1103/physrev.165.415,A. H. Morton;D. A. Aldcroft;M. F. Payne,"A.H.Morton,D.A.Aldcroft and M.F.Payne Phys.Rev. 165,415",1968
 Mö2002,10.1103/physrevlett.88.193201,S. P. Møller;A. Csete;T. Ichioka;H. Knudsen;U. I. Uggerhøj;H. H. Andersen,"S.P. Möller, A. Csete, T. Ichioka, H. Knudsen, U.I. Uggerhoj, and H.H. Andersen Phys. Rev. Lett. 88 (2002) 193201, and pers. comm. from S.P.Möller (see also An02)",2002
 Mö2004,10.1103/physrevlett.93.042502,S. P. Møller;A. Csete;T. Ichioka;H. Knudsen;U. I. Uggerhøj;H. H. Andersen,"S.P. Möller, A. Csete, T. Ichioka, H. Knudsen, U.I. Uggerhoj, and H.H. Andersen Phys. Rev. Lett. 93 (2004) 042502, and pers. comm. from S.P.Möller",2004
@@ -441,7 +444,7 @@ Mok1964,10.1016/0029-554x(64)90362-3,C.D. Moak,"C.D.Moak Nucl. Instr. Methods 28
 Mok1966,10.1103/physrev.149.244,C. D. Moak;M. D. Brown,"C.D.Moak and M.D.Brown Phys. Rev. 149, 244",1966
 Mon2008,10.1103/physreva.77.042901,C. C. Montanari;J. E. Miraglia;M. Behar;P. F. Duarte;N. R. Arista;J. C. Eckardt;G. H. Lantschner,"C.C. Montanari, J.E. Miraglia, M. Behar, P.F. Duarte, N.R. Arista, J.C. Eckardt, and G.H. Lantschner, Phys. Rev. A 77, 042901",2008
 Mor2016,10.1103/physreva.93.022704,M. V. Moro;T. F. Silva;A. Mangiarotti;Z. O. Guimarães-Filho;M. A. Rizzutto;N. Added;M. H. Tabacniks,"M. V. Moro T. F. Silva, A. Mangiarotti, Z. O. Guimaraes-Filho, M. A. Rizzutto,  N. Added, and M. H. Tabacniks Phys. Rev. A 93, 022704 (2016)",2016
-Mor2018,10.1016/j.nimb.2018.03.032,M.V. Moro;B. Bruckner;P.L. Grande;M.H. Tabacniks;P. Bauer;D. Primetzhofer,"M.V. Moro, B. Bruckner, P.L. Grande, M.H. Tabacniks, P. Bauer, D. Primetzhofer Nucl.Instrum.Methods B 424, 43 (2018).",2018
+Mor2018,10.1016/j.nimb.2018.03.032,M. V. Moro;B. Bruckner;P. L. Grande;M. H. Tabacniks;P. Bauer;D. Primetzhofer,"M.V. Moro, B. Bruckner, P.L. Grande, M.H. Tabacniks, P. Bauer, D. Primetzhofer Nucl.Instrum.Methods B 424, 43 (2018).",2018
 Mor2020,10.1103/physreva.102.022808,M. V. Moro;P. Bauer;D. Primetzhofer,"M.V. Moro, P. Bauer, D. Primetzhofer Phys. Rev. A 102, 022808 (2020)",2020
 Mor2021,10.1016/j.nimb.2021.04.010,M.V. Moro;P.M. Wolf;B. Bruckner;F. Munnik;R. Heller;P. Bauer;D. Primetzhofer,"M.V. Moro, P.M. Wolf, B. Bruckner, F. Munnik, R. Heller, P. Bauer, D. Primetzhofer Nucl.Instrum.Methods B 498, 1-8 (2021).",2021
 MP2007,10.1016/j.nimb.2006.10.065,J. Miranda;J.C. Pineda,"J.Miranda,J.C.Pineda Nucl.Instrum.Methods B 254, 39",2007
@@ -454,30 +457,32 @@ Msi2014,10.1016/j.nimb.2014.01.003,M. Msimanga;C.A. Pineda-Vargas;T. Hlatshwayo;
 Msi2015,10.1016/j.nimb.2015.01.081,M. Msimanga;C.B. Mtshali;C.A. Pineda-Vargas,"M. Msimanga, C.B. Mtshali, C.A. Pineda-Vargas  Nucl. Instrum. Methods B 349, 1-5 (2015)",2015
 MSTAR2003, 10.1016/j.adt.2003.08.003,H. Paul; A. Schinner,MSTAR - Empirical stopping power tables for ions from 3Li to 18Ar  in solids and gases (2003) H. Paul and A. Schinner- Atomic Data and Nuclear Data Tables 85 (2003) 377,2003
 Mt1976,10.1103/physreva.14.169,S. Matteson;E. K. L. Chau;D. Powers,"S.Matteson,E.K.L.Chau and D.Powers, Phys.Rev. A14,169 (1976)",1976
-Mt1977,10.1103/physreva.16.1407,E. K. L. Chau;R. B. Brown;A. S. Lodhi;D. Powers;S. Matteson;S. R. Eisenbarth,"S.Matteson,D.Powers and E.K.L.Chau, Phys.Rev. A15,856 (1977)",1977
+Mt1977,,S.Matteson;D.Powers;E.K.L.Chau,"S.Matteson,D.Powers and E.K.L.Chau, Phys.Rev. A15,856 (1977)",1977
 Mt1978,10.1016/0029-554x(78)90855-8,S. Matteson;J.M. Harris;R. Pretorius;M-A. Nicolet,"S.Matteson,J.M.Harris,R.Pretorius and M.-A.Nicolet Nucl.Instrum.Methods Phys.Res. 149,163",1978
 MT1995,10.1103/physreva.51.2285,G. Martínez-Tamayo;J. C. Eckardt;G. H. Lantschner;N. R. Arista,"G.Martinez-Tamayo,J.C.Eckardt,G.H.Lantscher,N.R.Arista Phys.Rev. A51, 2285",1995
-MT1996,10.1103/physreva.51.2285,G. Martínez-Tamayo;J. C. Eckardt;G. H. Lantschner;N. R. Arista,"G.Martinez-Tamayo,J.C.Eckardt,G.H.Lantscher,N.R.Arista Phys.Rev. A54, 3131",1996
+MT1996,10.1103/PhysRevA.54.3131,G. Martínez-Tamayo;J. C. Eckardt;G. H. Lantschner;N. R. Arista,"G.Martinez-Tamayo,J.C.Eckardt,G.H.Lantscher,N.R.Arista Phys.Rev. A54, 3131",1996
+Mts2024,10.1016/j.nimb.2024.165363,C.B. Mtshali;  Z.M. Khumalo; N Mongwaketsi; K. Segola; K. Lebesana; P. Sechogela; M. Msimanga,"C.B. Mtshali et al, Nuclear Instruments and Methods in Physics Research B 552, 165363 (2024)",2024
 Mu1996,10.1016/s0168-583x(96)00468-5,F. Munnik;A.J.M. Plompen;J. Räisänen;U. Wätjen,"F.Munnik,A.J.M.Plompen,J.Räisänen,U.Wätjen Nucl.Instrum.Meth. Phys.Res. B119,445",1996
 Mu1997,10.1063/1.52444,A. J. M. Plompen;F. Munnik;J. Räisänen;U. Wätjen,"F.Munnik,A.J.M.Plompen,J.Räisänen,U.Wätjen AIP Conf. Proc. 392, 1385",1997
 Mu1999,10.1063/1.371310,F. Munnik;K. Väkeväinen;J. Räisänen;U. Wätjen,"F.Munnik,K.Väkeväinen,J.Räisänen,U.Wätjen J.Appl.Phys. 86,3934",1999
 Na1968,10.1139/p70-220,Hiroshi Nakata,"H.Nakata, Can.J.Phys. 46,2765 (1968) and Erratum: Can.J.Phys.48(1970)1744",1968
 Na1969,10.1139/p69-312,Hiroshi Nakata,"H.Nakata, Can.J.Phys. 47,2545 (1969)",1969
-Na1971,10.1103/physrevd.3.2840,Philip D. Mannheim,"H.Nakata, Phys.Rev. B3,2847 (1971)",1971
-Nan2002,10.1177/0725513620961992,John Grumley,"N. Nankov, Ph.D. Thesis, Univ. of Giessen taken from Fet06",2002
+Na1971,,H.Nakata,"H.Nakata, Phys.Rev. B3,2847 (1971)",1971
+Nan2002,,N. Nankov,"N. Nankov, Ph.D. Thesis, Univ. of Giessen taken from Fet06",2002
 Naq2016,10.1016/j.nimb.2015.09.048,S.R. Naqvi;G. Possnert;D. Primetzhofer,"S.R. Naqvi, G. Possnert, D. Primetzhofer Nucl.Instr.Methods Phys.Res. B 371, 76 (2016)",2016
 Nd1977,10.1080/00337577708237473,V. B. Ndocko-ndongue;A. J. Pape;R. Armbruster,"V.B.Ndocko-Ndongue,A.J.Pape and R.Armbruster Rad.Eff. 33,91",1977
 Ne1969,10.1007/bf01394701,Wolfgang Neuwirth;Ulrich Hauser;Ernst Kühn,"W.Neuwirth,U.Hauser,E.Kühn Z. Physik 220, 241",1969
 Ne1975a,10.1007/bf01409286,W. Neuwirth;W. Pietsch;K. Richter;U. Hauser,"W.Neuwirth,W.Pietsch,K.Richter and U.Hauser Z. Physik A 275, 209",1975
 Ne1978,10.1016/0029-554x(78)90846-7,Wolfgang Neuwirth;Werner Pietsch;Ronald Kreutz,"W.Neuwirth,W.Pietsch,R.Kreutz Nucl.Instr.Methods 149, 105",1978
-Ni1961,10.1017/s0009840x00089137,A. E. Taylor,"L.P.Nielsen, Mat.-Fys.Medd.K.Dan.Vidensk.Selsk. 33,no.6 (1961)",1961
-Nig2001,10.1063/1.59191,Jian-Yue Jin;D. L. Weathers;F. Picton;B. F. Hughes;J. L. Duggan;F. D. McDaniel;S. Matteson,"M.Nigam,J.L.Duggan,M.El Bounanani,C.Yang,S.A.Datar,S.Matteson,F.D.McDaniel AIP Conf. Proceedings 576, 25",2001
+Ni1961,,L.P.Nielsen,"L.P.Nielsen, Mat.-Fys.Medd.K.Dan.Vidensk.Selsk. 33,no.6 (1961)",1961
+Nig2001,,M.Nigam;J.L.Duggan;M.El Bounanani;C.Yang;S.A.Datar;S.Matteson;F.D.McDaniel,"M.Nigam,J.L.Duggan,M.El Bounanani,C.Yang,S.A.Datar,S.Matteson,F.D.McDaniel AIP Conf. Proceedings 576, 25",2001
 Nig2004,10.1016/j.nimb.2004.01.067,M. Nigam;J.L. Duggan;M. El Bouanani;C. Yang;G.V. Ravi Prasad;E.D. Sosa;S. Matteson;F.D. McDaniel,"M.Nigam,J.L.Duggan,M.El Bounanani,C.Yang,G.V.Ravi Prasad,E.D.Sosa,S.Matteson, F.D.McDaniel Nucl.Instrum.Methods B219-220, 273",2004
 Nk1993,10.1088/0031-9155/41/4/009,D Novkovic;Z Milosevic;K Subotic;S Manic-Kudra,"D.Novkovic,K.Subotic,M.Stojanovic,Z.Milosevic,S.Manic,D.Paligoric J. Moscow Phys. Soc. 3, 209",1993
 Nm1996,10.1016/s0168-583x(97)00129-8,D Niemann;G Konac;S Kalbitzer,"D.Niemann, G.Konac, S.Kalbitzer Nucl.Instrum.Methods Phys.Res. B118,11 and B124 (1997)646",1996
 No1975,10.1088/0022-3727/8/13/017,A Nomura;S Kiyono,"A.Nomura and S.Kiyono, J.Phys.D:Appl.Phys. 8,1551 (1975)",1975
 Ns1975,10.1080/00337577508235400,F. G. Neshev;A. A. Puzanov;K. S. Shyshkin;E. I. Sirotinin;A. F. Tulinov;G. D. Ved'manov,"F.G.Neskev,A.A.Puzanov,K.S.Shyshkin,E.I.Sirotinin,A.F.Tulinov, G.D.Kedmanov, Rad. Effects 25,271",1975
 Nte2022,10.1016/j.radphyschem.2022.110033,E. Ntemou;R. Holenak;D. Primetzhofer,"Eleni Ntemou, Radek Holenak, Daniel Primetzhofer, Radiation Physics and Chemistry 194 (2022) 110033",2022
+Nte2023,10.1103/PhysRevB.107.155145,Ntemou Eleni; Lohmann Svenja; Holenak Radek; Primetzhofer Daniel,"E. Ntemou, and S. Lohmann, R. Holenak, and D. Primetzhofer, Phys. Rev. B 107 (2023) 155145",2023
 Nu1978,10.1016/0022-3115(78)90563-9,Shoichi Nasu;Kunio Ozawa;Ken-ichi Shiozawa;Kiyoshi Kawatsura;Toshimasa Kurasawa;Katsuya Uchida,"S.Nasu,K.Ozawa,K.Shiozawa,K.Kawatsura and T.Kurasawa J. Nucl. Materials 73,213",1978
 Ny1978,10.1088/0022-3719/11/14/014,A R Nyaiesh;W Steckelmacher;M W Lucas,"A.R.Nyaiesh,W.Steckelmacher and M.W.Lucas J.Phys.C,Solid State Phys. 11,2917",1978
 Ob1982,10.1051/jphys:01982004303048500,J.C. Oberlin;A. Amokrane;H. Beaumevieille;J.P. Stoquert;R. Perrier de la Bathie,"J.C.Oberlin,A.Amokrane,H.Beaumevieille and J.P.Stoquert J.Physique 43,485",1982
@@ -496,8 +501,8 @@ Pa1965,10.1103/physrev.138.a1317,John T. Park,"J.T.Park Phys.Rev. 138,1317",1965
 Pap1978,10.1007/bf01408970,H. Pape;H. -G. Clerc;K. -H. Schmidt,"H.Pape,H.G.Clerc and K.H.Schmidt Z.für Physik A286,159 (According to H. Geissel, foil thicknesses could not be carefully measured since foils were lost after energy loss measurements)",1978
 Pas2015,10.1016/j.nima.2014.11.066,A.A. Pasternak;I. Sankowska;A. Tucholski;J. Srebrny;T. Morek;Ch. Droste;E. Grodner;M. Sałata;J. Mierzejewski;M. Kisieliński;M. Kowalczyk;J. Perkowski;L. Nowicki;R. Ratajczak;A. Stonert;J. Jagielski;G. Gawlik;J. Kownacki;A. Kordyasz;A.A. Korman;W. Płóciennik;E. Ruchowska;M. Wolińska-Cichocka,"A.A. Pasternak, I. Sankowska, A. Tucholsky etc.  Nucl. Instrum. Methods A 774 (2015) 82",2015
 Pe1981,10.1063/1.329449,J. D. Pearce;R. R. Hart,"J.D.Pearce and R.R.Hart J.Appl.Phys. 52,5056",1981
-Pen2001,10.1103/physrevb.55.13275,W. Käferböck;W Rössler;V. Necas;P. Bauer;M. Peñalba;E. Zarate;A. Arnau,"M.Penalba,J.I.Juaristi,E.Zarate,A.Arnau, and P.Bauer Phys.Rev.A64,012902",2001
-Per2005,10.1016/j.nimb.2009.08.006,W.H. Trzaska;G.N. Knyazheva;J. Perkowski;J. Andrzejewski;S.V. Khlebnikov;E.M. Kozulin;V.G. Lyapin;T. Malkiewicz;M. Mutterer,"J.Perkowski,W.H.Trzaska,J.Andrzejewski,V.Lyapin,T.Malkiewicz Nucl.Instrum.Methods B240, 333",2005
+Pen2001,,M.Penalba;J.I.Juaristi;E.Zarate;A.Arnau;P.Bauer,"M.Penalba,J.I.Juaristi,E.Zarate,A.Arnau, and P.Bauer Phys.Rev.A64,012902",2001
+Per2005,,J.Perkowski;W.H.Trzaska;J.Andrzejewski;V.Lyapin;T.Malkiewicz,"J.Perkowski,W.H.Trzaska,J.Andrzejewski,V.Lyapin,T.Malkiewicz Nucl.Instrum.Methods B240, 333",2005
 Per2006,10.1016/j.nimb.2006.03.022,J. Perkowski;J. Andrzejewski;A. Climent-Font;G. Knyazheva;V. Lyapin;T. Malkiewicz;A. Munoz-Martin;W.H. Trzaska,"J.Perkowski,J.Andrzejewski,A.Climent-Font,G.Knyazheva,V.Lyapin, T.Malkiewicz,A.Munoz-Martin,W.H.Trzaska Nucl.Instrum.Methods B 249, 55",2006
 Per2008,10.1016/j.vacuum.2009.01.025,J. Perkowski;J. Andrzejewski;A. Javanainen;W.H. Trzaska;T. Malkiewicz;K. Sobczak;A. Virtanen,"J.Perkowski,J.Andrzejewski,A.Javanainen,T.Malkiewicz,K.Sobczak, A.Virtanen,W.H.Trzaska Acta Phys. Polonica B 39, 507",2008
 Per2009,10.1016/j.vacuum.2009.01.025,J. Perkowski;J. Andrzejewski;A. Javanainen;W.H. Trzaska;T. Malkiewicz;K. Sobczak;A. Virtanen,"J.Perkowski,J.Andrzejewski,A.Javanainen,W.H.Trzaska,T.Malkiewicz, K.Sobczak,A.Virtanen Vacuum 83, S73",2009
@@ -507,13 +512,14 @@ Pi1968,10.1103/PhysRev.173.390,T. Pierce; M. Blann,"T.E.Pierce and M.Blann Phys.
 Pl1966,10.1088/0370-1328/87/3/309,Rita B J Palmer,"R.B.J.Palmer Proc. Phys. Soc. 87,681 (some data are republished in Pl73)",1966
 Pl1973,10.1088/0022-3700/6/2/021,R. B. J.Palmer,"R.B.J.Palmer, J.Phys.B: Atom.Molec.Phys. 6,384 (1973)",1973
 Pl1978,10.1088/0022-3727/11/4/023,R B J Palmer;A Akhavan-Rezayat,"R.B.J.Palmer and A.Akhavan-Rezayat J.Phys.D: Appl.Phys. 11,605",1978
-Pl1980,10.1118/1.595184,Joseph C. McDonald,"R.B.J.Palmer and A.Akhavan-Rezayat, Editors: Booz,Ebert and Hartfield Seventh Symposium on Microdosimetry,Oxford,p.243",1980
+Pl1980,,R.B.J.Palmer;A.Akhavan-Rezayat,"R.B.J.Palmer and A.Akhavan-Rezayat, Editors: Booz,Ebert and Hartfield Seventh Symposium on Microdosimetry,Oxford,p.243",1980
 PM1970,10.1016/0029-554x(70)90829-3,L.E. Porter;L.C. McIntyre;W. Haeberli,"L.E.Porter,L.C.McIntyre,W.Haeberli Nucl.Instrum.Meth. 89,237",1970
 PN1978,10.1016/0029-554x(78)90182-9,L.E. Porter;H. Naylor;J.C. Duder,"L.E.Porter,H.Naylor and J.C.Duder Nucl. Instrum. Methods 155,25",1978
 Pn1996,10.1016/0168-583x(95)01190-0,I. Paulini;W. Heiland;A. Arnau;E. Zarate;P. Bauer,"I.Paulini,W.Heiland,A.Arnau,E.Zarate,P.Bauer Nucl.Instrum.Methods Phys. Res. B118,39",1996
 Po1959,10.1088/0370-1328/76/3/123,D I Porat;K Ramavataram,"D.I.Porat and K.Ramavataram Proc.R.Soc.Lond. A252,394",1959
 Po1960,10.1088/0370-1328/77/1/311,D I Porat;K Ramavataram,"D.I Porat and K.Ramavataram Proc.Phys.Soc. 77,97",1960
 Po1961,10.1088/0370-1328/78/6/304,D I Porat;K Ramavataram,"D.I.Porat and K.Ramavataram, Proc.Phys.Soc. 78,1135 (1961)",1961
+Pon2024,10.1103/PhysRevB.109.165123,E. Ponomareva;E. Pittham;R. Holenák;J. Shams-Latiﬁ;G. Pádraig Kiely;D. Primetzhofer;A. E. Sand,"E. Ponomareva et al, Phys. Rev. B 109, 165123 (2024)",2024
 Por2002,10.1002/qua.10378,L. E. Porter;J. Räisänen;F. Munnik,"L.E.Porter,J.Räisänen and F.Munnik Int.J.Quantum Chem. 90,1368 (contains only a selection of the data published already by Mun99)",2002
 Pp1996,10.1063/1.363277,A. J. M. Plompen;F. Munnik;J. Räisänen;U. Wätjen,"A.J.M.Plompen,F.Munnik,J.Räisänen,U.Wätjen J.Appl.Phys. 80,3147",1996
 Pr1993,10.1103/physreva.47.2913,Jack L. Price;Donald G. Simons;Stanley H. Stern;David J. Land;Noel A. Guardala;James G. Brennan;Michael F. Stumborg,"J.L.Price,D.G.Simons,S.H.Stern,D.J.Land,N.A.Guardala,J.G.Brennan, M.F.Stumborg Phys. Rev. A47, 2913",1993
@@ -569,7 +575,9 @@ Rn1953,10.1103/physrev.92.742,H. K. Reynolds;D. N. F. Dunbar;W. A. Wenzel;W. Wha
 Ro1928,10.1051/anphys/192810100408,Salomon Rosenblum,"S.Rosenblum, Ann.de Phys. 10,408 (1928)",1928
 Ro2017,10.1103/physrevlett.118.103401,D. Roth;B. Bruckner;M. V. Moro;S. Gruber;D. Goebl;J. I. Juaristi;M. Alducin;R. Steinberger;J. Duchoslav;D. Primetzhofer;P. Bauer,"D.Roth, B.Bruckner, M.V.Moro, S.Gruber, D.Goebl, J.I.Juaristi, M.Alducin, R.Steinberger, J.Duchoslav, D.Primetzhofer, and P.Bauer Phys.Rev.Lett. 118, 103401 (2017)",2017
 Ro2017b,10.1103/physrevlett.119.163401,D. Roth;B. Bruckner;G. Undeutsch;V. Paneta;A. I. Mardare;C. L. McGahan;M. Dosmailov;J. I. Juaristi;M. Alducin;J. D. Pedarnig;R. F. Haglund;D. Primetzhofer;P. Bauer,"D.Roth, B.Bruckner,V.Paneta, A.I.Mardare, C.L.McGahan, M.Dosmailov,  J.I.Juaristi, M.Alducin, J.D.Pedarnig, R.F.Haglund Jr., D.Primetzhofer, and P.Bauer Phys.Rev.Lett. 119, 163401 (2017)",2017
+Ro2018,10.1016/j.nimb.2018.09.028,D. Roth; C. E. Celedon; D. Goebl; E. A. Sanchez; B. Bruckner; R. Steinberger; J. Guimpel; N.R. Arista; P. Bauer,"D. Roth et al, Nuclear Instruments and Methods in Physics Research B 437 (2018) 1-7",2018
 Rt2013,10.1016/j.nimb.2012.12.094,D. Roth;D. Goebl;D. Primetzhofer;P. Bauer,"D.Roth,D.Goebl,D.Primetzhofer,P.Bauer Nucl. Instrum. Methods B 317, 61",2013
+rtTDDFT-Mao2024,10.1103/PhysRevB.109.174314,Xiong Ge-Ge; Jin Wen-Qi; Wang Feng; Mao Fei,"G. G. Xiong et al, Phys. Rev. B 109, 174314 (2024)",2024
 Ru1978,10.1016/0029-554x(78)90496-2,N. Rud;J. Bøttiger;P.S. Jensen,"N.Rud,J.Bottiger and P.S.Jensen Nucl.Instrum.Methods Phys.Res. 151,247",1978
 Sa1980a,10.1016/0029-554x(80)90833-2,D.C. Santry;R.D. Werner,"D.C.Santry and R.D.Werner Nucl.Instrum.Methods Phys.Res. 178,523",1980
 Sa1980b,10.1016/0029-554x(80)90834-4,D.C. Santry;R.D. Werner,"D.C.Santry and R.D.Werner Nucl.Instrum.Methods Phys.Res. 178,531",1980
@@ -592,19 +600,18 @@ Se1983,10.1016/0167-5087(83)91088-8,D. Semrad;P. Bauer;F. Aumayr;P. Huber;W. Obe
 Se1986a,10.1016/0168-583x(86)90259-4,D. Semrad;P. Mertens;P. Bauer,"D.Semrad,P.Mertens,P.Bauer, Nucl.Instrum.Methods Phys.Res. B15,86 (1986)",1986
 Se1986b,10.1063/1.1138602,D. Semrad;P. Bauer;K. Eder;W. Obermann,"D.Semrad,P.Bauer,K.Eder and W.Obermann Rev.Sci.Instrum. 57,1368",1986
 Se1987,10.1080/00337578708225337,D. Semrad;N. Ramaseder;L. Palmetshofer;P. Bauer,"D.Semrad,N.Ramaseder,L.Palmetshofer and P.Bauer Radiat.Eff. 104,67",1987
-Se1988,10.4337/9781800377486.flash.sales,Katerina Berezina;Kelly J. Semrad,D.Semrad unpublished,1988
 Se1990a,10.1016/0168-583x(90)90078-9,D. Semrad;Ch. Eppacher;R. Tober,"D.Semrad,C.Eppacher and R.Tober, Nucl.Instrum.Methods Phys.Res. B48,79 (1990) and C.Eppacher, diploma thesis, Univ. of Linz (1989) (Every second point omitted)",1990
-Se1990b,10.31937/ultimacomm.v8i2.946,Wildan Hakim,"D.Semrad, pers. comm.",1990
 Sel2020,10.1103/physreva.102.032812,F. F. Selau;H. Trombini;G. G. Marmitt;A. M. H. de Andrade;J. Morais;P. L. Grande;I. Alencar;M. Vos;R. Heller,"F.F. Selau, H. Trombini, G.G. Marmitt, A.M.H. de Andrade, J. Morais,P.L. Grande, I. Alencar, M. Vos, R. Heller Phys.Rev. A 102, 032812 (2020)",2020
-Sf1978,10.1051/rphysap:0197700120100153900,J.M. Freeman;C.J. Sofield;N.E.B. Cowern;J.P. Mason;R.J. Petty,"C.J.Sofield,N.E.B.Cowern,R.J.Petty,J.M.Freeman and J.P.Mason Phys.Rev.A17,859",1978
+Sf1978,,C.J.Sofield;N.E.B.Cowern;R.J.Petty;J.M.Freeman;J.P.Mason,"C.J.Sofield,N.E.B.Cowern,R.J.Petty,J.M.Freeman and J.P.Mason Phys.Rev.A17,859",1978
 Sg1976,10.1080/00337577608243027,R. Skoog;K. Augenlicht jakobsson,"R.Skoog and K.Augenlicht-Jakobsson Radiat.Eff. 27,143",1976
-SH1973,10.1103/physrevlett.31.407,P. L. Rothwell;Ludwig Katz;Bach Sellers;Frederick A. Hanser,"B.Sellers,F.A.Hanser,J.G.Kelley Phys. Rev. B8, 98",1973
+SH1973,,B.Sellers;F.A.Hanser;J.G.Kelley,"B.Sellers,F.A.Hanser,J.G.Kelley Phys. Rev. B8, 98",1973
 Sh1984,10.1080/00337578408206070,J. Shchuchinsky;C. Peterson,"J.Shchuchinsky and C.Peterson Radiat.Eff. 81,221-229 The heavy ion data given here are identical to those in Sc82",1984
 Sha1973,10.1103/physrevb.8.86,K. C. Shane;G. G. Seaman,"K.C.Shane and G.G.Seaman Phys.Rev.B8,86",1973
 She2000a,10.1016/s0168-583x(99)00569-8,Shen Yixiong;Lu Xiting;Xia Zonghuang;Shen Dingyu;Jiang Dongxing,"Yixiong Shen, Xiting Lu, Zonghuang Xia, Dingyu Shen, Dongxing Jiang Nucl.Instrum.Methods Phys.Res. B160,11",2000
 She2000b,10.1016/s0168-583x(99)00569-8,Shen Yixiong;Lu Xiting;Xia Zonghuang;Shen Dingyu;Jiang Dongxing,"Yixiong Shen, Dongxing Jiang, Xiting Lu, Zonghuang Xia, Dingyu Shen Nucl. Science and Techniques 11, 109",2000
 Shk1996,10.1080/10420159608211547,Shyam Kumar;S. K. Sharma;N. Nath;V. Harikumar;A. P. Pathak;D. Kabiraj;D. K. Avasthi,"Shyam Kumar,S.K.Sharma,N.Nath,V.Harikumar,A.P.Pathak,D.Kabiraj, D.K.Avasthi Rad. Eff. Defects in Sol. 139, 197",1996
 ShL2023,10.1016/j.nme.2023.101491,J. Shams-Latifi;E. Pitthan;P. Mika Wolf;D. Primetzhofer,"Jila Shams-Latifi et al, Nuclear Materials and Energy 36 (2023) 101491",2023
+ShL2024,10.1016/j.radphyschem.2024.112073,Jila Shams-Latiﬁ; Eduardo Pitthan;Daniel Primetzhofer,"J Shams-Latiﬁ, E Pitthan, D Primetzhofer,Radiation Physics and Chemistry 224 (2024) 112073",2024
 Shn1973,10.1063/1.1654504,R. Shnidman;R. M. Tapphorn;Kenneth N. Geller,"R.Shnidman,R.M.Taphorn and K.N.Geller Appl.Phys.Lett.,Vol.22,No10,551",1973
 Shr1999,10.1088/0954-3899/25/1/012,Annu Sharma;Shyam Kumar;S K Sharma;N Nath;V Harikumar;A P Pathak;L N S Prakash Goteti;S K Hui;D K Avasthi,"Annu Sharma,Shyam Kumar,S.K.Sharma,N.Nath,V.Harikumar,A.P.Pathak, L.N.S.Prakash Goteti,S.K.Hui, and D.K.Avasthi J. Physics G: Nucl. Part. Phys. 25, 135",1999
 Shr2000,10.1016/s0168-583x(00)00260-3,Annu Sharma;Shyam Kumar;S.K Sharma;P.K Diwan;N Nath;V.K Mittal;S Ghosh;D.K Avasthi,"Annu Sharma,Shyam Kumar,S.K.Sharma,P.K.Diwan,N.Nath,V.K.Mittal, S.Ghosh, and D.K.Avasthi Nucl.Instrum.Methods Phys.Res. B170,323",2000
@@ -613,8 +620,8 @@ Shr2008,10.1016/j.nimb.2008.07.001,V.Sharma;P.K.Diwan;Pratibha;S.Kumar;S.A.Khan;
 Shr2009,10.1007/s12648-009-0051-x,V.Sharma;P.K.Diwan;Pratibha;T. Sharma;S.Kumar;D.K.Avasthi,"V.Sharma,P.K.Diwan,Pratibha,T. Sharma,S.Kumar,D.K.Avasthi Indian J. Phys. 83, 937",2009
 Si1972,10.1080/00337577208234688,E. I. Strotinin;A. F. Tulinov;A. Fiderkevich;K. S. Shyshkin,"E.I.Sirotinin,A.F.Tulinov,A.Fiderkevich and K.S.Shyshkin, Radiat.Eff. 15,149 (1972)",1972
 Si1984,10.1016/0168-583x(84)90577-9,E.I. Sirotinin;A.F. Tulinov;V.A. Khodyrev;V.N. Mizgulin,"E.I.Sirotinin,A.F.Tulinov,V.A.Khodyrev and V.N.Mizgulin, Nucl.Instrum.Methods Phys.Res. B4,337 (1984)",1984
-Sik2010,10.1088/1741-4326/ab9347,C. Pardanaud;D. Dellasega;M. Passoni;C. Martin;P. Roubin;Y. Addab;C. Arnas;L. Couëdel;M. Minissale;E. Salomon;G. Giacometti;A. Merlen;E. Bernard;R. Mateus;E. Alves;Z. Siketic;I. Bogdanovic Radovic;A. Hakola,"Z.Siketic, I.Bogdanovic Radovic,E.Alves,N.P.Barradas Nucl. Instrum. Methods B 268, 1768",2010
-Sim1976,,D.G.Simons;D.J.Land;J.G.Brennan;M.D.Brown,"D.G.Simons,D.J.Land,J.G.Brennan and M.D.Brown in O.Meyer,G.Linker and F.Käppeler (edts): Ion Beam Surface Layer Analysis, Plenum, N.Y. 863",1976
+Sik2010,,Z.Siketic; I.Bogdanovic Radovic;E.Alves;N.P.Barradas,"Z.Siketic, I.Bogdanovic Radovic,E.Alves,N.P.Barradas Nucl. Instrum. Methods B 268, 1768",2010
+Sil2025,10.1016/j.nimb.2025.165891,Tiago F. Silva;Arilson Silva;Cleber L. Rodrigues;Nemitala Added;Manfredo H. Tabacniks; Flávio Matias;Helio Yoriyaz;Julian M.B. Shorto,"T. F. Silva et al, Nuclear Instruments and Methods in Physics Research B 569 (2025) 165891",2025
 Sim2014,10.1016/j.nimb.2014.02.092,Aliz Simon;Nuno Pessoa Barradas;Andreas Bergmaier;Mandlenkosi Msimanga;Iva Bogdanovic Radovic;Jyrki Räisänen;Timo Sajavaara,"A.Simon,N.P.Barradas,A.Bergmaier,M.Msimanga,I.Bogdanovic Radovic,J.Räisänen,T.Sajavaara Nucl. Instrum. Methods B 332, 341",2014
 Sk1986a,10.1016/0375-9601(86)90350-6,N. Sakamoto;H. Ogawa;N. Shiomi,"N.Sakamoto,H.Ogawa and N.Shiomi Phys.Letters A116,25",1986
 Sk1986b,10.1016/b978-0-12-168561-4.50486-8,N. SHIOMI–TSUDA;N. SAKAMOTO;H. OGAWA;R. Ishiwari,"N.Sakamoto,N.Shiomi,H.Ogawa,R.Ishiwari Nucl.Instrum.Methods Phys.Res. B13, 115",1986
@@ -623,9 +630,10 @@ Sk1991,10.1080/10420159108220612,N. Sakamoto;H. Ogawa;M. Mannami;K. Kimura;Y. Su
 Sk1996,10.1016/0168-583x(95)01529-9,N. Sakamoto;H. Ogawa;N. Shiomi-Tsuda,"N.Sakamoto,H.Ogawa,N.Shiomi-Tsuda Nucl.Instrum.Methods Phys. Res. B115,84",1996
 Sk1998,10.1016/s0168-583x(97)00581-8,N. Sakamoto;H. Ogawa;N. Shiomi-Tsuda;M. Saitoh;U. Kitoba;M. Ota,"N.Sakamoto,H.Ogawa,N.Shiomi-Tsuda,M.Saitoh,U.Kitoba,M.Ota Nucl. Instrum. Methods B135, 107",1998
 Sk2000,10.1016/s0168-583x(99)01088-5,N. Sakamoto;H. Ogawa;H. Tsuchida,"N.Sakamoto,H.Ogawa,H.Tsuchida Nucl. Instrum.Methods Phys.Res. B164-165,250",2000
-Sl1990,10.1127/anthranz/48/1990/385,The Editor,"A.Seilinger Diploma Thesis,University of Linz,1990",1990
+Sl1990,,A.Seilinger,"A.Seilinger Diploma Thesis,University of Linz,1990",1990
 Sl1993,10.1103/physreva.48.4467,A. Schiefermüller;R. Golser;R. Stohl;D. Semrad,"A.Schiefermüller,R.Golser,R.Stohl, and D.Semrad Phys. Rev. A 48, 4467",1993
 SLPA-LM,10.1103/PhysRevA.105.062814,J. P. Peralta;M. Fiori;A. M. P. Mendez;C. C. Montanari,"J. P. Peralta, M. Fiori, A. M. P. Mendez and C. C. Montanari, PHYSICAL REVIEW A 105, 062814 (2022)",2022
+SLPA2023,10.1103/PhysRevA.107.052809,J. P. Peralta;A. M. P. Mendez;D. M. Mitnik;C. C. Montanari,"J. P. Peralta, A. M. P. Mendez, D. M. Mitnik and C. C. Montanari, Phys. Rev. A 107, 052809 (2023)",2023
 Sm1986,10.1016/0168-583x(86)90483-0,N. Shiomi;N. Sakamoto;K. Shima;T. Ishihara;K. Michikawa;S. Nagai;R. Ishiwari,"N.Shiomi and N.Sakamoto,K.Shima,T.Ishihara,K.Michikawa and S.Nagai,R.Ishiwari, Nucl.Instrum.Methods Phys.Res. B13,107 (1986)",1986
 Sm1990,10.1016/0168-583x(90)90074-5,N. Shiomi-Tsuda;N. Sakamoto;H. Ogawa;R. Ishiwari,"N.Shiomi-Tsuda,N.Sakamoto and H.Ogawa, Nucl.Instrum.Methods Phys.Res. B48,61 (1990)",1990
 Sm1994,10.1016/0168-583x(94)95624-3,N. Shiomi-Tsuda;N. Sakamoto;R. Ishiwari,"N.Shiomi-Tsuda,N.Sakamoto,R.Ishiwari, Nucl.Instrum.Methods Phys.Res. B93,391 (1994)",1994
@@ -649,27 +657,29 @@ SRIM2013,10.1016/j.nimb.2010.02.091,J. F. Ziegler;M. D. Ziegler;J. P. Biersack,"
 SS2007,10.1103/physreva.76.040901,L. N. Serkovic;E. A. Sánchez;O. Grizzi;J. C. Eckardt;G. H. Lantschner;N. R. Arista,"L.N.Serkovic,E.A.Sanchez,O.Grizzi,J.C.Eckardt,G.H.Lantschner,N.R.Arista Phys. Rev. A76, 040901(R)",2007
 SS2010,10.1103/physreva.81.022902,L. N. Serkovic Loli;E. A. Sánchez;O. Grizzi;N. R. Arista,"L.N.Serkovic Loli,E.A.Sanchez,O.Grizzi,N.R.Arista Phys. Rev. A81, 022902",2010
 St1958,10.1103/physrev.110.489,P. H. Stelson;F. K. McGowan,"P.H.Stelson and F.K.Mc Gowan, Phys.Rev. 110,489 (1958)",1958
-Str2021,10.1103/physreve.89.039902,Do-Hyun Kim,"P. Strom, D. Primetzhofer Phys. Rev. A 103, 022803 (2021).",2021
+Str2021,10.1103/PhysRevA.103.02280,P. Strom; D. Primetzhofer,"P. Strom, D. Primetzhofer Phys. Rev. A 103, 022803 (2021).",2021
 Sü1991,10.1007/978-3-642-99056-4_54,W. Schüle,"V.Schüle and S.Kalbitzer Z.Phys. A340,219",1991
 Sun2007,10.1016/j.nimb.2006.12.184,G. Sun;M. Döbeli;A.M. Müller;M. Stocker;M. Suter;L. Wacker,"G. Sun, M. Döbeli, A.M. Müller, M. Stocker, M. Suter, L. Wacker Nucl. Instrum. Methods B 256 (2007) 586",2007
 Sw1970,10.1016/0029-554x(70)90308-3,J.B. Swint;R.M. Prior;J.J. Ramirez,"J.B.Swint,R.M.Prior and J.J.Ramirez Nucl.Instrum.Methods Phys.Res. 80,134",1970
 Sx1989,10.1016/0168-583x(89)90669-1,Atul Saxena;K.K. Dwivedi;E. Reichwein;G. Fiedler,"A.Saxena,K.K.Dwivedi,E.Reichwein and G.Fiedler Nucl.Instrum.Methods Phys.Res. B36, 276",1989
 Sx1990,10.1088/0022-3727/23/5/002,A Saxena;K K Dwivedi,"A.Saxena,K.K.Dwivedi J.Phys.D:Appl.Phys 23, 476",1990
+SYA2025,10.1016/j.nimb.2024.165598,ungYup An; Chang Seon Park; Ji Ho Song; Kyungsu Park; Kyu-Sang Yu; Cheolho Jeon; Won Ja Min,"SungYup An et al, Nuclear Instruments and Methods in Physics Research B 559 (2025) 165598",2025
 Sz2009,10.1016/j.nimb.2009.05.036,M. Shimizu;M. Kaneda;T. Hayakawa;H. Tsuchida;A. Itoh,"M.Shimizu, M.Kaneda, T.Hayakawa, H.Tsuchida, A.Itoh Nucl.Instrum.Methods Phys. Res. B 267, 2667 and priv. communication from Dr. Itoh (2009)",2009
 Sz2010,10.1016/j.vacuum.2009.11.019,M. Shimizu;T. Hayakawa;M. Kaneda;H. Tsuchida;A. Itoh,"M.Shimizu, T.Hayakawa, M.Kaneda, H.Tsuchida, A.Itoh Vacuum 84, 1002 and priv. communication from Dr. Itoh (2009)",2010
 Sz2011,10.1016/j.nimb.2010.12.070, M. Shimizu; T. Hayakawa; K. Hisano; M. Kaneda; H. Tsuchida; A. Itoh,"M. Shimizu, T. Hayakawa, K. Hisano, M. Kaneda, H. Tsuchida, A. Itoh, Nucl. Instrum.Methods Phys. Res. B 269, 810-812 (2011)",2011
 Ta1983,10.1016/0029-554x(79)90556-1,T. Takahashi;Y. Awaya;T. Tonuma;H. Kumagai;K. Izumo;A. Hashizume;S. Uchiyama;A. Hitachi,"T.Takahashi,Y.Awaya,T.Tonuma,H.Kumagai,K.Izumo,M.Nishida,A.Hitachi, A.Hashizume,S.Uchiyama and T.Doke Phys.Rev. A27,1360",1983
-Tan1988,10.1016/0042-207x(89)90238-8,Xia Yueyuan;Tan Chunyu;Yang Hong;Sun Xiufang;Liu Jiarui;Zheng Zongshuang;Zhu Peiran,"Chunyu Tan,Yueyuan Xia,Hong Yang and Xiufang Sun Jiariu Liu,Zongshuang Zheng and Peiran Zhu Nucl.Instrum.Methods Phys.Res. B33,142",1988
+Tan1988,,C. Tan;Y. Xia;H. Yang;X.S.J. Liu;Z. Zheng;P. Zhu,"Chunyu Tan,Yueyuan Xia,Hong Yang and Xiufang Sun Jiariu Liu,Zongshuang Zheng and Peiran Zhu Nucl.Instrum.Methods Phys.Res. B33,142",1988
 Tan1998,10.1016/s0168-583x(97)00582-x,Chunyu Tan;Fengxiang Wang;Yueyuan Xia;Zhaolin Zhang;Yuguang Mu;Xiangdong Liu;Jitian Liu,"Chunyu Tan,Fengxiang Wang,Yueyuan Xia,Zhaolin Zhang, Yuguang Mu,Xiangdong Liu, and Jitian Liu Nucl.Instrum.Methods Phys.Res. B135,113",1998
-Te1957,10.1070/pu1961v004n02abeh003340,I N Golovin;L I Artemenkov;G F Bogdanov;D A Panov;V I Pistunovich;N N Semashko,"V.G.Tel'kovskii and V.I.Pistunovich, Sov.Phys.-Dolkady 2,184 (1957)",1957
+Te1957,,V.G.Telkovskii; V.I.Pistunovich,"V.G.Telkovskii and V.I.Pistunovich, Sov.Phys.-Dolkady 2,184 (1957)",1957
 TEC2019,,IAEA,"IMPROVEMENT OF THE RELIABILITY AND ACCURACY OF HEAVY ION BEAM ANALYSIS, IAEA Technical Report Series No. 485, 2019",2019
 TF1978,10.1016/0029-554x(78)90856-x,J.P. Thomas;M. Fallavier,"J.P.Thomas and M.Fallavier Nucl. Instrum. Methods 149, 169",1978
 Th1971,10.1063/1.1659712,D.A.Thompson;W.D.Macintosh,"D.A.Thompson and W.D.Macintosh J. Appl. Phys. 42, 3969",1971
-Th1980,10.1007/s00186-005-0020-x,U. Çakmak;S. Özekici,"D.A.Thomson and W.F.S.Poehlman Nucl.Instrum.Meth. Phys.Res. 168,63",1980
+Th1980,,D.A.Thomson;W.F.S.Poehlman,"D.A.Thomson and W.F.S.Poehlman Nucl.Instrum.Meth. Phys.Res. 168,63",1980
 Th1981,10.1016/0029-554x(81)91047-8,D.A. Thompson;W.F.S. Poehlman;P. Presunka;J.A. Davies,"D.A.Thomson,W.F.S.Poehlman,P.Presunka and J.A.Davies,  Nucl.Instrum.Methods Phys.Res. 191,469 (1981)",1981
 Tk1990,10.1016/0168-583x(90)90578-i,K. Takahiro;F. Nishiyama;T. Yamasaki;Y. Osaka;S. Yamaguchi,"K.Takahiro,F.Nishiyama,T.Yamasaki,Y.Osaka,S.Yamaguchi Nucl.Instrum.Methods Phys.Res. B52,117",1990
 Tm1976,10.5771/9783748930143-233,Tom Thieme,"G.Thieme Vakuumtechnik,25.Jahrgang 1,5",1976
 To2016,10.1016/j.nimb.2016.10.031,D. Torresi;D. Carbone;M. Cavallaro;A. Di Pietro;J.P. Fernández Garcia;P. Figuera;M. Fisichella;M. Lattuada;M. Zadro,"D. Torresi, D. Carbone, M. Cavallaro, A. Di Pietro, J.P. Fernández Garcia,   P. Figuera, M. Fisichella, M. Lattuada, M. Zadro  Nucl.Instrum.Methods B 389-390, 1-4 (2016)",2016
+Tos2015,10.1016/j.nimb.2015.07.114,Mitsuo Tosaki;Eero Rauhala,"Mitsuo Tosaki and Eero Rauhala,Nuclear Instruments and Methods in Physics Research B 360 (2015) 16",2015
 Tp1962,,Ya.A. Teplova;V.S. Nikolaev;I.S. Dmitriev;L.N.Fateeva,"Y.A.Teplova,V.S.Nikolaev,I.S.Dmitriev and L.N.Fateeva Sov.Phys.-JETP 15,31",1962
 Tr1981,10.1016/0029-554x(81)91157-5,P.N. Trehan;B.H. Armitage,"P.N.Trehan and B.H.Armitage Nucl.Instrum.Methods Phys.Res. 179,21",1981
 Tra2019,10.1103/physreva.100.032705,Tuan Thien Tran;Lukas Jablonka;Barbara Bruckner;Stefanie Rund;Dietmar Roth;Mauricio A. Sortica;Peter Bauer;Zhen Zhang;Daniel Primetzhofer,"T T Tran, L Jablonka, B Bruckner, S Rund, D Roth,   M A. Sortica, P Bauer, Z Zhang, D Primetzhofer,  Phys. Rev. A 100, 032705 (2019).",2019
@@ -685,20 +695,20 @@ Tw1982,10.1088/0031-9155/27/4/007,D I Thwaites,"D.I.Thwaites, Phys.Med.Biol. 27,
 Va1972,10.1103/physrevb.6.95,A. Valenzuela;W. Meckbach;A. J. Kestelman;J. C. Eckardt,"A.Valenzuela,W.Meckbach,A.J.Kestelman and J.C.Eckardt, Phys.Rev. B6,95 (1972)",1972
 Ve1978,10.1007/bf01221768,G. D. Ved'manov;F. G. Neshov;A. A. Puzanov;A. R. Urmanov,"G.D.Ved'manov,F.G.Neshov,A.A.Puzanov,A.R.Urmanov Atomnaya Energiya 45, 285. Translation: p. 989",1978
 Ve1979,10.1007/bf00891570,G. D. Ved'manov;F. F. Gavrilov;V. N. Mizgulin;F. G. Neshov;A. A. Puzanov;A. R. Urmanov,"G.D.Ved'manov,F.F.Gavrilov,V.N.Mizgulin,F.G.Neshov, A.A.Puzanov,A.R.Urmanov, Izv. Vyss. Ucheb. Zav., Fiz. (USSR) 22,111; Trans. in Sov.Phys.J.22,668 (1979)",1979
-Vi1962,10.1051/jphysrad:01962002304024100,A.B. Datzeff,"J.B.Vial, C.R.Acad.Sci. 254,3842 (1962)",1962
+Vi1962,,.B. Vial; C.R. Acad,"J.B.Vial, C.R.Acad, Sci. 254,3842 (1962)",1962
 Vk1997,10.1016/S0168-583X(96)00823-3,K.Väkeväinen,"K.Väkeväinen, Nucl.Instrum.Meth. Phys.Res. B122,187",1997
 Vok2013,10.1140/epjd/e2013-40095-4,Christof Vockenhuber;Jens Jensen;Jaakko Julin;Heikki Kettunen;Mikko Laitinen;Mikko Rossi;Timo Sajavaara;Orkhan Osmani;Andreas Schinner;Peter Sigmund;Harry J. Whitlow,"Ch.Vockenhuber,J.Jensen,J.Juulin,H.Kettunen,M.Laitinen,M.Rossi, T.Sajavaara,O.Osmani,A.Schinner,P.Sigmund,H.J.Whitlow Eur. Phys. J. D 67, 145",2013
 Vok2017,10.1016/j.nimb.2016.11.030,C. Vockenhuber;K. Arstila;J. Jensen;J. Julin;H. Kettunen;M. Laitinen;M. Rossi;T. Sajavaara;M. Thöni;H.J. Whitlow,"C. Vockenhuber, K. Arstila, J. Jensen, J. Julin, H. Kettunen,  M. Laitinen, M. Rossi, T. Sajavaara, M. Thöni, H.J. Whitlow Nucl.Instrum.Meth. Phys.Res. B 391, 20-26 (2017).",2017
-Vs1993,10.1088/0953-8984/5/33a/102,J E Valdes;G Martinez Tamayo;N R Arista;G H Lantschner;J C Eckardt,"J.E.Valdes,G.Martinez Tamayo,G.H.Lantschner,J.C.Eckardt,N.R.Arista Nucl.Instrum.Meth. Phys.Res. 73,313",1993
+Vom2025,10.1016/j.nimb.2025.165772,Kevin Vomschee; Radek Holeňák; Thanush Sivagnanalingam; Eleni Ntemou; Daniel Primetzhofer,"K. Vomschee et al, Nuclear Instruments and Methods in Physics Research B 566 (2025) 165772",2025
+Vs1993,10.1016/0168-583X(93)95744-P,J E Valdes;G Martinez Tamayo;G H Lantschner;J C Eckardt;N R Arista,"J.E.Valdes,G.Martinez Tamayo,G.H.Lantschner,J.C.Eckardt,N.R.Arista Nucl.Instrum.Meth. Phys.Res. B 73,313",1993
 Vs1994,10.1103/physreva.49.1083,J. E. Valdés;J. C. Eckardt;G. H. Lantschner;N. R. Arista,"J.E.Valdes,J.C.Eckardt,G.H.Lantschner,N.R.Arista Phys. Rev. A 49, 1083",1994
 Vs2000,10.1016/s0168-583x(99)01090-3,J.E. Valdés;C. Agurto;F. Ortega;P. Vargas;R. Labbé;N.R. Arista,"J.E.Valdes,C.Agurto,F.Ortega,P.Vargas,R.Labbé,N.R.Arista Nucl.Instrum.Meth. Phys.Res. B164-165,268",2000
-Vs2016,10.1080/10420150.2015.1131687,Jorge E. Valdés;Patricio Vargas;Vladimir A. Esaulov,"J.E.Valdes,P.Vargas, V. Esaulov Rad.Ef&Def. Solids 171, 60-76 (2016)",2016
 Wa1949,10.1103/physrev.76.1759,S. D. Warshaw,"S.D.Warshaw, Phys.Rev. 76,1759 (1949)",1949
 Wc1994a,10.1063/1.356273,W. E. Wallace;J. B. Rothman;R. J. Composto,"W.E.Wallace,J.B.Rothman,R.J.Composto J.Appl.Phys. 75,2312",1994
 Wc1994b,10.1016/0168-583X(94)95694-4,W. E. Wallace;J. B. Rothman;R. J. Composto,"W.E.Wallace,J.B.Rothman,R.J.Composto Nucl.Instrum.Meth. Phys.Res. B84,1",1994
 WD2006,10.1016/j.nimb.2006.07.019,T.D.M. Weijers-Dall;H. Timmers;K. Stenström;P. Persson;A. Pergjegjaj;X. Wang;M. Graczyk;T. Osipowicz;M.Q. Ren;D.J. O’Connor;H.J. Whitlow,"T.D.M.Weijers-Dall,H.Timmers,K.Stenström,P.Persson,A.Pergjegjaj, X.Wang,M.Graczyk,T.Osipowicz,M.Q.Ren,D.J.O'Connor,H.J.Whitlow Nucl.Instrum.Meth. B251, 352",2006
 We1953,10.1103/physrev.91.289,Peter K. Weyl,"P.K.Weyl Phys.Rev. 91,289",1953
-Wei2000,10.1103/physrevlett.38.1211,R. Hosemann;A. Müller;D. Weick,"H.Weick et al. Nucl.Instrum.Methods Phys.Res. B164-165, 168 and H.Weick, dissertation, Univ. of Giessen, rev. version, 13 Oct 2000",2000
+Wei2000,,H. Weick,"H.Weick et al. Nucl.Instrum.Methods Phys.Res. B164-165, 168 and H.Weick, dissertation, Univ. of Giessen, rev. version, 13 Oct 2000",2000
 Wh1967,10.1063/1.1710188,W. White;R. M. Mueller,"W.White and R.M.Mueller J.Appl.Phys. 38,3660",1967
 Wh1969,10.1103/PhysRev.187.499,W.White; R.M.Mueller,"W.White and R.M.Mueller Phys.Rev. 187,499",1969
 Whl2002a,10.1016/s0168-583x(01)01301-5,Harry J. Whitlow;Heiko Timmers;Robert G. Elliman;Tessica D.M. Weijers;Yanwen Zhang;Juan Uribastera;D. John O'Connor,"H.J.Whitlow,H.Timmers,R.G.Elliman,T.D.M.Weijers,Y.Zhang, J.Uribastera,D.J.O'Connor Nucl.Instrum.Meth. Phys.Res. B190, 84",2002
@@ -709,6 +719,7 @@ Wk1979,10.1088/0031-9155/24/3/003,M J Whillock;A A Edwards,"M.J.Whillock and A.A
 Wl1948,10.1038/ncpgasthep1199,C Mel Wilcox,"H.A.Wilcox Phys.Rev. 74,1743",1948
 Wn1973,10.1097/00004032-197307000-00008,F. Wenger;R. P. Gardner;K. Verghese,"F.Wenger,R.P.Gardner,K.Verghese Health Physics 25, 67",1973
 Wo1963,10.1103/physrev.129.2591,R. L. Wolke;W. N. Bishop;E. Eichler;N. R. Johnson;G. D. O'kelley,"R.L.Wolke,W.N.Bishop,E.Eichler,N.R.Johnson and G.D.O'Kelley Phys.Rev. 129,2591",1963
+Wol2024,10.1016/j.nimb.2024.165471,P. M. Wolf;E. Pittham;D. Primetzhofer,"P. M. Wolf, E. Pittham, D. Primetzhofer,Nuclear Instruments and Methods in Physics Research B 555 (2024) 165471",2024
 Wr1972,10.1139/p72-305,D. Ward;R. L. Graham;J. S. Geiger,"D.Ward,R.L.Graham and J.S.Geiger Can.J.Phys. 50,2302",1972
 Wr1979,10.1139/p79-092,D. Ward;H. R. Andrews;I. V. Mitchell;W. N. Lennard;R. B. Walker;N. Rud,"D.Ward,H.R.Andrews,I.R.Mitchell,W.N.Lennard,R.B.Walker and N.Rud Can.J.Phys. 57,645 (1979)",1979
 Wre1994,10.1103/PhysRevC.49.1205,P. R. Wrean; C. R. Brune; R. W. Kavanagh,"P. R. Wrean, C. R. Brune, R. W. Kavanagh, Phys. Rev. C 49, 1205-1213, 1994",1994
@@ -717,13 +728,13 @@ Ya1983,10.1002/pssb.2221160153,S. V. Yalyshko;R. Wedell,"S.V.Yalyshko and R.Wede
 Yo1956,10.1063/1.88524,J. J. Young;J. N. Zemel,"J.R.Young J.Appl.Phys. 27,1",1956
 YuH2007,10.1016/j.nimb.2007.04.002,Y.C. Yu;J.Y. Hsu;K.M. Chen,"Y.C.Yu, J.Y.Hsu, K.M.Chen Nucl. Instrum. Methods B 261 (2007) 1184",2007
 YuH2008,10.1016/j.nimb.2007.12.099,Y.C. Yu;J.Y. Hsu;K.M. Chen;C.H. Wang,"Y.C.Yu, J.Y.Hsu, K.M.Chen, C.H. Wang Nucl. Instrum. Methods B 266, 1166",2008
-Za1967,10.1070/pu1965v007n06abeh003686,A A Vedenov,"E.M.Zarutskii Sov.Phys.-Solid State 9,1172",1967
+Za1967,,E.M.Zarutskii,"E.M.Zarutskii Sov.Phys.-Solid State 9,1172",1967
 Zad2007,10.1016/j.nimb.2007.02.078,M. Zadro;A. Di Pietro;P. Figuera;M. Fisichella;M. Lattuada;A. Maggio;F. Pansini;M. Papa;V. Scuderi;O.Yu. Goryunov;V.V. Ostashko,"M. Zadro, A.Di Pietro, P. Figuera, M. Fisichella, M. Lattuada, A. Maggio, F. Pansini, M. Papa, V. Scuderi, O.Yu. Goryunov, V.V. Ostashko Nucl. Instrum. Methods B 259 (2007) 836",2007
-Zg1972,10.1063/1.1654388,M.H. Brodsky;D. Kaplan;J.F. Ziegler,"J.F.Ziegler and M.H.Brodsky J.Appl.Phys. 44, 188",1972
+Zg1972,,J.F. Ziegler;M.H. Brodsky,"J.F.Ziegler and M.H.Brodsky J.Appl.Phys. 44, 188",1972
 Zh1998a,10.1016/s0169-4332(03)00936-x,Xiting Lu;Tao Zheng;Zonghuang Xia;Dingyu Shen,"Tao Zheng,Xiting Lu,Zonghuang Xia,Dingyu Shen Phys.Rev. B57,10213",1998
 Zh1998b,10.1016/s0168-583x(97)00585-5,Zheng Tao;Lu Xiting;Zhai Yongjun;Xia Zonghuang;Shen Dingyu;Wang Xuemei;Zhao Qiang,"Tao Zheng,Xiting Lu,Yongjun Zhai,Zonghuang Xia,Dingyu Shen, Xuemei Wang,Qiang Zhao, Nucl.Instrum.Methods Phys.Res. B135,169 (1998)",1998
 Zha2002b,10.1016/s0168-583x(02)01246-6,Y. Zhang,"Yanwen Zhang, Nucl.Instrum.Methods Phys.Res. B 196, 1-15",2002
-Zha2003b,10.1103/physrevb.82.075202,Yanwen Zhang;William J. Weber,"Yanwen Zhang and W.J.Weber Phys. Rev. B68, 235317",2003
+Zha2003b,10.1103/PhysRevB.68.23531,Y. Zhang;W. J. Weber,"Yanwen Zhang and W.J.Weber Phys. Rev. B68, 235317",2003
 Zha2003c,10.1063/1.1604473,Yanwen Zhang;William J. Weber,"Yanwen Zhang and W.J.Weber, Appl. Phys. Lett. 83, 1665",2003
 Zha2004a,10.1016/j.nimb.2003.09.005,Yanwen Zhang;William J. Weber;Harry J. Whitlow,"Yanwen Zhang,W.J.Weber,H.J.Whitlow Nucl.Instrum.Methods Phys.Res. B215, 48, and personal communication from Y.Zhang, 14 Nov., 2003",2004
 Zha2004b,10.1103/PhysRevB.69.205201,Yanwen Zhang;W.J.Weber;C.M.Wang,"Yanwen Zhang,W.J.Weber,C.M.Wang Phys.Rev. B69, 205201 (Data for Cr, Mn, Co, and Cu ions are already in Zha03b)",2004
