@@ -2,7 +2,16 @@ from pathlib import Path
 
 from .api import (
     clear_stopping_data_cache,
+    get_stopping_power_compound_targets,
+    get_stopping_power_compound_targets_for_target,
     get_stopping_power_data,
+    get_stopping_power_elemental_targets,
+    get_stopping_power_elemental_targets_for_target,
+    get_stopping_power_for_ion,
+    get_stopping_power_for_ion_compound_targets,
+    get_stopping_power_for_ion_elemental_targets,
+    get_stopping_power_for_ion_target,
+    get_stopping_power_for_target,
     get_stopping_power_references,
 )
 from .utils import (
@@ -32,5 +41,14 @@ __all__ = [
     "get_stopping_power_data",
     "get_stopping_power_references",
     "clear_stopping_data_cache",
+    "get_stopping_power_for_ion",
+    "get_stopping_power_for_target",
+    "get_stopping_power_for_ion_target",
+    "get_stopping_power_elemental_targets",
+    "get_stopping_power_compound_targets",
+    "get_stopping_power_for_ion_elemental_targets",
+    "get_stopping_power_for_ion_compound_targets",
+    "get_stopping_power_elemental_targets_for_target",
+    "get_stopping_power_compound_targets_for_target",
     "DATA_PATH",
 ]
