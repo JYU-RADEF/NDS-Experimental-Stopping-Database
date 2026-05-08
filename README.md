@@ -7,10 +7,10 @@ Python package for the Experimental Stopping Database. This package provides acc
 Use the bundled API to load the packaged CSV files once and reuse them from memory:
 
 ```python
-from nds_dedx_database import get_stopping_power_data, get_stopping_power_references
+from nds_dedx_database import get_bundled_df, get_references
 
-stopping = get_stopping_power_data()
-references = get_stopping_power_references()
+stopping = get_bundled_df()
+references = get_references()
 ```
 
 Both functions return pandas DataFrames. By default they return defensive copies of the cached data, so downstream code can mutate the result without affecting later calls.
@@ -23,38 +23,30 @@ The API provides convenient functions to filter the stopping power data by speci
 
 ```python
 from nds_dedx_database import (
-    get_stopping_power_for_ion,
-    get_stopping_power_for_target,
-    get_stopping_power_for_ion_target,
-    get_stopping_power_elemental_targets,
-    get_stopping_power_compound_targets,
-    get_stopping_power_for_ion_elemental_targets,
-    get_stopping_power_for_ion_compound_targets,
+    get_data_for_ion,
+    get_data_for_target,
+    get_data_for_ion_target,
+    get_data_elemental_targets,
+    get_data_compound_targets,
 )
 
 # Single ion across all targets
-h_stopping = get_stopping_power_for_ion("H")
+h_stopping = get_data_for_ion("H")
 
 # Single target across all ions
-cu_stopping = get_stopping_power_for_target("Cu")
+cu_stopping = get_data_for_target("Cu")
 
 # Specific ion-target pair
-h_in_cu = get_stopping_power_for_ion_target("H", "Cu")
+h_in_cu = get_data_for_ion_target("H", "Cu")
 
 # All ions in elemental targets only
-elemental = get_stopping_power_elemental_targets()
+elemental = get_data_elemental_targets()
 
 # All ions in compound targets only
-compounds = get_stopping_power_compound_targets()
-
-# Specific ion in elemental targets only
-h_elemental = get_stopping_power_for_ion_elemental_targets("H")
-
-# Specific ion in compound targets only
-h_compounds = get_stopping_power_for_ion_compound_targets("H")
+compounds = get_data_compound_targets()
 ```
 
-All filtering functions return pandas DataFrames and support the same `copy` parameter as the base functions.
+All filtering functions return pandas DataFrames and support the same `copy` parameter as the base functions. Ion and target arguments accept both element symbols (strings) and atomic numbers (integers).
 
 ## Utilities
 

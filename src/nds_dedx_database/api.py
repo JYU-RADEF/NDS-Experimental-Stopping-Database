@@ -4,18 +4,123 @@ from functools import lru_cache
 from pathlib import Path
 
 import pandas as pd  # type: ignore
+import polars as pl  # type: ignore
 
 from . import utils
 
 DATA_PATH = Path(__file__).parent / "package_data" / "latest"
+DEDX_CSV = DATA_PATH / "StoppingPower.csv"
+REFS_CSV = DATA_PATH / "StoppingPower_refs.csv"
 
 
 @lru_cache(maxsize=1)
-def _read_csv(filename: str) -> pd.DataFrame:
-    return pd.read_csv(DATA_PATH / filename, low_memory=False)
+def _read_csv_lazy(filename: str | Path = DEDX_CSV) -> pl.LazyFrame:
+    """Read bundled CSV as a lazy frame for deferred execution.
+
+    Returns a Polars LazyFrame that does not materialize data until collect()
+    is called, allowing filters to be pushed down efficiently.
+    """
+    if filename == DEDX_CSV.name:
+        return pl.scan_csv(DATA_PATH / filename)
+    elif filename == REFS_CSV.name:
+        return pl.scan_csv(DATA_PATH / filename)
+    else:
+        raise ValueError(f"Unknown filename: {filename}")
 
 
-def get_stopping_power_data(copy: bool = True) -> pd.DataFrame:
+@lru_cache(maxsize=128)
+def _normalize_target(target: str | int) -> str:
+    """Normalize target input. Integer -> element symbol; strings left as-is."""
+    if isinstance(target, int):
+        try:
+            return utils.get_symbol(target)
+        except Exception as exc:
+            raise ValueError(f"Invalid atomic number for target: {target}") from exc
+
+    if isinstance(target, str):
+        target = target.strip()
+        try:
+            return utils.get_symbol(target)
+        except Exception:
+            pass  # Not an element symbol, return as-is
+        if target.isdigit():
+            return _normalize_target(int(target))
+        return target
+
+
+def get_data(
+    ion: str | int | None = None,
+    target: str | int | None = None,
+    target_type: str = "any",
+    copy: bool = True,
+    harmonize_units: bool = True,
+) -> pd.DataFrame:
+    """Unified accessor for stopping power data.
+
+    Builds a lazy filter chain and only materializes data after filtering.
+
+    Parameters
+    ----------
+    ion : str|int|None
+        Projectile name (symbol or full name) or atomic number. If None,
+        data for all ions is returned.
+    target : str|int|None
+        Target name (element symbol, full name, or formula) or atomic number.
+        If None, data for all targets is returned.
+    target_type : {'any', 'elemental', 'compound'}
+        Filter targets by type when requested.
+    copy : bool
+        Return a defensive copy when True (default).
+    """
+    if target_type not in {"any", "elemental", "compound"}:
+        raise ValueError("target_type must be one of 'any', 'elemental', 'compound'")
+
+    # Start with lazy frame (no data materialization yet)
+    lazy_df = _read_csv_lazy("StoppingPower.csv")
+
+    # Apply ion filter lazily
+    if ion is not None:
+        ion_sym = utils.get_symbol(ion)
+        lazy_df = lazy_df.filter(pl.col("projectile_name") == ion_sym)
+
+    # Apply target filter lazily
+    if target is not None:
+        target_val = _normalize_target(target)
+        lazy_df = lazy_df.filter(pl.col("target_name") == target_val)
+
+    # Collect and convert to pandas only after all lazy filters are defined
+    # This is where the actual query execution happens
+    data = pd.DataFrame(lazy_df.collect().to_dicts())
+
+    # Validate results after basic filters but before target_type filtering
+    if data.empty:
+        if ion is not None and target is not None:
+            raise ValueError(
+                f"Ion-target pair ('{ion}', '{target}') not found in database."
+            )
+        if ion is not None:
+            raise ValueError(f"Ion '{ion}' not found in database.")
+        if target is not None:
+            raise ValueError(f"Target '{target}' not found in database.")
+
+    # Apply target_type filter (requires Python-based is_compound check)
+    if target_type == "elemental":
+        is_elemental = data["target_name"].apply(
+            lambda name: not utils.is_compound(name)
+        )
+        data = data[is_elemental]
+    elif target_type == "compound":
+        is_compound_mask = data["target_name"].apply(utils.is_compound)
+        data = data[is_compound_mask]
+
+    if harmonize_units:
+        data = utils.harmonize_dedx_units(data)
+        data = utils.harmonize_energy_units(data)
+
+    return data.copy(deep=True) if copy else data
+
+
+def get_bundled_df(copy: bool = True) -> pd.DataFrame:
     """Return the bundled stopping power table.
 
     Parameters
@@ -25,14 +130,14 @@ def get_stopping_power_data(copy: bool = True) -> pd.DataFrame:
         you want to reuse the in-memory cached object directly.
     """
 
-    data = _read_csv("StoppingPower.csv")
+    data = _read_csv_lazy("StoppingPower.csv").collect().to_pandas()
     return data.copy(deep=True) if copy else data
 
 
-def get_stopping_power_references(copy: bool = True) -> pd.DataFrame:
+def get_references(copy: bool = True) -> pd.DataFrame:
     """Return the bundled stopping power reference table."""
 
-    data = _read_csv("StoppingPower_refs.csv")
+    data = _read_csv_lazy("StoppingPower_refs.csv").collect().to_pandas()
     return data.copy(deep=True) if copy else data
 
 
@@ -43,16 +148,20 @@ def clear_stopping_data_cache() -> None:
     swapped out in-process.
     """
 
-    _read_csv.cache_clear()
+    _read_csv_lazy.cache_clear()
 
 
-def get_stopping_power_for_ion(ion: str, copy: bool = True) -> pd.DataFrame:
+def get_data_for_ion(
+    ion: str | int, target_type: str = "any", copy: bool = True
+) -> pd.DataFrame:
     """Return stopping power data for a specific projectile (ion) across all targets.
 
     Parameters
     ----------
-    ion : str
-        Name of the projectile (e.g., "H", "He", "C", etc.).
+    ion : str | int
+        Name or atomic number of the projectile (e.g., "H", "He", "C", etc.).
+    target_type : str, default "any"
+        Filter targets by type when requested. Must be one of "any", "elemental", or "compound".
     copy : bool, default True
         Return a defensive copy of the cached DataFrame. Set to False when
         you want to reuse the in-memory cached object directly.
@@ -69,28 +178,19 @@ def get_stopping_power_for_ion(ion: str, copy: bool = True) -> pd.DataFrame:
 
     Examples
     --------
-    >>> h_stopping = get_stopping_power_for_ion("H")
-    >>> he_stopping = get_stopping_power_for_ion("He")
+    >>> h_stopping = get_data_for_ion("H")
+    >>> he_stopping = get_data_for_ion("He")
     """
-    data = _read_csv("StoppingPower.csv")
-    filtered = data[data["projectile_name"] == ion]
-
-    if filtered.empty:
-        raise ValueError(
-            f"Ion '{ion}' not found in database. "
-            f"Available ions: {sorted(data['projectile_name'].unique().tolist())}"
-        )
-
-    return filtered.copy(deep=True) if copy else filtered
+    return get_data(ion=ion, target_type=target_type, copy=copy)
 
 
-def get_stopping_power_for_target(target: str, copy: bool = True) -> pd.DataFrame:
+def get_data_for_target(target: str | int, copy: bool = True) -> pd.DataFrame:
     """Return stopping power data for a specific target across all projectiles.
 
     Parameters
     ----------
-    target : str
-        Name of the target material (e.g., "Cu", "CuO", "Al2O3", etc.).
+    target : str | int
+        Name or atomic number of the target material (e.g., "Cu", "CuO", "Al2O3", etc.).
     copy : bool, default True
         Return a defensive copy of the cached DataFrame. Set to False when
         you want to reuse the in-memory cached object directly.
@@ -107,32 +207,23 @@ def get_stopping_power_for_target(target: str, copy: bool = True) -> pd.DataFram
 
     Examples
     --------
-    >>> cu_stopping = get_stopping_power_for_target("Cu")
-    >>> sio2_stopping = get_stopping_power_for_target("SiO2")
+    >>> cu_stopping = get_data_for_target("Cu")
+    >>> sio2_stopping = get_data_for_target("SiO2")
     """
-    data = _read_csv("StoppingPower.csv")
-    filtered = data[data["target_name"] == target]
-
-    if filtered.empty:
-        raise ValueError(
-            f"Target '{target}' not found in database. "
-            f"Available targets: {sorted(data['target_name'].unique().tolist())}"
-        )
-
-    return filtered.copy(deep=True) if copy else filtered
+    return get_data(target=target, copy=copy)
 
 
-def get_stopping_power_for_ion_target(
-    ion: str, target: str, copy: bool = True
+def get_data_for_ion_target(
+    ion: str | int, target: str | int, copy: bool = True
 ) -> pd.DataFrame:
     """Return stopping power data for a specific ion-target pair.
 
     Parameters
     ----------
-    ion : str
-        Name of the projectile (e.g., "H", "He", "C", etc.).
-    target : str
-        Name of the target material (e.g., "Cu", "CuO", "Al2O3", etc.).
+    ion : str | int
+        Name or atomic number of the projectile (e.g., "H", "He", "C", etc.).
+    target : str | int
+        Name or atomic number of the target material (e.g., "Cu", "CuO", "Al2O3", etc.).
     copy : bool, default True
         Return a defensive copy of the cached DataFrame. Set to False when
         you want to reuse the in-memory cached object directly.
@@ -149,21 +240,13 @@ def get_stopping_power_for_ion_target(
 
     Examples
     --------
-    >>> h_in_cu = get_stopping_power_for_ion_target("H", "Cu")
-    >>> he_in_sio2 = get_stopping_power_for_ion_target("He", "SiO2")
+    >>> h_in_cu = get_data_ion_target("H", "Cu")
+    >>> he_in_sio2 = get_data_ion_target("He", "SiO2")
     """
-    data = _read_csv("StoppingPower.csv")
-    filtered = data[(data["projectile_name"] == ion) & (data["target_name"] == target)]
-
-    if filtered.empty:
-        raise ValueError(
-            f"Ion-target pair ('{ion}', '{target}') not found in database."
-        )
-
-    return filtered.copy(deep=True) if copy else filtered
+    return get_data(ion=ion, target=target, copy=copy)
 
 
-def get_stopping_power_elemental_targets(copy: bool = True) -> pd.DataFrame:
+def get_data_elemental_targets(copy: bool = True) -> pd.DataFrame:
     """Return stopping power data for all ions in elemental targets only.
 
     Parameters
@@ -181,14 +264,10 @@ def get_stopping_power_elemental_targets(copy: bool = True) -> pd.DataFrame:
     --------
     >>> elemental_stopping = get_stopping_power_elemental_targets()
     """
-    data = _read_csv("StoppingPower.csv")
-    is_elemental = data["target_name"].apply(lambda name: not utils.is_compound(name))
-    filtered = data[is_elemental]
-
-    return filtered.copy(deep=True) if copy else filtered
+    return get_data(target_type="elemental", copy=copy)
 
 
-def get_stopping_power_compound_targets(copy: bool = True) -> pd.DataFrame:
+def get_data_compound_targets(copy: bool = True) -> pd.DataFrame:
     """Return stopping power data for all ions in compound targets only.
 
     Parameters
@@ -204,180 +283,19 @@ def get_stopping_power_compound_targets(copy: bool = True) -> pd.DataFrame:
 
     Examples
     --------
-    >>> compound_stopping = get_stopping_power_compound_targets()
+    >>> compound_stopping = get_data_compound_targets()
     """
-    data = _read_csv("StoppingPower.csv")
-    is_compound = data["target_name"].apply(utils.is_compound)
-    filtered = data[is_compound]
-
-    return filtered.copy(deep=True) if copy else filtered
-
-
-def get_stopping_power_for_ion_elemental_targets(
-    ion: str, copy: bool = True
-) -> pd.DataFrame:
-    """Return stopping power data for a specific ion in elemental targets only.
-
-    Parameters
-    ----------
-    ion : str
-        Name of the projectile (e.g., "H", "He", "C", etc.).
-    copy : bool, default True
-        Return a defensive copy of the cached DataFrame. Set to False when
-        you want to reuse the in-memory cached object directly.
-
-    Returns
-    -------
-    pd.DataFrame
-        Filtered stopping power data for the specified ion in elemental targets.
-
-    Raises
-    ------
-    ValueError
-        If the specified ion is not found in elemental targets.
-
-    Examples
-    --------
-    >>> h_elemental = get_stopping_power_for_ion_elemental_targets("H")
-    """
-    data = _read_csv("StoppingPower.csv")
-    is_elemental = data["target_name"].apply(lambda name: not utils.is_compound(name))
-    filtered = data[(data["projectile_name"] == ion) & is_elemental]
-
-    if filtered.empty:
-        raise ValueError(f"Ion '{ion}' not found in elemental targets in database.")
-
-    return filtered.copy(deep=True) if copy else filtered
-
-
-def get_stopping_power_for_ion_compound_targets(
-    ion: str, copy: bool = True
-) -> pd.DataFrame:
-    """Return stopping power data for a specific ion in compound targets only.
-
-    Parameters
-    ----------
-    ion : str
-        Name of the projectile (e.g., "H", "He", "C", etc.).
-    copy : bool, default True
-        Return a defensive copy of the cached DataFrame. Set to False when
-        you want to reuse the in-memory cached object directly.
-
-    Returns
-    -------
-    pd.DataFrame
-        Filtered stopping power data for the specified ion in compound targets.
-
-    Raises
-    ------
-    ValueError
-        If the specified ion is not found in compound targets.
-
-    Examples
-    --------
-    >>> h_compound = get_stopping_power_for_ion_compound_targets("H")
-    """
-    data = _read_csv("StoppingPower.csv")
-    is_compound = data["target_name"].apply(utils.is_compound)
-    filtered = data[(data["projectile_name"] == ion) & is_compound]
-
-    if filtered.empty:
-        raise ValueError(f"Ion '{ion}' not found in compound targets in database.")
-
-    return filtered.copy(deep=True) if copy else filtered
-
-
-def get_stopping_power_elemental_targets_for_target(
-    target: str, copy: bool = True
-) -> pd.DataFrame:
-    """Return stopping power data for a specific elemental target across all ions.
-
-    Parameters
-    ----------
-    target : str
-        Name of the elemental target (e.g., "Cu", "Al", "Au", etc.).
-    copy : bool, default True
-        Return a defensive copy of the cached DataFrame. Set to False when
-        you want to reuse the in-memory cached object directly.
-
-    Returns
-    -------
-    pd.DataFrame
-        Filtered stopping power data for the specified elemental target.
-
-    Raises
-    ------
-    ValueError
-        If the specified target is not found or is not elemental.
-
-    Examples
-    --------
-    >>> cu_stopping = get_stopping_power_elemental_targets_for_target("Cu")
-    """
-    data = _read_csv("StoppingPower.csv")
-
-    if utils.is_compound(target):
-        raise ValueError(f"Target '{target}' is a compound, not an element.")
-
-    filtered = data[data["target_name"] == target]
-
-    if filtered.empty:
-        raise ValueError(f"Elemental target '{target}' not found in database.")
-
-    return filtered.copy(deep=True) if copy else filtered
-
-
-def get_stopping_power_compound_targets_for_target(
-    target: str, copy: bool = True
-) -> pd.DataFrame:
-    """Return stopping power data for a specific compound target across all ions.
-
-    Parameters
-    ----------
-    target : str
-        Name of the compound target (e.g., "SiO2", "Al2O3", "CuO", etc.).
-    copy : bool, default True
-        Return a defensive copy of the cached DataFrame. Set to False when
-        you want to reuse the in-memory cached object directly.
-
-    Returns
-    -------
-    pd.DataFrame
-        Filtered stopping power data for the specified compound target.
-
-    Raises
-    ------
-    ValueError
-        If the specified target is not found or is not a compound.
-
-    Examples
-    --------
-    >>> sio2_stopping = get_stopping_power_compound_targets_for_target("SiO2")
-    """
-    data = _read_csv("StoppingPower.csv")
-
-    if not utils.is_compound(target):
-        raise ValueError(f"Target '{target}' is not a compound.")
-
-    filtered = data[data["target_name"] == target]
-
-    if filtered.empty:
-        raise ValueError(f"Compound target '{target}' not found in database.")
-
-    return filtered.copy(deep=True) if copy else filtered
+    return get_data(target_type="compound", copy=copy)
 
 
 __all__ = [
-    "get_stopping_power_data",
-    "get_stopping_power_references",
+    "get_bundled_df",
+    "get_references",
     "clear_stopping_data_cache",
-    "get_stopping_power_for_ion",
-    "get_stopping_power_for_target",
-    "get_stopping_power_for_ion_target",
-    "get_stopping_power_elemental_targets",
-    "get_stopping_power_compound_targets",
-    "get_stopping_power_for_ion_elemental_targets",
-    "get_stopping_power_for_ion_compound_targets",
-    "get_stopping_power_elemental_targets_for_target",
-    "get_stopping_power_compound_targets_for_target",
+    "get_data_for_ion",
+    "get_data_for_target",
+    "get_data_for_ion_target",
+    "get_data_elemental_targets",
+    "get_data_compound_targets",
+    "get_data",
 ]

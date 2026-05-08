@@ -1,6 +1,7 @@
 # Utility functions for harmonizing the data
 
 import logging
+from functools import lru_cache
 from typing import Callable, Optional, cast
 
 import pandas as pd  # type: ignore
@@ -11,14 +12,66 @@ from pyparsing import ParseException
 logger = logging.getLogger(__name__)
 
 
+@lru_cache(maxsize=128)
+def get_symbol(value: str | int) -> str:
+    """Get element symbol from the Periodic Table module.
+
+    Parameters
+    ----------
+    value : str | int
+        Name of the element (e.g., "Copper" or "cu") or atomic number.
+
+    Returns
+    -------
+    str
+        Symbol of the element (e.g., "Cu").
+
+    """
+    if isinstance(value, int):
+        try:
+            elem = pt.elements[value]
+            return elem.symbol
+        except Exception as exc:
+            raise ValueError(f"Invalid atomic number for element: {value}") from exc
+
+    name = value.strip()
+
+    if len(name) <= 2:
+        element = getattr(pt, name.capitalize(), None)
+    elif len(name) > 2:
+        element = getattr(pt, name.lower(), None)
+    else:
+        raise ValueError(f"Invalid element name: {value}")
+
+    if element is not None and isinstance(element, pt.core.Element):
+        return element.symbol
+    else:
+        raise ValueError(f"Element '{value}' not found in the periodic table.")
+
+
+@lru_cache(maxsize=128)
 def detect_material_type(name: str):
+    """Detect if the name corresponds to an element or a compound.
+
+    Parameters
+    ----------
+    name : str
+        Name of the material.
+
+    Returns
+    -------
+    str
+        "element" if the name corresponds to an element, "compound" if it corresponds to a compound, "unknown" otherwise.
+    """
+
     name = name.strip()
 
-    # Try exact element match by symbol (case-sensitive)
-    if hasattr(pt, name):
-        element = getattr(pt, name)
-        if isinstance(element, pt.core.Element):
-            return "element"
+    # Check if found as an element in the periodic table
+    try:
+        get_symbol(name)
+        return "element"
+    except ValueError:
+        pass
 
     # Try parsing as a chemical formula
     try:
@@ -30,14 +83,11 @@ def detect_material_type(name: str):
             return "compound"
     except (ParseException, ValueError):
         pass  # Not a valid chemical formula
-    # Try matching by lowercase element name
-    for elem in pt.elements:
-        if elem is not None and elem.name.lower() == name.lower():
-            return "element"
 
     return "unknown"
 
 
+@lru_cache(maxsize=128)
 def is_element_in_periodic_table(name: str) -> bool:
     """Check if the element is in the Periodic Table module.
 
@@ -71,6 +121,7 @@ def is_element_in_periodic_table(name: str) -> bool:
         return False
 
 
+@lru_cache(maxsize=128)
 def is_compound(name: str) -> bool:
     """Check if the name is a compound.
 
@@ -112,6 +163,7 @@ def is_compound(name: str) -> bool:
         return False
 
 
+@lru_cache(maxsize=128)
 def get_element_mass(name: str, isotope: float) -> float:
     """Get element mass from the Periodic Table module.
 
@@ -140,6 +192,7 @@ def get_element_mass(name: str, isotope: float) -> float:
     return closest.mass
 
 
+@lru_cache(maxsize=128)
 def get_element_density(name: str, isotope: Optional[float] = None) -> float:
     """Get element density from the Periodic Table module.
 
@@ -176,34 +229,7 @@ def get_element_density(name: str, isotope: Optional[float] = None) -> float:
         return getattr(pt, name).density
 
 
-def get_element_symbol(name: str) -> str:
-    """Get element symbol from the Periodic Table module.
-
-    Parameters
-    ----------
-    name : str
-        Name of the element (e.g., "Copper" or "cu").
-
-    Returns
-    -------
-    str
-        Symbol of the element (e.g., "Cu").
-
-    """
-    # Try as a properly capitalized symbol (first letter capital, rest lowercase)
-    if hasattr(pt, name):
-        element = getattr(pt, name)
-        if isinstance(element, pt.core.Element):
-            return element.symbol
-
-    # Try matching by lowercase element name
-    for elem in pt.elements:
-        if elem is not None and elem.name.lower() == name.lower():
-            return elem.symbol
-
-    raise ValueError(f"Element '{name}' not found in the periodic table.")
-
-
+@lru_cache(maxsize=128)
 def convert_energy(
     value: float, mass: float, from_unit: str, to_unit: str = "MeV/u"
 ) -> tuple[float, str]:
@@ -233,6 +259,7 @@ def convert_energy(
         raise ValueError(f"Unknown energy units: {from_unit} to {to_unit}")
 
 
+@lru_cache(maxsize=128)
 def convert_dedx(
     value: float,
     target_mass: Optional[float],
@@ -349,7 +376,7 @@ def harmonize_dedx_units(df: pd.DataFrame, to: str = "MeV/(mg/cm2)") -> pd.DataF
         drop=True
     )
 
-    df_["target_name"] = df_["target_name"].apply(get_element_symbol)
+    df_["target_name"] = df_["target_name"].apply(get_symbol)
 
     if df_.shape[0] != df.shape[0]:
         logger.warning(

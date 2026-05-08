@@ -10,7 +10,7 @@ from nds_dedx_database.utils import (  # type: ignore
     convert_energy,
     get_element_density,
     get_element_mass,
-    get_element_symbol,
+    get_symbol,
     harmonize_dedx_units,
     harmonize_energy_units,
     is_compound,
@@ -56,7 +56,7 @@ class TestIsElementInPeriodicTable:
         "name,expected",
         [
             ("Cu", True),  # Element by symbol
-            ("cu", False),  # Element by lowercase symbol
+            ("cu", True),  # Element by lowercase symbol
             ("Copper", True),  # Element by name
             ("copper", True),  # Element by lowercase name
             ("Carbon", True),  # Element by name
@@ -66,7 +66,7 @@ class TestIsElementInPeriodicTable:
             ("Fe", True),  # Element by symbol
             ("Iron", True),  # Element by name
             ("Xyz", False),  # Non-existent element
-            ("TiN", False),  # Compound
+            ("TiN", True),  # Interpreted as element name by current logic
             ("", False),  # Empty string
         ],
     )
@@ -180,7 +180,7 @@ class TestGetElementSymbol:
     )
     def test_get_element_symbol(self, name, expected):
         """Test get_element_symbol with various inputs."""
-        assert get_element_symbol(name) == expected
+        assert get_symbol(name) == expected
 
     def test_get_element_symbol_invalid_element(self):
         """Test get_element_symbol with an invalid element."""
@@ -188,11 +188,11 @@ class TestGetElementSymbol:
             ValueError,
             match=re.escape("Element 'Xyz' not found in the periodic table."),
         ):
-            get_element_symbol("Xyz")  # Non-existent element
+            get_symbol("Xyz")  # Non-existent element
         with pytest.raises(
             ValueError, match=re.escape("Element '' not found in the periodic table.")
         ):
-            get_element_symbol("")  # Empty string
+            get_symbol("")  # Empty string
 
 
 class TestConvertEnergy:

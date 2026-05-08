@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-05-08
+
+### Changed
+- **BREAKING**: Refactored primary data access API with clearer naming:
+  - `get_stopping_power_data()` → `get_bundled_df()`
+  - `get_stopping_power_references()` → `get_references()`
+  - `get_stopping_power_for_ion()` → `get_data_for_ion()`
+  - `get_stopping_power_for_target()` → `get_data_for_target()`
+  - `get_stopping_power_for_ion_target()` → `get_data_for_ion_target()`
+  - `get_stopping_power_elemental_targets()` → `get_data_elemental_targets()`
+  - `get_stopping_power_compound_targets()` → `get_data_compound_targets()`
+- **BREAKING**: Removed redundant elemental/compound filtering functions:
+  - `get_stopping_power_for_ion_elemental_targets()` - use `get_data_for_ion()` with `target_type="elemental"` parameter instead
+  - `get_stopping_power_for_ion_compound_targets()` - use `get_data_for_ion()` with `target_type="compound"` parameter instead
+  - `get_stopping_power_elemental_targets_for_target()` - use `get_data_for_target()` with `target_type="elemental"` parameter instead
+  - `get_stopping_power_compound_targets_for_target()` - use `get_data_for_target()` with `target_type="compound"` parameter instead
+- **BREAKING**: Renamed utility function `get_element_symbol()` → `get_symbol()` and updated its signature to accept both element symbols (str) and atomic numbers (int)
+- Improved filtering API design: consolidated target type filtering into optional `target_type` parameter across all data access functions
+- Switched to lazy evaluation with Polars backend for improved query performance; data is materialized only after filtering
+- Enhanced ion and target parameter support: all data access functions now accept both element symbols/names (str) and atomic numbers (int)
+
+### Added
+- Caching (`@lru_cache`) to utility functions for improved performance: `get_symbol()`, `is_element_in_periodic_table()`, `is_compound()`, `get_element_mass()`, `get_element_density()`, and `detect_material_type()`
+- New unified `get_data()` function providing flexible filtering by ion, target, and target type with lazy evaluation
+- Enhanced error messages with helpful guidance when ion/target queries return no results
+- Moved `py.typed` marker file into source directory for better PEP 561 compliance
+
 ## [0.1.2] - 2026-05-08
 
 ### Added
