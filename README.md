@@ -50,7 +50,64 @@ All filtering functions return pandas DataFrames and support the same `copy` par
 
 ## Utilities
 
-The package also exposes helpers for material classification and unit conversions.
+The package exposes helpers for material classification and unit conversions:
+
+```python
+from nds_dedx_database import (
+    get_symbol,
+    is_element_in_periodic_table,
+    is_compound,
+    get_element_mass,
+    get_element_density,
+    convert_energy,
+    convert_dedx,
+    harmonize_energy_units,
+    harmonize_dedx_units,
+    detect_material_type,
+)
+
+# Element/compound detection
+is_element_in_periodic_table("H")  # True
+is_compound("H2O")  # True
+
+# Material properties
+mass = get_element_mass("Cu")
+density = get_element_density("Cu")
+
+# Unit conversions
+energy_mev = convert_energy(1000, from_unit="keV", to_unit="MeV")
+dedx_mev_mg_cm2 = convert_dedx(0.5, from_unit="MeV/mg·cm²", to_unit="MeV/(mg/cm2)")
+
+# Harmonize DataFrame units
+df_harmonized = harmonize_energy_units(df, to="MeV/u")
+df_harmonized = harmonize_dedx_units(df, to="MeV/(mg/cm2)")
+```
+
+Most utility functions are cached for improved performance when called repeatedly.
+
+## Interactive Tools
+
+### Marimo Notebook
+
+An interactive marimo notebook is provided in `notebooks/StoppingPowerDatabase.py` for exploring and visualizing the stopping power data. The notebook features:
+- Data loading and inspection
+- Energy and stopping power unit harmonization
+- Interactive filtering by ion and target materials
+- Log-scale scatter plots for stopping power vs. energy
+- Density validation checks
+
+To run the notebook, install the notebooks dependencies and use marimo:
+
+```bash
+# Install with notebook dependencies
+uv sync --group notebooks
+
+# Run the notebook
+marimo run notebooks/StoppingPowerDatabase.py
+
+# Or edit the notebook
+marimo edit notebooks/StoppingPowerDatabase.py
+```
 
 ## Contributing
 

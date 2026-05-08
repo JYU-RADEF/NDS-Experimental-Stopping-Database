@@ -6,11 +6,13 @@ readme = "README.md"
 authors = [{name = "Arto Javanainen", email = "arto.javanainen@jyu.fi"}]
 requires-python = ">=3.12"
 dependencies = [
+    "anywidget>=0.11.0",
     "numpy>=2.2.6",
     "pandas>=2.3.0",
     "periodictable>=2.0.2",
     "plotly>=6.1.2",
     "polars>=1.40.1",
+    "pyarrow>=24.0.0",
 ]
 
 [dependency-groups]
@@ -25,6 +27,7 @@ notebooks = [
     "ipykernel>=6.29.5",
     "ipywidgets>=8.1.7",
     "jupyter>=1.1.1",
+    "marimo>=0.23.5",
 ]
 
 [tool.hatch.version]
@@ -45,3 +48,9 @@ packages = ["src/nds_dedx_database"]
 include = [
     "nds_dedx_database/package_data/latest/*.csv",
 ]
+
+[tool.mypy]
+follow_imports = "silent"
+
+[tool.ty.rules]
+unused-type-ignore-comment = "ignore"

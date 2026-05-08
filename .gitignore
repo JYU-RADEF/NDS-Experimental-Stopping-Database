@@ -42,6 +42,9 @@ coverage.xml
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Marimo notebook checkpoints and sessions
+__marimo__/
+
 # IDEs and editors
 .vscode/
 .idea/

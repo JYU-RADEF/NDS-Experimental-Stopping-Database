@@ -5,7 +5,7 @@ from __future__ import annotations
 import pandas as pd
 import pytest
 
-from nds_dedx_database import api  # type: ignore
+from nds_dedx_database import api
 
 
 def test_refactored_api_exports_expected_names():

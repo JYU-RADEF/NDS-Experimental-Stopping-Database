@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Interactive marimo notebook (`notebooks/StoppingPowerDatabase.py`) for exploring and visualizing stopping power data with features for filtering by ions/targets and interactive plotting
+- New dependencies for enhanced functionality:
+  - `anywidget>=0.11.0` - Support for custom interactive widgets (main dependency)
+  - `pyarrow>=24.0.0` - Arrow support for improved data handling (main dependency)
+  - `marimo>=0.23.5` - Interactive notebook framework (notebooks dependency group)
+
+### Fixed
+- Improved error handling in `get_element_density()` to gracefully handle isotopes with missing density data; now falls back to natural element density when isotope-specific data is unavailable
+
 ## [0.1.3] - 2026-05-08
 
 ### Changed

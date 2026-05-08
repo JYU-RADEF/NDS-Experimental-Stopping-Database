@@ -224,7 +224,14 @@ def get_element_density(name: str, isotope: Optional[float] = None) -> float:
 
     if isotope is not None:
         closest = min(options, key=lambda x: abs(x.mass - isotope))
-        return closest.density
+        try:
+            return closest.density
+        except TypeError:
+            logger.warning(
+                f"Could not calculate density for isotope of {name_} with mass {isotope}. "
+                f"Falling back to natural element density."
+            )
+            return getattr(pt, name).density
     else:
         return getattr(pt, name).density
 

@@ -2,9 +2,10 @@
 
 from functools import lru_cache
 from pathlib import Path
+from typing import cast
 
 import pandas as pd  # type: ignore
-import polars as pl  # type: ignore
+import polars as pl
 
 from . import utils
 
@@ -90,7 +91,7 @@ def get_data(
 
     # Collect and convert to pandas only after all lazy filters are defined
     # This is where the actual query execution happens
-    data = pd.DataFrame(lazy_df.collect().to_dicts())
+    data = cast(pl.DataFrame, lazy_df.collect()).to_pandas()
 
     # Validate results after basic filters but before target_type filtering
     if data.empty:
@@ -137,7 +138,9 @@ def get_bundled_df(copy: bool = True) -> pd.DataFrame:
 def get_references(copy: bool = True) -> pd.DataFrame:
     """Return the bundled stopping power reference table."""
 
-    data = _read_csv_lazy("StoppingPower_refs.csv").collect().to_pandas()
+    data = cast(
+        pl.DataFrame, _read_csv_lazy("StoppingPower_refs.csv").collect()
+    ).to_pandas()
     return data.copy(deep=True) if copy else data
 
 

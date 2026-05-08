@@ -5,7 +5,7 @@ import re
 import pandas as pd
 import pytest
 
-from nds_dedx_database.utils import (  # type: ignore
+from nds_dedx_database.utils import (
     convert_dedx,
     convert_energy,
     get_element_density,
