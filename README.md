@@ -1,5 +1,7 @@
 # Experimental Stopping Database
 
+[![pipeline status](https://gitlab.jyu.fi/rd-phys-acclab/radef/stopping/nds-experimental-stopping-database/badges/v0.1.4/pipeline.svg?ignore_skipped=true)](https://gitlab.jyu.fi/rd-phys-acclab/radef/stopping/nds-experimental-stopping-database/-/pipelines)
+
 Python package for the Experimental Stopping Database. This package provides access to the bundled stopping power tables and reference metadata, as well as utilities for material classification and unit conversion. The data is obtained from https://nds.iaea.org/stopping/. When using the data for any purpose, all citations should be made to the original source.
 
 ## Data access
