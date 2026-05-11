@@ -71,12 +71,12 @@ is_element_in_periodic_table("H")  # True
 is_compound("H2O")  # True
 
 # Material properties
-mass = get_element_mass("Cu")
+mass = get_element_mass("Cu", isotope=63.546)
 density = get_element_density("Cu")
 
 # Unit conversions
 energy_mev = convert_energy(1000, from_unit="keV", to_unit="MeV")
-dedx_mev_mg_cm2 = convert_dedx(0.5, from_unit="MeV/mg·cm²", to_unit="MeV/(mg/cm2)")
+dedx_mev_mg_cm2 = convert_dedx(0.5, from_unit="MeV/(mg/cm²)", to_unit="MeV/(mg/cm2)")
 
 # Harmonize DataFrame units
 df_harmonized = harmonize_energy_units(df, to="MeV/u")
@@ -89,23 +89,23 @@ Most utility functions are cached for improved performance when called repeatedl
 
 ### Marimo Notebook
 
-An interactive marimo notebook is provided in `notebooks/StoppingPowerDatabase.py` for exploring and visualizing the stopping power data. The notebook features:
-- Data loading and inspection
+An interactive [marimo](https://marimo.io) notebook is provided in `notebooks/StoppingPowerDatabase.py` for exploring and visualizing the stopping power data. The notebook features:
+- Data loading and inspection from the bundled database
 - Energy and stopping power unit harmonization
-- Interactive filtering by ion and target materials
-- Log-scale scatter plots for stopping power vs. energy
-- Density validation checks
+- Interactive dropdowns for filtering by projectile (ion) and target material
+- Dataset summary statistics (energy range, stopping power range, entry counts)
+- Log-scale scatter plots for stopping power vs. energy with reference annotations
 
-To run the notebook, install the notebooks dependencies and use marimo:
+To run the notebook, install the notebook dependencies and use marimo:
 
 ```bash
 # Install with notebook dependencies
 uv sync --group notebooks
 
-# Run the notebook
+# Run the notebook in a browser
 marimo run notebooks/StoppingPowerDatabase.py
 
-# Or edit the notebook
+# Or edit the notebook interactively
 marimo edit notebooks/StoppingPowerDatabase.py
 ```
 

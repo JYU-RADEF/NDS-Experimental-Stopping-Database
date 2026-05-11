@@ -119,7 +119,7 @@ def _(Optional, df_energy_harmonized, projectile_dropdown, target_dropdown):
 @app.cell
 def _(filtered_df, mo):
     mo.md(f"""
-    ### Selected Projectile-Target Combination
+    ### About Selected Projectile-Target Combination
 
     Dataset summary for the selected projectile-target combination will be displayed here.
     - number of entries: {len(filtered_df)}
