@@ -49,6 +49,15 @@ def _normalize_target(target: str | int) -> str:
         return target
 
 
+def _collection_to_pandas(collection: pl.DataFrame) -> pd.DataFrame:
+    """Convert a collected lazy result into a pandas DataFrame."""
+    if hasattr(collection, "to_pandas"):
+        return cast(pd.DataFrame, collection.to_pandas())
+    if hasattr(collection, "to_dicts"):
+        return pd.DataFrame(cast(list[dict], collection.to_dicts()))
+    raise TypeError("Collected data cannot be converted to pandas")
+
+
 def get_data(
     ion: str | int | None = None,
     target: str | int | None = None,
@@ -91,7 +100,7 @@ def get_data(
 
     # Collect and convert to pandas only after all lazy filters are defined
     # This is where the actual query execution happens
-    data = cast(pl.DataFrame, lazy_df.collect()).to_pandas()
+    data = _collection_to_pandas(lazy_df.collect())
 
     # Validate results after basic filters but before target_type filtering
     if data.empty:
@@ -131,16 +140,14 @@ def get_bundled_df(copy: bool = True) -> pd.DataFrame:
         you want to reuse the in-memory cached object directly.
     """
 
-    data = _read_csv_lazy("StoppingPower.csv").collect().to_pandas()
+    data = _collection_to_pandas(_read_csv_lazy("StoppingPower.csv").collect())
     return data.copy(deep=True) if copy else data
 
 
 def get_references(copy: bool = True) -> pd.DataFrame:
     """Return the bundled stopping power reference table."""
 
-    data = cast(
-        pl.DataFrame, _read_csv_lazy("StoppingPower_refs.csv").collect()
-    ).to_pandas()
+    data = _collection_to_pandas(_read_csv_lazy("StoppingPower_refs.csv").collect())
     return data.copy(deep=True) if copy else data
 
 

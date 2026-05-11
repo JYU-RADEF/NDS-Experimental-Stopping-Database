@@ -6,7 +6,7 @@ stages:
 
 variables:
   PYTHON_VERSION: "3.12"
-  PACKAGE_NAME: "nds-dedx-database"
+  PACKAGE_NAME: "nds_dedx_database"
   # With the following variables, we tell uv how to publish our package.
   # Gitlab has built in usernames and passwords for publish packages.
   # This means you don't need to change them!
