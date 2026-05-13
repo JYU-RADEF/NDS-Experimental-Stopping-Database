@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.5] - 2026-05-13
+
+### Added
+- New `nds-notebook` console command for launching the bundled marimo notebook directly from the package (for example with `uvx --from nds_dedx_database nds-notebook`)
+
+### Fixed
+- Fixed `nds-notebook` launcher behavior so it starts marimo reliably by invoking `python -m marimo run` on the packaged notebook file
+- Improved README documentation with clearer instructions and examples
+- Added CI/CD pipeline status badges to documentation
+
 ## [0.1.4] - 2026-05-11
 
 ### Added

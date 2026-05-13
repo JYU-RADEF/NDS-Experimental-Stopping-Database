@@ -1118,6 +1118,7 @@ name = "nds-dedx-database"
 source = { editable = "." }
 dependencies = [
     { name = "anywidget" },
+    { name = "marimo" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "periodictable" },
@@ -1145,6 +1146,7 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "anywidget", specifier = ">=0.11.0" },
+    { name = "marimo", specifier = ">=0.23.5" },
     { name = "numpy", specifier = ">=2.2.6" },
     { name = "pandas", specifier = ">=2.3.0" },
     { name = "periodictable", specifier = ">=2.0.2" },

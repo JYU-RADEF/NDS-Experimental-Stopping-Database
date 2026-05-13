@@ -7,6 +7,7 @@ authors = [{name = "Arto Javanainen", email = "arto.javanainen@jyu.fi"}]
 requires-python = ">=3.12"
 dependencies = [
     "anywidget>=0.11.0",
+    "marimo>=0.23.5",
     "numpy>=2.2.6",
     "pandas>=2.3.0",
     "periodictable>=2.0.2",
@@ -29,6 +30,9 @@ notebooks = [
     "jupyter>=1.1.1",
     "marimo>=0.23.5",
 ]
+
+[project.scripts]
+nds-notebook = "nds_dedx_database.notebook_entrypoint:main"
 
 [tool.hatch.version]
 source = "uv-dynamic-versioning"

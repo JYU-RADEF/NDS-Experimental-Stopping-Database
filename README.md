@@ -98,7 +98,13 @@ An interactive [marimo](https://marimo.io) notebook is provided in `notebooks/St
 - Dataset summary statistics (energy range, stopping power range, entry counts)
 - Log-scale scatter plots for stopping power vs. energy with reference annotations
 
-To run the notebook, install the notebook dependencies and use marimo:
+To run the notebook directly via the package entrypoint (including with `uvx --from`):
+
+```bash
+uvx --index-url https://gitlab.jyu.fi/api/v4/projects/12453/packages/pypi/simple --from nds_dedx_database nds-notebook
+```
+
+For local development, you can still run/edit the notebook with marimo:
 
 ```bash
 # Install with notebook dependencies
@@ -109,6 +115,28 @@ marimo run notebooks/StoppingPowerDatabase.py
 
 # Or edit the notebook interactively
 marimo edit notebooks/StoppingPowerDatabase.py
+```
+
+## Troubleshooting
+
+### `nds-notebook` command not starting
+
+If `uvx --refresh --from . nds-notebook` does not start the marimo server or appears to hang, the issue is likely a stale cached tool environment. To resolve this:
+
+```bash
+# Reinstall the tool with fresh dependencies from your current local source
+uv tool install --reinstall --from . nds_dedx_database
+
+# Then run the notebook (now using the updated launcher)
+nds-notebook
+```
+
+Alternatively, for a fresh ephemeral environment:
+
+```bash
+# Clear the uv cache and run with forced rebuild
+uv cache prune --force
+uvx --no-cache --from . nds-notebook
 ```
 
 ## Contributing
