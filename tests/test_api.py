@@ -95,6 +95,12 @@ def test_get_data_for_ion_target_delegates_to_get_data(
     assert calls == [{"ion": "He", "target": "Cu", "copy": False}]
 
 
+def test_get_data_for_ion_target_with_integer_input_delegates_to_get_data():
+    result = api.get_data_for_ion_target(2, 29, copy=False)
+    result2 = api.get_data_for_ion_target("He", "Cu", copy=False)
+    assert result.equals(result2)
+
+
 def test_get_data_elemental_targets_delegates_to_get_data(
     monkeypatch: pytest.MonkeyPatch,
 ):

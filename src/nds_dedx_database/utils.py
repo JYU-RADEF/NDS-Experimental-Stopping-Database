@@ -390,6 +390,16 @@ def harmonize_dedx_units(df: pd.DataFrame, to: str = "MeV/(mg/cm2)") -> pd.DataF
             "Some rows were removed in harmonize_dedx_units because they contain non-elemental targets."
         )
 
+    # Some bundled schemas store elemental target mass in target_mass_atom_ratio.
+    # Use it when target_mass is not already present.
+    if "target_mass" not in df_.columns:
+        if "target_mass_atom_ratio" in df_.columns:
+            df_["target_mass"] = df_["target_mass_atom_ratio"]
+        else:
+            raise KeyError(
+                "Expected either 'target_mass' or 'target_mass_atom_ratio' for dE/dx harmonization."
+            )
+
     target_densities = df_[["target_name", "target_mass"]].apply(
         lambda x: get_element_density(x["target_name"], x["target_mass"]), axis=1
     )
