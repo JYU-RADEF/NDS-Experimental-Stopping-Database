@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.23.5"
+__generated_with = "0.23.6"
 app = marimo.App()
 
 
@@ -36,19 +36,18 @@ def _():
     from nds_dedx_database import (
         get_bundled_df,
         harmonize_energy_units,
+        get_data_for_ion_target,
     )
 
     # Use the API to get the stopping power data
     df_original = get_bundled_df()
     df_energy_harmonized = harmonize_energy_units(df_original)
-    return Optional, df_energy_harmonized, df_original, pd, px
+    return Optional, df_energy_harmonized, df_original, px
 
 
 @app.cell
 def _(df_original, mo):
-    unique_combinations = df_original[
-        ["projectile_name", "target_name"]
-    ].drop_duplicates()
+    unique_combinations = df_original[["projectile_name", "target_name"]].drop_duplicates()
     mo.md(f"""
     ## Dataset Summary
     Full dataset information:\n
@@ -113,6 +112,7 @@ def _(Optional, df_energy_harmonized, projectile_dropdown, target_dropdown):
         df_["selected_target"] = target
         return df_
 
+
     filtered_df = filter_data(projectile_dropdown.value, target_dropdown.value)
     return (filtered_df,)
 
@@ -131,7 +131,7 @@ def _(filtered_df, mo):
 
 
 @app.cell
-def _(filtered_df, pd, px):
+def _(filtered_df, px):
     def plot_data(df):
 
         ion = df["selected_ion"].iloc[0]
@@ -155,7 +155,25 @@ def _(filtered_df, pd, px):
         )
         return fig
 
+
     plot_data(filtered_df)
+    return
+
+
+@app.cell
+def _(df_energy_harmonized):
+    df_energy_harmonized
+    return
+
+
+@app.cell
+def _(df_original):
+    df_original.query("projectile_name == 'O' and target_name == 'C'")
+    return
+
+
+@app.cell
+def _():
     return
 
 

@@ -32,6 +32,10 @@ class _FakeLazy:
     def collect(self) -> _Collected:
         return _Collected(self._rows)
 
+    def with_columns(self, *args, **kwargs):
+        # This fake ignores with_columns since the real code applies target normalization in Python after collection
+        return self
+
 
 def _make_rows() -> list[dict]:
     return [

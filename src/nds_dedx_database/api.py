@@ -88,6 +88,15 @@ def get_data(
     # Start with lazy frame (no data materialization yet)
     lazy_df = _read_csv_lazy("StoppingPower.csv")
 
+    # Change values in target_name column to elemental symbols when possible, to support flexible target input
+
+    lazy_df = lazy_df.with_columns(
+        pl
+        .col("target_name")
+        .map_elements(_normalize_target, return_dtype=pl.String)
+        .alias("target_name")
+    )
+
     # Apply ion filter lazily
     if ion is not None:
         ion_sym = utils.get_symbol(ion)
