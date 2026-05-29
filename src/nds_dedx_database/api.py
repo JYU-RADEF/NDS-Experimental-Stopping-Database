@@ -88,28 +88,19 @@ def get_data(
     # Start with lazy frame (no data materialization yet)
     lazy_df = _read_csv_lazy("StoppingPower.csv")
 
-    # Change values in target_name column to elemental symbols when possible, to support flexible target input
-
-    lazy_df = lazy_df.with_columns(
-        pl
-        .col("target_name")
-        .map_elements(_normalize_target, return_dtype=pl.String)
-        .alias("target_name")
-    )
-
     # Apply ion filter lazily
     if ion is not None:
         ion_sym = utils.get_symbol(ion)
         lazy_df = lazy_df.filter(pl.col("projectile_name") == ion_sym)
 
-    # Apply target filter lazily
-    if target is not None:
-        target_val = _normalize_target(target)
-        lazy_df = lazy_df.filter(pl.col("target_name") == target_val)
-
     # Collect and convert to pandas only after all lazy filters are defined
     # This is where the actual query execution happens
     data = _collection_to_pandas(lazy_df.collect())
+
+    # Apply target filter in pandas after normalization.
+    if target is not None:
+        target_val = _normalize_target(target)
+        data = data[data["target_name"] == target_val]
 
     # Validate results after basic filters but before target_type filtering
     if data.empty:

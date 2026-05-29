@@ -3,6 +3,7 @@ from pathlib import Path
 from .api import (
     clear_stopping_data_cache,
     get_bundled_df,
+    get_data,
     get_data_compound_targets,
     get_data_elemental_targets,
     get_data_for_ion,
@@ -42,5 +43,6 @@ __all__ = [
     "get_data_for_ion_target",
     "get_data_elemental_targets",
     "get_data_compound_targets",
+    "get_data",
     "DATA_PATH",
 ]

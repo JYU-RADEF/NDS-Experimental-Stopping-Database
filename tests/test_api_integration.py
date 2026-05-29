@@ -8,6 +8,7 @@ is exercised without loading the full CSV bundle.
 
 from __future__ import annotations
 
+import pandas as pd
 import pytest
 
 from nds_dedx_database import api, utils
@@ -116,3 +117,16 @@ def test_get_data_raises_when_filtered_empty(monkeypatch: pytest.MonkeyPatch):
 
     with pytest.raises(ValueError, match="not found in the periodic table"):
         api.get_data(ion="Xx")
+
+
+def test_get_data_he_sn_matches_bundled_slice():
+    bundled = api.get_bundled_df(copy=False)
+    expected = bundled[
+        (bundled["projectile_name"] == "He") & (bundled["target_name"] == "Sn")
+    ].reset_index(drop=True)
+
+    data = api.get_data(ion="He", target="Sn", harmonize_units=False).reset_index(
+        drop=True
+    )
+
+    pd.testing.assert_frame_equal(data, expected)

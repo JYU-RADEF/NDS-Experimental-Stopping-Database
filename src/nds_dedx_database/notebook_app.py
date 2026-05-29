@@ -37,12 +37,20 @@ def _():
         get_bundled_df,
         harmonize_energy_units,
         get_data_for_ion_target,
+        get_data,
     )
 
     # Use the API to get the stopping power data
     df_original = get_bundled_df()
     df_energy_harmonized = harmonize_energy_units(df_original)
-    return Optional, df_energy_harmonized, df_original, px
+    return (
+        Optional,
+        df_energy_harmonized,
+        df_original,
+        get_data_for_ion_target,
+        pd,
+        px,
+    )
 
 
 @app.cell
@@ -161,14 +169,32 @@ def _(filtered_df, px):
 
 
 @app.cell
-def _(df_energy_harmonized):
-    df_energy_harmonized
+def _():
     return
 
 
 @app.cell
-def _(df_original):
-    df_original.query("projectile_name == 'O' and target_name == 'C'")
+def _(get_data_for_ion_target, pd):
+    pd.options.plotting.backend = "plotly"
+    get_data_for_ion_target("He", "Sn", copy=False).plot.scatter(
+        x="energy",
+        y="stopping_power_converted",
+        log_x=True,
+        log_y=False,
+        hover_data=["energy", "energy_unit", "stopping_unit_converted"],
+    )
+    return
+
+
+@app.cell
+def _(filtered_df):
+    filtered_df.plot.scatter(
+        x="energy",
+        y="stopping_power_converted",
+        log_x=True,
+        log_y=False,
+        hover_data=["energy", "energy_unit", "stopping_unit_converted"],
+    )
     return
 
 
