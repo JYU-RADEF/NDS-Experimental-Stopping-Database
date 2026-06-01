@@ -66,7 +66,7 @@ class TestIsElementInPeriodicTable:
             ("Fe", True),  # Element by symbol
             ("Iron", True),  # Element by name
             ("Xyz", False),  # Non-existent element
-            ("TiN", True),  # Interpreted as element name by current logic
+            ("TiN", False),  # Compound that should not be treated as an element
             ("", False),  # Empty string
         ],
     )

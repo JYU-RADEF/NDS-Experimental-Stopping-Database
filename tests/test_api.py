@@ -48,6 +48,10 @@ def test_normalize_target_keeps_compound_formula_unchanged():
     assert api._normalize_target("SiO2") == "SiO2"
 
 
+def test_normalize_target_keeps_compound_named_like_element_unchanged():
+    assert api._normalize_target("TiN") == "TiN"
+
+
 def test_get_data_for_ion_delegates_to_get_data(monkeypatch: pytest.MonkeyPatch):
     calls: list[dict[str, object]] = []
     expected = pd.DataFrame({"ok": [1]})
@@ -194,3 +198,9 @@ def test_get_references_returns_copy_by_default(monkeypatch: pytest.MonkeyPatch)
 
     assert out.equals(source)
     assert out is not source
+
+
+def test_get_ion_target_data_for_carbon():
+    df = api.get_data_for_ion_target("O", "C", copy=False)
+    assert (df["projectile_name"] == "O").all()
+    assert (df["target_name"] == "C").all()

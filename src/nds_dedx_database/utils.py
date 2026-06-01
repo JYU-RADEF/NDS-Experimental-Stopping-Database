@@ -66,13 +66,6 @@ def detect_material_type(name: str):
 
     name = name.strip()
 
-    # Check if found as an element in the periodic table
-    try:
-        get_symbol(name)
-        return "element"
-    except ValueError:
-        pass
-
     # Try parsing as a chemical formula
     try:
         formula = parse_formula(name)
@@ -83,6 +76,14 @@ def detect_material_type(name: str):
             return "compound"
     except (ParseException, ValueError):
         pass  # Not a valid chemical formula
+
+    # Fall back to element-name / symbol lookup only if the string is not a
+    # recognizable chemical formula.
+    try:
+        get_symbol(name)
+        return "element"
+    except ValueError:
+        pass
 
     return "unknown"
 

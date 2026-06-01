@@ -31,7 +31,7 @@ def _read_csv_lazy(filename: str | Path = DEDX_CSV) -> pl.LazyFrame:
 
 @lru_cache(maxsize=128)
 def _normalize_target(target: str | int) -> str:
-    """Normalize target input. Integer -> element symbol; strings left as-is."""
+    """Normalize target input. String or Integer -> element symbol; If not found, strings left as-is."""
     if isinstance(target, int):
         try:
             return utils.get_symbol(target)
@@ -40,12 +40,10 @@ def _normalize_target(target: str | int) -> str:
 
     if isinstance(target, str):
         target = target.strip()
-        try:
-            return utils.get_symbol(target)
-        except Exception:
-            pass  # Not an element symbol, return as-is
         if target.isdigit():
             return _normalize_target(int(target))
+        if utils.detect_material_type(target) == "element":
+            return utils.get_symbol(target)
         return target
 
 
@@ -96,6 +94,9 @@ def get_data(
     # Collect and convert to pandas only after all lazy filters are defined
     # This is where the actual query execution happens
     data = _collection_to_pandas(lazy_df.collect())
+
+    # Harmonize target_name column with element symbols for consistent filtering
+    data["target_name"] = data["target_name"].apply(_normalize_target)
 
     # Apply target filter in pandas after normalization.
     if target is not None:
