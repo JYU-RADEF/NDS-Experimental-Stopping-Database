@@ -251,8 +251,8 @@ def get_data_for_ion_target(
 
     Examples
     --------
-    >>> h_in_cu = get_data_ion_target("H", "Cu")
-    >>> he_in_sio2 = get_data_ion_target("He", "SiO2")
+    >>> h_in_cu = get_data_for_ion_target("H", "Cu")
+    >>> he_in_sio2 = get_data_for_ion_target("He", "SiO2")
     """
     return get_data(ion=ion, target=target, copy=copy)
 
@@ -273,7 +273,7 @@ def get_data_elemental_targets(copy: bool = True) -> pd.DataFrame:
 
     Examples
     --------
-    >>> elemental_stopping = get_stopping_power_elemental_targets()
+    >>> elemental_stopping = get_data_elemental_targets()
     """
     return get_data(target_type="elemental", copy=copy)
 

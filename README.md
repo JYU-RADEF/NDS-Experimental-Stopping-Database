@@ -4,6 +4,60 @@
 
 Python package for the Experimental Stopping Database. This package provides access to the bundled stopping power tables and reference metadata, as well as utilities for material classification and unit conversion. The data is obtained from https://nds.iaea.org/stopping/. When using the data for any purpose, all citations should be made to the original source.
 
+## Quick start
+
+Start notebook with `uvx`:
+
+```bash
+uvx --index-url https://gitlab.jyu.fi/api/v4/projects/12453/packages/pypi/simple --from nds_dedx_database nds-notebook
+```
+
+This will launch the interactive marimo notebook for exploring the stopping power data in your browser.
+
+> Note: For this you will need to install `uv` from https://docs.astral.sh/uv/getting-started/installation/
+
+## Installation
+
+You can install the package from a Gitlab repository, or locally for development.
+
+- From Gitlab (install latest main branch):
+
+```bash
+pip install git+https://gitlab.jyu.fi/rd-phys-acclab/radef/stopping/nds-experimental-stopping-database.git
+```
+
+- Local editable install (development):
+
+```bash
+pip install -e .[test]
+```
+
+Notebook quick-start uses `uv`/`uvx`. Ensure `uv` is installed before using the `uvx` example below. You can install `uv` following https://docs.astral.sh/uv/getting-started/installation/ or use the `nds-notebook` entry point directly with Python.
+
+Running the packaged notebook via `uvx` (example):
+
+```bash
+uvx --index-url https://gitlab.jyu.fi/api/v4/projects/12453/packages/pypi/simple --from nds_dedx_database nds-notebook
+```
+
+Or run the notebook entry point directly (requires `marimo` in the environment):
+
+```bash
+python -m nds_dedx_database.notebook_entrypoint
+```
+
+## Running tests
+
+Run the test-suite with `pytest` (recommended to run inside a virtual environment):
+
+```bash
+python -m pytest
+```
+
+If you use `uv` tooling, `uvx pytest` can be used to run tests inside the project's environment.
+
+
+
 ## Data access
 
 Use the bundled API to load the packaged CSV files once and reuse them from memory:
@@ -87,57 +141,6 @@ df_harmonized = harmonize_dedx_units(df, to="MeV/(mg/cm2)")
 
 Most utility functions are cached for improved performance when called repeatedly.
 
-## Interactive Tools
-
-### Marimo Notebook
-
-An interactive [marimo](https://marimo.io) notebook is provided in `notebooks/StoppingPowerDatabase.py` for exploring and visualizing the stopping power data. The notebook features:
-- Data loading and inspection from the bundled database
-- Energy and stopping power unit harmonization
-- Interactive dropdowns for filtering by projectile (ion) and target material
-- Dataset summary statistics (energy range, stopping power range, entry counts)
-- Log-scale scatter plots for stopping power vs. energy with reference annotations
-
-To run the notebook directly via the package entrypoint (including with `uvx --from`):
-
-```bash
-uvx --index-url https://gitlab.jyu.fi/api/v4/projects/12453/packages/pypi/simple --from nds_dedx_database nds-notebook
-```
-
-For local development, you can still run/edit the notebook with marimo:
-
-```bash
-# Install with notebook dependencies
-uv sync --group notebooks
-
-# Run the notebook in a browser
-marimo run notebooks/StoppingPowerDatabase.py
-
-# Or edit the notebook interactively
-marimo edit notebooks/StoppingPowerDatabase.py
-```
-
-## Troubleshooting
-
-### `nds-notebook` command not starting
-
-If `uvx --refresh --from . nds-notebook` does not start the marimo server or appears to hang, the issue is likely a stale cached tool environment. To resolve this:
-
-```bash
-# Reinstall the tool with fresh dependencies from your current local source
-uv tool install --reinstall --from . nds_dedx_database
-
-# Then run the notebook (now using the updated launcher)
-nds-notebook
-```
-
-Alternatively, for a fresh ephemeral environment:
-
-```bash
-# Clear the uv cache and run with forced rebuild
-uv cache prune --force
-uvx --no-cache --from . nds-notebook
-```
 
 ## Contributing
 
