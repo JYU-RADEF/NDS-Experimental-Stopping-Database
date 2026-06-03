@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-06-03
+
+### Added
+- Pruned interactive notebook to remove development noise and non-essential cells.
+
+### Changed
+- Documentation and docstrings updated to reflect recent API and behavior changes.
+
+## [0.3.0] - 2026-06-01
+
+### Fixed
+- Corrected `detect_material_type()` to prioritize identifying compound formulas before falling back to element-name lookup, improving compound detection accuracy.
+
+## [0.2.0] - 2026-05-29
+
+### Fixed
+- Bug fixes and robustness improvements to `get_data()` including better normalization and filtering behavior.
+
+## [0.1.7] - 2026-05-22
+
+### Fixed
+- Normalize `target_name` values to elemental symbols where applicable to improve filtering consistency.
+
+## [0.1.6] - 2026-05-22
+
+### Fixed
+- API fixes: support integer `ion` and `target` arguments across data accessors.
+
 ## [0.1.5] - 2026-05-13
 
 ### Added
